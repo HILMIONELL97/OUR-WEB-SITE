@@ -1,0 +1,20 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.nn {
+  font-size: 60px;
+  color: #9c8686;
+}
+
+.cc {
+  background-image: url(img/bridge-1660417_1920.jpg);
+  width: 2000px;
+  height: 1440px;
+  padding-top: 1000px;
+  padding-left: 1000px;
+}
+/*# sourceMappingURL=style.css.map */
