@@ -11,7 +11,10 @@ body {
   text-align: center;
 }
 
-.testimoniale .cmmentaire {
-  width: 40%;
+.testimoniale .comment {
+  width: 23%;
+  margin: auto;
+  border: 2px solid #8f25D6;
+  padding: 20px;
 }
 /*# sourceMappingURL=styles.css.map */
