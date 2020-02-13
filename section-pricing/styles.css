@@ -1,1 +1,17 @@
-/* No CSS *//*# sourceMappingURL=styles.css.map */
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.testimoniale .test {
+  text-decoration: underline;
+  text-align: center;
+}
+
+.testimoniale .cmmentaire {
+  width: 40%;
+}
+/*# sourceMappingURL=styles.css.map */
