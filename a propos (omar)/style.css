@@ -1,1 +1,105 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.aheader {
+  background: url(img/back1.jpg) no-repeat;
+  background-size: 1550px 600px;
+  height: 600px;
+}
+
+.aheader .abg {
+  width: 100%;
+  height: 600px;
+  position: absolute;
+  z-index: 2;
+  background-color: rgba(226, 12, 198, 0.4);
+}
+
+.center {
+  margin-left: 33%;
+  margin-top: 16%;
+  position: absolute;
+  z-index: 3;
+  text-align: center;
+}
+
+.aqui {
+  color: #8F25D6;
+  font-weight: 100;
+}
+
+.apro {
+  color: white;
+  font-size: 80px;
+  font-weight: 900;
+}
+
+.aorg {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas: "apart1 apart2 apart3";
+}
+
+.apart1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: apart1;
+}
+
+.apart2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: apart2;
+}
+
+.apart2 img {
+  width: 20%;
+}
+
+.apart3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: apart3;
+}
+
+.apaart1 {
+  grid-area: apaart1;
+}
+
+.apaart2 {
+  grid-area: apaart2;
+}
+
+.apaart1 img {
+  width: 30px;
+}
+
+.apaart3 {
+  grid-area: apaart3;
+}
+
+.apaaart1 {
+  grid-area: apaaart1;
+}
+
+.apaaart2 {
+  grid-area: apaaart2;
+}
+
+.apaaart3 {
+  grid-area: apaaart3;
+}
+/*# sourceMappingURL=style.css.map */
