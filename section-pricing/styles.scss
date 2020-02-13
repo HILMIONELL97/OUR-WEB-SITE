@@ -1,0 +1,64 @@
+$principe: #8f25D6;
+@mixin grid() {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.testimoniale {
+    .test {
+        text-decoration: underline;
+        text-align: center;
+    }
+    .comment {
+        width: 23%;
+        margin: auto;
+        border: 2px solid $principe;
+        .border {
+            margin: 0;
+            border: 10px solid $principe;
+            width: 20%;
+        }
+        .stars {
+            padding: 10px;
+            .fa-star {
+                color: $principe;
+                padding-top: 20px;
+            }
+        }
+        p {
+            margin: 0;
+            padding: 0 10px;
+        }
+        img {
+            border-radius: 100%;
+            width: 55%;
+            margin: 15px 10px;
+        }
+        .finsection {
+            background-color: $principe;
+            @include grid;
+            margin-top: 20px;
+            .com {
+                margin-top: 15px;
+                margin-left: -50px;
+            }
+            p {
+                margin-top: -15px;
+                margin-left: -10px;
+            }
+            .circle {
+                grid-column: 2/3;
+                margin-left: 110px;
+            }
+        }
+    }
+}
