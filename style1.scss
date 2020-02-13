@@ -50,4 +50,26 @@ body {
             padding: 1em;
         }
     }
+    .hbtn {
+        font-family: 'Montserrat', sans-serif;
+        background-image: linear-gradient(45deg, #7749c1, #9b59b6, #3498db);
+        border-radius: 3em 0.5em;
+        margin-top: 2.5em;
+        padding: 1em;
+        font-size: 100%;
+        background-size: 800px;
+        background-position: right;
+        color: white;
+    }
+    .hbtn {
+        animation: hover 2s infinite;
+    }
+    @keyframes hover {
+        0% {
+            background-position: right;
+        }
+        100% {
+            background-position: left;
+        }
+    }
 }
