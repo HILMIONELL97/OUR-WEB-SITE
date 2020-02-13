@@ -1,1 +1,65 @@
-/* No CSS *//*# sourceMappingURL=style1.css.map */
+body,
+html {
+  margin: 0;
+}
+
+body {
+  height: 100%;
+  font-family: 'Montserrat';
+}
+
+.hhead {
+  position: absolute;
+  padding: 1em;
+  z-index: 20;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: calc(100% - 2em);
+  height: 700px;
+}
+
+.hhead a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  padding: 0px 20px;
+}
+
+.hhead a:hover {
+  background-color: #8f25D6;
+  border-radius: 40px;
+  font-style: italic;
+  color: white;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.hhead .hlogo {
+  width: 120px;
+  -webkit-transition: -webkit-transform 2s;
+  transition: -webkit-transform 2s;
+  transition: transform 2s;
+  transition: transform 2s, -webkit-transform 2s;
+}
+
+.hhead nav .hmenu {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 80%;
+  margin: 0;
+  padding: 0;
+  float: right;
+  margin-top: -70px;
+}
+
+.hhead nav .hmenu li a {
+  padding: 1em;
+}
+/*# sourceMappingURL=style1.css.map */
