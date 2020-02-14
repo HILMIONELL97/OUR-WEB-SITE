@@ -1,1 +1,130 @@
-/* No CSS *//*# sourceMappingURL=style1.css.map */
+body,
+html {
+  margin: 0;
+  background-color: #Dae1eb;
+}
+
+body {
+  height: 100%;
+  font-family: 'Montserrat';
+}
+
+.fixe {
+  position: fixed;
+  width: calc(100% - 2em);
+}
+
+.hhead {
+  padding: 1em;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: calc(100% - 2em);
+  height: 700px;
+  background-image: url(/Images/bridge-4.jpg);
+  background-attachment: fixed;
+}
+
+.hhead a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  padding: 0px 20px;
+  position: relative;
+  left: 200px;
+}
+
+.hhead a:hover {
+  background-color: #8f25D6;
+  border-radius: 40px;
+  font-style: italic;
+  color: white;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.hhead .hlogo {
+  width: 120px;
+  cursor: pointer;
+  position: relative;
+  left: 40px;
+}
+
+.hhead nav .hmenu {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 80%;
+  padding: 100px;
+  margin-top: -170px;
+}
+
+.hhead nav .hmenu li a {
+  padding: 1em;
+}
+
+.hhead nav .hmenu .fas fa-search {
+  position: relativ;
+  right: 150px;
+}
+
+.hhead .para {
+  text-align: center;
+  width: 600px;
+  margin: 290px auto;
+  font-size: 19px;
+  color: whitesmoke;
+}
+
+.hhead h1 {
+  text-align: center;
+  font-size: 65px;
+  color: white;
+  position: relative;
+  top: 260px;
+  z-index: 2;
+  margin: 0;
+  padding: 0;
+}
+
+.hhead .hbtn {
+  background-image: linear-gradient(45deg, #7749c1, #9b59b6, #3498db);
+  border-radius: 3em 0.5em;
+  padding: 1em;
+  font-size: 100%;
+  background-size: 800px;
+  background-position: right;
+  color: white;
+  margin-left: 680px;
+  position: relative;
+  top: -200px;
+}
+
+.hhead .hbtn {
+  -webkit-animation: hover 2s infinite;
+          animation: hover 2s infinite;
+}
+
+@-webkit-keyframes hover {
+  0% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+}
+
+@keyframes hover {
+  0% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+}
+/*# sourceMappingURL=style1.css.map */

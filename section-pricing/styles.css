@@ -1,17 +1,179 @@
 body {
-  width: 100%;
   margin: 0;
   padding: 0;
-  font-size: 18px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+  background-image: url(img/back.jpg);
 }
 
-.testimoniale .test {
-  text-decoration: underline;
+h1 {
   text-align: center;
+  text-decoration: underline;
 }
 
-.testimoniale .cmmentaire {
-  width: 40%;
+.testimonaile {
+  margin-top: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[8];
+      grid-template-columns: repeat(8, 1fr);
+  grid-column-gap: 5%;
+}
+
+.testimonaile .jone {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+  padding: 30px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  background-color: white;
+}
+
+.testimonaile .jone img {
+  border-radius: 100%;
+  width: 50%;
+  margin: 20px 25%;
+}
+
+.testimonaile .jone .stars {
+  color: #8f25D6;
+}
+
+.testimonaile .jone .personne h3 {
+  color: #8f25D6;
+}
+
+.testimonaile .jone .social {
+  display: none;
+  width: 100%;
+}
+
+.testimonaile .jone .social .fab {
+  font-size: 400%;
+  padding: 10% 3%;
+}
+
+.testimonaile .jone .social .fa-facebook-square:hover {
+  color: #1877F2;
+}
+
+.testimonaile .jone .social .fa-whatsapp-square:hover {
+  color: #25D366;
+}
+
+.testimonaile .jone .social .fa-twitter-square:hover {
+  color: #1DA1F2;
+}
+
+.testimonaile .jone:hover .social {
+  display: contents;
+}
+
+.testimonaile .steve {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 2;
+  grid-column: 4/6;
+  padding: 30px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  background-color: white;
+}
+
+.testimonaile .steve img {
+  border-radius: 100%;
+  width: 50%;
+  margin: 20px 25%;
+}
+
+.testimonaile .steve .stars {
+  color: #8f25D6;
+}
+
+.testimonaile .steve .personne h3 {
+  color: #8f25D6;
+}
+
+.testimonaile .steve .social {
+  display: none;
+  width: 100%;
+}
+
+.testimonaile .steve .social .fab {
+  font-size: 400%;
+  padding: 10% 3%;
+}
+
+.testimonaile .steve .social .fa-facebook-square:hover {
+  color: #1877F2;
+}
+
+.testimonaile .steve .social .fa-whatsapp-square:hover {
+  color: #25D366;
+}
+
+.testimonaile .steve .social .fa-twitter-square:hover {
+  color: #1DA1F2;
+}
+
+.testimonaile .steve:hover .social {
+  display: contents;
+}
+
+.testimonaile .ball {
+  -ms-grid-column: 6;
+  -ms-grid-column-span: 2;
+  grid-column: 6/8;
+  padding: 30px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  background-color: white;
+}
+
+.testimonaile .ball img {
+  border-radius: 100%;
+  width: 50%;
+  margin: 20px 25%;
+}
+
+.testimonaile .ball .stars {
+  color: #8f25D6;
+}
+
+.testimonaile .ball .personne h3 {
+  color: #8f25D6;
+}
+
+.testimonaile .ball .social {
+  display: none;
+  width: 100%;
+}
+
+.testimonaile .ball .social .fab {
+  font-size: 400%;
+  padding: 10% 3%;
+}
+
+.testimonaile .ball .social .fa-facebook-square:hover {
+  color: #1877F2;
+}
+
+.testimonaile .ball .social .fa-whatsapp-square:hover {
+  color: #25D366;
+}
+
+.testimonaile .ball .social .fa-twitter-square:hover {
+  color: #1DA1F2;
+}
+
+.testimonaile .ball:hover .social {
+  display: contents;
 }
 /*# sourceMappingURL=styles.css.map */
