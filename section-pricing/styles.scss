@@ -27,6 +27,28 @@ body {
             color: $principe;
         }
     }
+    .social {
+        display: none;
+        width: 100%;
+        .fab {
+            font-size: 400%;
+            padding: 10% 3%;
+        }
+        .fa-facebook-square:hover {
+            color: #1877F2;
+        }
+        .fa-whatsapp-square:hover {
+            color: #25D366;
+        }
+        .fa-twitter-square:hover {
+            color: #1DA1F2;
+        }
+    }
+    &:hover {
+        .social {
+            display: contents;
+        }
+    }
 }
 
 h1 {
@@ -41,7 +63,7 @@ h1 {
     grid-column-gap: 5%;
     .jone {
         grid-column: 2/4;
-        @include tous
+        @include tous;
     }
     .steve {
         grid-column: 4/6;
