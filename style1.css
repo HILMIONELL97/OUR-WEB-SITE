@@ -141,11 +141,28 @@ body {
 .hsec1 .hleft {
   background-image: url(/Images/workplace-1245776_1920.jpg);
   background-size: cover;
+  -webkit-box-shadow: -4px -4px 8px #ffffff73, 3px 3px 5px rgba(94, 104, 121, 0.288);
+          box-shadow: -4px -4px 8px #ffffff73, 3px 3px 5px rgba(94, 104, 121, 0.288);
+}
+
+.hsec1 .hleft:hover {
+  -webkit-box-shadow: inset -4px -4px 8px #ffffff73, inset 3px 3px 5px rgba(94, 104, 121, 0.288);
+          box-shadow: inset -4px -4px 8px #ffffff73, inset 3px 3px 5px rgba(94, 104, 121, 0.288);
+}
+
+.hsec1 .hright {
+  -webkit-box-shadow: -4px -4px 8px #ffffff73, 3px 3px 5px rgba(94, 104, 121, 0.288);
+          box-shadow: -4px -4px 8px #ffffff73, 3px 3px 5px rgba(94, 104, 121, 0.288);
+}
+
+.hsec1 .hright:hover {
+  -webkit-box-shadow: inset -4px -4px 8px #ffffff73, inset 3px 3px 5px rgba(94, 104, 121, 0.288);
+          box-shadow: inset -4px -4px 8px #ffffff73, inset 3px 3px 5px rgba(94, 104, 121, 0.288);
 }
 
 .hsec1 .htitle3 {
   text-align: center;
-  font-size: 30px;
+  font-size: 28px;
   color: #8f25D6;
   font-weight: bold;
   position: relative;
@@ -158,5 +175,73 @@ body {
   margin: 100px auto 0 auto;
   font-size: 25px;
   color: black;
+}
+
+.hsec1 span {
+  color: white;
+}
+
+.hsec2 .htitle4 {
+  text-align: center;
+  font-size: 28px;
+  color: #8f25D6;
+  position: relative;
+  top: 40px;
+  z-index: 2;
+}
+
+.hsec2 span {
+  color: white;
+}
+
+.hsec2 .para {
+  text-align: center;
+  width: 600px;
+  margin: 50px auto 0 auto;
+  font-size: 30px;
+  color: black;
+  font-weight: bold;
+}
+
+.hsec2 .hgrid {
+  margin-top: 60px;
+  height: 1000px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -ms-grid-rows: 50% 50%;
+      grid-template-rows: 50% 50%;
+}
+
+.hsec2 .hone {
+  background-image: url(/Images/4.jpg);
+  background-size: cover;
+  background-color: transparent;
+}
+
+.hsec2 .htwo {
+  background-image: url(/Images/1.jpg);
+  background-size: cover;
+}
+
+.hsec2 .htree {
+  background-image: url(/Images/5.jpg);
+  background-size: cover;
+}
+
+.hsec2 .hfour {
+  background-image: url(/Images/3.jpg);
+  background-size: cover;
+}
+
+.hsec2 p {
+  text-align: center;
+  width: 600px;
+  margin: 230px auto 0 auto;
+  font-size: 35px;
+  font-weight: bold;
+  color: black;
+  letter-spacing: -.02em;
 }
 /*# sourceMappingURL=style1.css.map */
