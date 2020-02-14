@@ -1,0 +1,75 @@
+// Variables
+$primary-color: #8f25D6;
+$btn-bg-color: black;
+$btn-color: white;
+body,
+html {
+    margin: 0;
+}
+
+body {
+    height: 100%;
+    font-family: 'Montserrat';
+}
+
+.hhead {
+    position: absolute;
+    padding: 1em;
+    z-index: 20;
+    justify-content: space-between;
+    width: calc(100% - 2em);
+    height: 700px;
+    a {
+        text-decoration: none;
+        color: black;
+        font-size: 16px;
+        transition: 0.5s;
+        padding: 0px 20px;
+    }
+    a:hover {
+        background-color: $primary-color;
+        border-radius: 40px;
+        font-style: italic;
+        color: $btn-color;
+        transition: .5s;
+    }
+    .hlogo {
+        width: 120px;
+        transition: transform 2s;
+    }
+    nav .hmenu {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+        width: 80%;
+        margin: 0;
+        padding: 0;
+        float: right;
+        margin-top: -70px;
+        li a {
+            padding: 1em;
+        }
+    }
+    .hbtn {
+        font-family: 'Montserrat', sans-serif;
+        background-image: linear-gradient(45deg, #7749c1, #9b59b6, #3498db);
+        border-radius: 3em 0.5em;
+        margin-top: 2.5em;
+        padding: 1em;
+        font-size: 100%;
+        background-size: 800px;
+        background-position: right;
+        color: white;
+    }
+    .hbtn {
+        animation: hover 2s infinite;
+    }
+    @keyframes hover {
+        0% {
+            background-position: right;
+        }
+        100% {
+            background-position: left;
+        }
+    }
+}
