@@ -10,8 +10,6 @@ body {
   background-attachment: fixed;
   background-size: 1550px 600px;
   height: 600px;
-  position: relative;
-  bottom: 30px;
 }
 
 .header .abg {
@@ -35,9 +33,10 @@ body {
 .para p {
   margin-top: 30px;
   margin-bottom: 0;
+  line-height: 150%;
 }
 
-h1 {
+.title h1 {
   text-align: center;
   font-size: 65px;
   color: white;
@@ -168,5 +167,130 @@ h3 {
 
 .container i .fa-twitter {
   color: #1DA1F2;
+}
+
+.title1 h1 {
+  text-align: center;
+  color: #7749c1;
+  font-size: 40px;
+  margin-top: 90px;
+}
+
+.clients1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 80px;
+}
+
+.clients2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0 80px 0 80px;
+}
+
+.client {
+  height: 200px;
+  width: 200px;
+  background-color: #Dae1eb;
+  border-radius: 10px;
+  -webkit-box-shadow: -4px -4px 8px #ffffff73, 3px 3px 5px rgba(94, 104, 121, 0.288);
+          box-shadow: -4px -4px 8px #ffffff73, 3px 3px 5px rgba(94, 104, 121, 0.288);
+  -webkit-transition: all .7s;
+  transition: all .7s;
+}
+
+.client i {
+  margin: 55px;
+  font-size: 90px;
+  color: grey;
+}
+
+.client .fa-amazon {
+  margin: 58px;
+}
+
+.client .fa-paypal {
+  margin: 57px 65px;
+}
+
+.client .fa-apple {
+  margin: 50px 65px;
+}
+
+.client .fa-fedex {
+  margin: 55px 45px;
+}
+
+.client .fa-imdb {
+  margin: 55px 60px;
+}
+
+.client .fa-youtube {
+  margin: 55px 50px;
+}
+
+.client .fa-bootstrap {
+  margin: 56px 60px;
+}
+
+.client:hover {
+  -webkit-box-shadow: inset -3px -3px 7px #ffffff73, inset 3px 3px 5px rgba(94, 104, 121, 0.288);
+          box-shadow: inset -3px -3px 7px #ffffff73, inset 3px 3px 5px rgba(94, 104, 121, 0.288);
+}
+
+.client:hover i {
+  color: #7749C1;
+  margin: 57px;
+}
+
+.client:hover .fa-amazon {
+  margin: 59px;
+  color: #e78c04;
+}
+
+.client:hover .fa-paypal {
+  margin: 58px 66px;
+  color: #00457C;
+}
+
+.client:hover .fa-apple {
+  margin: 51px 66px;
+  color: #000000;
+}
+
+.client:hover .fa-fedex {
+  margin: 56px 46px;
+  color: #d33324;
+}
+
+.client:hover .fa-imdb {
+  margin: 56px 61px;
+  color: #bb9b27;
+}
+
+.client:hover .fa-youtube {
+  margin: 56px 51px;
+  color: #FF0000;
+}
+
+.client:hover .fa-spotify {
+  margin: 56px;
+  color: #2ac25f;
+}
+
+.client:hover .fa-bootstrap {
+  margin: 57px 61px;
+  color: #563D7C;
+}
+
+.client:hover .fa-github {
+  margin: 56px;
+  color: #F05032;
 }
 /*# sourceMappingURL=style.css.map */
