@@ -1,0 +1,152 @@
+$color1: #8f25D6;
+$color2: #fff;
+$color:#000;
+$font-family: 'Montserrat',
+sans-serif;
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.stitre {
+    color: $color1;
+    margin: 10px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.S0 {
+    color: $color;
+}
+
+hr {
+    width: 20%;
+}
+
+.svideo {
+    width: 900px;
+    height: 300px;
+    position: relative;
+    left: 150px;
+}
+
+.Spara {
+    text-align: center;
+    text-decoration: underline $color1;
+    margin: 3%;
+    font-size: 25px;
+}
+
+.sp1 {
+    color: $color1;
+}
+
+.svido {
+    width: 100%;
+    background: $color;
+    margin-top: 30px;
+}
+
+.para1 {
+    font-family: $font-family;
+    font-size: 70%;
+}
+
+.Ssection1 {
+    display: flex;
+}
+
+.Ssection2 {
+    display: flex;
+}
+
+.ssection3 {
+    background-image: url(images/agence-web.png);
+    text-align: center;
+}
+
+.StitreD {
+    color: $color2;
+    text-align: center;
+    font-size: 30px;
+    padding: 5%;
+    line-height: 10%;
+}
+
+.btR {
+    float: left;
+    border-radius: 50px;
+    border: none;
+    position: relative;
+    left: 10px;
+    width: 10%;
+    padding:15px;
+    background-color: $color2;
+    color: $color;
+    font-size: 20px;
+}
+.btb{
+    padding: 25px;
+    border-radius: 50px;
+    border: none;
+    background-color: $color2;
+    font-size: 30px;
+    width:30%;
+}
+.ser{
+    position: relative;
+    right: 50px;
+
+}
+
+.StitreF {
+    color: $color2;
+    font-size: 30px;
+}
+
+.sp2 {
+    color: $color;
+    font-size: 30px;
+}
+.fab{
+    margin: 1px 40px;
+    border-radius: 500px;
+
+}
+
+@mixin shad {
+    width: 400px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    border-radius: 2%;
+    margin: 4%;
+    padding: 5%;
+    border-left:10px $color1 solid ;
+}
+
+.Spartie3 {
+    @include shad
+}
+
+.spartie1 {
+    @include shad
+}
+
+.Spartie2 {
+    @include shad
+}
+
+.Spartie4 {
+    @include shad
+}
+
+.Spartie5 {
+    @include shad
+}
+
+.Spartie6 {
+    @include shad
+}
+
+@import"./style"

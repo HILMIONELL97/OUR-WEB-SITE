@@ -1,75 +1,139 @@
-// Variables
-$primary-color: #8f25D6;
-$btn-bg-color: black;
-$btn-color: white;
-body,
-html {
-    margin: 0;
-}
-
-body {
-    height: 100%;
-    font-family: 'Montserrat';
-}
-
-.hhead {
-    position: absolute;
-    padding: 1em;
-    z-index: 20;
-    justify-content: space-between;
-    width: calc(100% - 2em);
-    height: 700px;
-    a {
-        text-decoration: none;
-        color: black;
-        font-size: 16px;
-        transition: 0.5s;
-        padding: 0px 20px;
-    }
-    a:hover {
-        background-color: $primary-color;
-        border-radius: 40px;
-        font-style: italic;
-        color: $btn-color;
-        transition: .5s;
-    }
-    .hlogo {
-        width: 120px;
-        transition: transform 2s;
-    }
-    nav .hmenu {
-        list-style-type: none;
-        display: flex;
-        justify-content: space-around;
-        width: 80%;
-        margin: 0;
-        padding: 0;
-        float: right;
-        margin-top: -70px;
-        li a {
-            padding: 1em;
-        }
-    }
-    .hbtn {
-        font-family: 'Montserrat', sans-serif;
-        background-image: linear-gradient(45deg, #7749c1, #9b59b6, #3498db);
-        border-radius: 3em 0.5em;
-        margin-top: 2.5em;
-        padding: 1em;
-        font-size: 100%;
-        background-size: 800px;
-        background-position: right;
-        color: white;
-    }
-    .hbtn {
-        animation: hover 2s infinite;
-    }
-    @keyframes hover {
-        0% {
-            background-position: right;
-        }
-        100% {
-            background-position: left;
-        }
-    }
-}
+     // Variables
+     $primary-color: #8f25D6;
+     $btn-bg-color: black;
+     $btn-color: white;
+     // MIXIN
+     @mixin btn {
+         .hbtn {
+             background-image: linear-gradient(45deg, #7749c1, #9b59b6, #3498db);
+             border-radius: 3em 0.5em;
+             padding: 1em;
+             font-size: 100%;
+             background-size: 800px;
+             background-position: right;
+             color: white;
+             margin-left: 680px;
+             position: relative;
+             top: -80px;
+         }
+         .hbtn {
+             animation: hover 2s infinite;
+         }
+         @keyframes hover {
+             0% {
+                 background-position: right;
+             }
+             100% {
+                 background-position: left;
+             }
+         }
+     }
+     
+     body,
+     html {
+         padding: 0;
+         margin: 0;
+         background-color: #Dae1eb;
+     }
+     
+     body {
+         height: 100%;
+         font-family: 'Montserrat';
+     }
+     
+     .fixe {
+         position: fixed;
+         width: calc(100% - 2em);
+     }
+     
+     .hhead {
+         padding: 1em;
+         justify-content: space-between;
+         width: calc(100% - 2em);
+         height: 700px;
+         background-image: url(/Images/bridge-4.jpg);
+         background-size: cover;
+         background-attachment: fixed;
+         a {
+             text-decoration: none;
+             color: black;
+             font-size: 16px;
+             transition: 0.5s;
+             padding: 0px 20px;
+             position: relative;
+             left: 200px;
+         }
+         a:hover {
+             background-color: $primary-color;
+             border-radius: 40px;
+             font-style: italic;
+             color: $btn-color;
+             transition: .5s;
+         }
+         .hlogo {
+             width: 120px;
+             cursor: pointer;
+             position: relative;
+             left: 40px;
+         }
+         nav .hmenu {
+             list-style-type: none;
+             display: flex;
+             justify-content: space-around;
+             width: 80%;
+             padding: 100px;
+             margin-top: -170px;
+             li a {
+                 padding: 1em;
+             }
+             .fas fa-search {
+                 position: relativ;
+                 right: 150px;
+             }
+         }
+         .para {
+             text-align: center;
+             width: 600px;
+             margin: 290px auto;
+             font-size: 19px;
+             color: whitesmoke;
+         }
+         h1 {
+             text-align: center;
+             font-size: 65px;
+             color: white;
+             position: relative;
+             top: 260px;
+             z-index: 2;
+             margin: 0;
+             padding: 0;
+         }
+         @include btn();
+     }
+     
+     .hsec1 {
+         .hgrid {
+             height: 400px;
+             display: grid;
+             grid-template-columns: 50% auto;
+         }
+         .hleft {
+             background-image: url(/Images/workplace-1245776_1920.jpg);
+             background-size: cover;
+         }
+         .htitle3 {
+             text-align: center;
+             font-size: 30px;
+             color: $primary-color;
+             font-weight: bold;
+             position: relative;
+             top: 40px;
+         }
+         .para {
+             text-align: center;
+             width: 600px;
+             margin: 100px auto 0 auto;
+             font-size: 25px;
+             color: $btn-bg-color;
+         }
+     }

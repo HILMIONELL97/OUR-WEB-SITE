@@ -8,7 +8,7 @@ body {
 .header {
   background: url(images/Online-Leadership-and-Team-Working.jpg) no-repeat;
   background-attachment: fixed;
-  background-size: 1550px 600px;
+  background-size: 1550px 700px;
   height: 600px;
 }
 
@@ -65,6 +65,8 @@ h3 {
       justify-content: space-around;
   text-align: center;
   margin-top: 150px;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 
 .container img {
