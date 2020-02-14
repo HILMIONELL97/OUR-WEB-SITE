@@ -9,14 +9,13 @@ body {
 }
 
 .hhead {
-  position: absolute;
   padding: 1em;
-  z-index: 20;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: calc(100% - 2em);
   height: 700px;
+  background-image: url(/Images/bridge-4.jpg);
 }
 
 .hhead a {
