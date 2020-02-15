@@ -13,6 +13,7 @@ body {
    background: url(img/back.jpg) no-repeat ;
    background-size: 1550px 600px ;
    height: 600px;
+   background-attachment:fixed;
 
 
    .abg{
@@ -47,7 +48,12 @@ body {
 /*--------------------------------------------------------------------*/
 .fixed{
 
-    position: relative;
+    
+    
+
+    
+    
+ 
 }
 .aorg{ 
  display: flex ;  
@@ -170,7 +176,7 @@ body {
     
 }
 .apaart3{
-   width: 72%; 
+   width: 1085px; 
    background-color: #EB2F5B; 
    color:white ;
    padding: 140px 35px ;
@@ -230,7 +236,7 @@ body {
 
 .apaaart2{
  background-color: white;
- width: 442px;
+ width: 446px;
  padding: 140px 35px ;
 
  
