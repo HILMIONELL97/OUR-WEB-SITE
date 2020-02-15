@@ -107,6 +107,7 @@ body {
   margin-left: 680px;
   position: relative;
   top: -80px;
+  font-family: 'Montserrat';
 }
 
 .hhead .hbtn {
@@ -183,6 +184,10 @@ body {
   color: white;
 }
 
+.hsec2 .hcont {
+  background-color: black;
+}
+
 .hsec2 .htitle4 {
   text-align: center;
   font-size: 28px;
@@ -201,7 +206,7 @@ body {
   width: 600px;
   margin: 50px auto 0 auto;
   font-size: 30px;
-  color: black;
+  color: white;
   font-weight: bold;
 }
 
@@ -288,6 +293,7 @@ body {
   margin-left: 680px;
   position: relative;
   top: -80px;
+  font-family: 'Montserrat';
 }
 
 .hsec3 .hbtn {
@@ -351,5 +357,64 @@ body {
 
 .hsec3 .SEPAR:hover span {
   color: rgba(255, 255, 255, 0);
+}
+
+.hsec4 .hgrid3 {
+  height: 200px;
+  background-color: black;
+  position: relative;
+  bottom: 55px;
+}
+
+.hsec4 p {
+  color: white;
+  text-align: left;
+  width: 800px;
+  margin: 50px auto 0 auto;
+  font-size: 21px;
+  font-weight: bold;
+  position: relative;
+  right: 300px;
+  top: 60px;
+  line-height: 1.5;
+}
+
+.hsec4 .hbtn {
+  background-image: linear-gradient(45deg, #7749c1, #9b59b6, #3498db);
+  border-radius: 3em 0.5em;
+  padding: 1em;
+  font-size: 100%;
+  background-size: 800px;
+  background-position: right;
+  color: white;
+  margin-left: 680px;
+  position: relative;
+  top: -80px;
+  font-family: 'Montserrat';
+}
+
+.hsec4 .hbtn {
+  -webkit-animation: hover 2s infinite;
+          animation: hover 2s infinite;
+}
+
+@keyframes hover {
+  0% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+}
+
+.hsec4 .hbtn {
+  position: relative;
+  z-index: 5;
+  left: 550px;
+  top: -20px;
+}
+
+.hsec5 .slider .slide {
+  float: left;
 }
 /*# sourceMappingURL=style1.css.map */

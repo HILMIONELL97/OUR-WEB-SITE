@@ -1,13 +1,11 @@
 @mixin flex {
     display: flex;
     justify-content: space-around;
-
 }
 
-
 body {
-    background-color: #Dae1eb;
-    font-family: 'Montserrat', sans-serif;
+    background-color: #dae1eb;
+    font-family: "Montserrat", sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -18,19 +16,12 @@ body {
     background-size: 1550px 700px;
     height: 600px;
 
-
-
-
-
-
-
-
     .abg {
         width: 100%;
         height: 600px;
         position: absolute;
         z-index: 2;
-        background-color: rgba($color: #7749c1, $alpha: .7);
+        background-color: rgba($color: #7749c1, $alpha: 0.7);
     }
 }
 
@@ -66,7 +57,7 @@ body {
 
 h2 {
     color: #7749c1;
-    transition: all .4s ease-in-out;
+    transition: all 0.4s ease-in-out;
 }
 
 h3 {
@@ -90,11 +81,11 @@ h3 {
     .team {
         margin-left: 25px;
         margin-right: 25px;
-        background-color: #Dae1eb;
+        background-color: #dae1eb;
         padding: 30px;
         border-radius: 10px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        transition: all .4s ease-in-out;
+        transition: all 0.4s ease-in-out;
         border-top: 8px solid #7749c1;
         height: 445px;
 
@@ -113,25 +104,26 @@ h3 {
             border-radius: 50%;
             height: 45px;
             width: 45px;
-            box-shadow: -4px -4px 8px #ffffff73, 3px 3px 5px rgba(94, 104, 121, .288);
+            box-shadow: -4px -4px 8px #ffffff73, 3px 3px 5px rgba(94, 104, 121, 0.288);
 
             &:hover {
-                box-shadow: inset -4px -4px 8px #ffffff73, inset 3px 3px 5px rgba(94, 104, 121, .288);
+                box-shadow: inset -4px -4px 8px #ffffff73,
+                    inset 3px 3px 5px rgba(94, 104, 121, 0.288);
 
                 .fa-twitter {
-                    color: #1DA1F2;
+                    color: #1da1f2;
                 }
 
                 .fa-facebook-f {
-                    color: #1877F2;
+                    color: #1877f2;
                 }
 
                 .fa-instagram {
-                    color: #E4405F;
+                    color: #e4405f;
                 }
 
                 .fa-linkedin-in {
-                    color: #0077B5;
+                    color: #0077b5;
                 }
             }
         }
@@ -159,18 +151,15 @@ h3 {
     .icon {
         display: flex;
         justify-content: space-between;
-
     }
 
     i {
         margin: auto;
 
         .fa-twitter {
-            color: #1DA1F2;
+            color: #1da1f2;
         }
     }
-
-
 }
 
 .title1 {
@@ -179,14 +168,12 @@ h3 {
         color: #7749c1;
         font-size: 40px;
         margin-top: 90px;
-
     }
 }
 
 .clients1 {
     @include flex();
     margin: 80px;
-
 }
 
 .clients2 {
@@ -194,4 +181,153 @@ h3 {
     margin: 0 80px 0 80px;
 }
 
-@import"./client"
+@import "./client";
+
+footer {
+    background-color: rgb(95, 97, 99);
+    text-align: center;
+    height: 350px;
+
+    .projet {
+        display: inline-flex;
+        cursor: pointer;
+
+
+        &:hover {
+            h3 {
+                color: #bc93fd;
+            }
+
+            i {
+                color: #bc93fd;
+                left: 32px;
+            }
+        }
+
+        i {
+            font-size: 40px;
+            color: white;
+            position: relative;
+            top: 45px;
+            left: 22px;
+
+            transition: all 0.4s ease-in-out;
+        }
+
+        h3 {
+            color: white;
+            font-size: 40px;
+            font-weight: normal;
+            transition: all 0.3s ease-in-out;
+        }
+    }
+}
+
+.footer-content {
+    margin-top: 60px;
+}
+
+.flaot {
+    float: left;
+    width: 33%;
+}
+
+footer {
+    .contact {
+        color: #ffffff80;
+        margin-top: 10px;
+
+        h4 {
+            font-weight: 100;
+
+        }
+
+        h4:hover {
+            color: #bc93fd;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+    }
+
+    .form {
+        margin-left: 10px;
+
+        .text-input {
+            padding: 10px 30px;
+            margin-bottom: 20px;
+
+            background: none;
+            border: 1px solid #bc93fd;
+            color: white;
+            border-radius: 50px;
+            outline: none;
+            width: 160px;
+            transition: .4s ease-in-out;
+
+            &::placeholder {
+                color: #ffffff80;
+            }
+
+            &:focus {
+                width: 230px;
+            }
+        }
+
+        .submit-input {
+            background: none;
+            color: #ffffff80;
+            padding: 10px 15px;
+            border: 1px solid #bc93fd;
+            border-radius: 50px;
+            transition: .5S;
+
+            &:hover {
+                background-color: #8561be;
+                color: white;
+                border: 1px solid #8561be;
+            }
+
+
+        }
+    }
+
+    .footer-icon {
+        .icon {
+            @include flex();
+            margin: 60px;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+        }
+
+        .icon-link {
+            display: flex;
+            text-decoration: none;
+            font-size: 19px;
+            color: rgb(165, 164, 164);
+            border-radius: 50%;
+
+            &:hover {
+                .fa-twitter {
+                    color: #1da1f2;
+                }
+
+                .fa-facebook-f {
+                    color: #1877f2;
+                }
+
+                .fa-instagram {
+                    color: #e4405f;
+                }
+
+                .fa-linkedin-in {
+                    color: #0077b5;
+                }
+            }
+        }
+    }
+}
