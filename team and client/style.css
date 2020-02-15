@@ -11,6 +11,8 @@ body {
   background-size: 1550px 800px;
   background-position: bottom;
   height: 600px;
+  -webkit-box-shadow: 0 10px 16px 0px #7749c160;
+          box-shadow: 0 10px 16px 0px #7749c160;
 }
 
 .header .abg {
