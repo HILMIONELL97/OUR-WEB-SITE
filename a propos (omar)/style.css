@@ -51,14 +51,13 @@ body {
 .aorg{ 
  display: flex ;  
  height: 600px;
- 
- 
 }
 .apart1 {
  background-color: #82ECE8;
  padding: 100px 30px ;
  flex-basis: 32%;
  line-height: 40px;
+
  
  
 }
@@ -133,8 +132,6 @@ body {
 .aorg2{
     display: flex; 
     height: 600px;
-    
-
 }
 .apaart1 img {
     width: 479px;
@@ -201,7 +198,7 @@ body {
 .aorg3{
 
    display: flex;
-   height: 600px; 
+   height: 600px;
 }
 
 .apaaart1{
@@ -305,4 +302,33 @@ body {
     border-color:#EB2F5B ;
     margin-left: 310px;
     margin-top: -5px;  
+}
+@media screen and (max-width:800px){
+
+   .aheader{
+
+    width:140%;
+    background-position: top;
+    
+    
+   }
+
+   .center {
+
+     margin-left: 43%;
+   }
+
+ .aorg img {
+      width: 450px;
+ }
+ 
+ .apart3{
+     flex-basis: 37%;
+
+
+     
+ }
+
+    
+
 }
