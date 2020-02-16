@@ -48,6 +48,10 @@ footer {
 .flaot {
     float: left;
     width: 33%;
+
+    @include mq(800px) {
+        width: 32.90%;
+    }
 }
 
 footer {
@@ -55,8 +59,14 @@ footer {
         color: #ffffff80;
         margin-top: 10px;
 
+        @include mq(800px) {
+            font-size: 13px;
+            margin-top: 20px;
+        }
+
         h4 {
             font-weight: 100;
+
 
         }
 
