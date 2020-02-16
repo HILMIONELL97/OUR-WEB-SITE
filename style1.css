@@ -19,6 +19,12 @@ body {
   z-index: 10;
 }
 
+@media (max-width: 800px) {
+  .hfixe {
+    max-width: 645px;
+  }
+}
+
 .hhead {
   padding: 1em;
   -webkit-box-pack: justify;
@@ -28,7 +34,12 @@ body {
   height: 700px;
   background-image: url(/Images/bridge-4.jpg);
   background-size: cover;
-  background-attachment: fixed;
+}
+
+@media (max-width: 800px) {
+  .hhead {
+    max-width: 800px;
+  }
 }
 
 .hhead a {
@@ -40,6 +51,12 @@ body {
   padding: 0px 20px;
   position: relative;
   left: 200px;
+}
+
+@media (max-width: 800px) {
+  .hhead a {
+    font-size: 10.2px;
+  }
 }
 
 .hhead a:hover {
@@ -70,8 +87,20 @@ body {
   margin-top: -170px;
 }
 
+@media (max-width: 800px) {
+  .hhead nav .hmenu {
+    padding: 90px 0px 0px 0px;
+  }
+}
+
 .hhead nav .hmenu li a {
   padding: 1em;
+}
+
+@media (max-width: 800px) {
+  .hhead nav .hmenu li {
+    margin-right: 10px;
+  }
 }
 
 .hhead nav .hmenu .fas fa-search {
@@ -87,6 +116,14 @@ body {
   color: whitesmoke;
 }
 
+@media (max-width: 800px) {
+  .hhead .hpara {
+    color: black;
+    margin: 350px auto;
+    margin-right: 50px;
+  }
+}
+
 .hhead h1 {
   text-align: center;
   font-size: 65px;
@@ -96,6 +133,13 @@ body {
   z-index: 2;
   margin: 0;
   padding: 0;
+}
+
+@media (max-width: 800px) {
+  .hhead h1 {
+    color: black;
+    margin-left: 22px;
+  }
 }
 
 .hhead .hbtn {
@@ -137,6 +181,14 @@ body {
   }
 }
 
+@media (max-width: 800px) {
+  .hhead .halone {
+    position: relative;
+    right: 350px;
+    top: -195px;
+  }
+}
+
 .hsec1 .hgrid {
   height: 400px;
   display: -ms-grid;
@@ -167,6 +219,12 @@ body {
           box-shadow: inset -4px -4px 8px #ffffff73, inset 3px 3px 5px rgba(94, 104, 121, 0.288);
 }
 
+@media (max-width: 800px) {
+  .hsec1 .hright {
+    max-width: 400px;
+  }
+}
+
 .hsec1 .htitle3 {
   text-align: center;
   font-size: 28px;
@@ -176,12 +234,26 @@ body {
   top: 40px;
 }
 
+@media (max-width: 800px) {
+  .hsec1 .htitle3 {
+    margin-top: 20px;
+  }
+}
+
 .hsec1 .hpara {
   text-align: center;
   width: 600px;
   margin: 100px auto 0 auto;
   font-size: 25px;
   color: black;
+}
+
+@media (max-width: 800px) {
+  .hsec1 .hpara {
+    max-width: 300px;
+    font-size: 20px;
+    margin: 60px auto 0 auto;
+  }
 }
 
 .hsec1 span {
@@ -223,6 +295,13 @@ body {
       grid-template-columns: 50% 50%;
   -ms-grid-rows: 50% 50%;
       grid-template-rows: 50% 50%;
+}
+
+@media (max-width: 800px) {
+  .hsec2 .hgrid {
+    max-width: 800px;
+    max-height: 800px;
+  }
 }
 
 .hsec2 .hgrid .hone {
@@ -273,12 +352,22 @@ body {
   cursor: pointer;
 }
 
+@media (max-width: 800px) {
+  .hsec2 .hgrid p {
+    max-width: 360px;
+    font-size: 30px;
+    margin: 180px auto 0 auto;
+    color: black;
+  }
+}
+
 .hsec3 .hfather {
   background-color: #8f25D6;
   height: 400px;
   opacity: .8;
   -webkit-clip-path: polygon(50% 0%, 100% 0, 74% 100%, 0 99%, 0 0);
           clip-path: polygon(50% 0%, 100% 0, 74% 100%, 0 99%, 0 0);
+  z-index: -1;
 }
 
 .hsec3 .htitle5 {
@@ -287,8 +376,15 @@ body {
   color: white;
   position: relative;
   top: 60px;
-  position: relative;
   right: 350px;
+}
+
+@media (max-width: 800px) {
+  .hsec3 .htitle5 {
+    margin-left: 360px;
+    max-width: 450px;
+    font-size: 30px;
+  }
 }
 
 .hsec3 .p4 {
@@ -301,6 +397,14 @@ body {
   position: relative;
   right: 250px;
   top: 50px;
+}
+
+@media (max-width: 800px) {
+  .hsec3 .p4 {
+    margin-left: 300px;
+    max-width: 450px;
+    font-size: 25px;
+  }
 }
 
 .hsec3 .hbtn {
@@ -337,7 +441,7 @@ body {
   position: relative;
   top: 80px;
   z-index: 5;
-  right: 200px;
+  right: 230px;
 }
 
 .hsec3 .SEPAR {
@@ -352,6 +456,12 @@ body {
   position: relative;
   left: 1000px;
   bottom: 250px;
+}
+
+@media (max-width: 800px) {
+  .hsec3 .SEPAR {
+    display: none;
+  }
 }
 
 .hsec3 .SEPAR:hover {
@@ -404,6 +514,14 @@ body {
   line-height: 1.5;
 }
 
+@media (max-width: 800px) {
+  .hsec4 p {
+    max-width: 500px;
+    margin-left: 360px;
+    font-size: 16px;
+  }
+}
+
 .hsec4 .hbtn {
   background-image: linear-gradient(45deg, #7749c1, #9b59b6, #3498db);
   border-radius: 3em 0.5em;
@@ -441,6 +559,14 @@ body {
   top: -20px;
 }
 
+@media (max-width: 800px) {
+  .hsec4 .hbtn {
+    position: relative;
+    left: -80px;
+    top: -30px;
+  }
+}
+
 .hsec5 .hpara {
   text-align: center;
   width: 700px;
@@ -464,6 +590,13 @@ body {
   background-color: rgba(119, 73, 193, 0.5);
 }
 
+@media (max-width: 800px) {
+  .hsec5 .habg {
+    width: 100vw;
+    height: 100vh;
+  }
+}
+
 .hsec5 .hslides {
   width: calc(1518px * 3);
   -webkit-animation: glisse 10s infinite ease-in;
@@ -476,6 +609,13 @@ body {
 .hsec5 .hslider {
   width: 1518px;
   overflow: hidden;
+}
+
+@media (max-width: 800px) {
+  .hsec5 .hslider {
+    width: 100vw;
+    height: 100vh;
+  }
 }
 
 @-webkit-keyframes glisse {
@@ -720,5 +860,12 @@ footer .form {
 footer .copy h6 {
   position: relative;
   top: 50px;
+}
+
+@media (max-width: 800px) {
+  footer .icon-link {
+    position: relative;
+    left: 260px;
+  }
 }
 /*# sourceMappingURL=style1.css.map */

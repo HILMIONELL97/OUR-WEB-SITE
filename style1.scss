@@ -1,403 +1,503 @@
-                                 // Variables
-                                 $primary-color: #8f25D6;
-                                 $btn-bg-color: black;
-                                 $btn-color: white;
-                                 // MIXIN
-                                 @mixin btn {
-                                     .hbtn {
-                                         background-image: linear-gradient(45deg, #7749c1, #9b59b6, #3498db);
-                                         border-radius: 3em 0.5em;
-                                         padding: 1em;
-                                         font-size: 100%;
-                                         background-size: 800px;
-                                         background-position: right;
-                                         color: white;
-                                         margin-left: 680px;
-                                         position: relative;
-                                         top: -80px;
-                                         font-family: 'Montserrat';
-                                         outline: none;
-                                         cursor: pointer;
-                                     }
-                                     .hbtn {
-                                         animation: hover 2s infinite;
-                                     }
-                                     @keyframes hover {
-                                         0% {
-                                             background-position: right;
-                                         }
-                                         100% {
-                                             background-position: left;
-                                         }
-                                     }
+                         // Variables
+                         $primary-color: #8f25D6;
+                         $btn-bg-color: black;
+                         $btn-color: white;
+                         $tablet:800px;
+                         // MIXIN
+                         @mixin btn {
+                             .hbtn {
+                                 background-image: linear-gradient(45deg, #7749c1, #9b59b6, #3498db);
+                                 border-radius: 3em 0.5em;
+                                 padding: 1em;
+                                 font-size: 100%;
+                                 background-size: 800px;
+                                 background-position: right;
+                                 color: white;
+                                 margin-left: 680px;
+                                 position: relative;
+                                 top: -80px;
+                                 font-family: 'Montserrat';
+                                 outline: none;
+                                 cursor: pointer;
+                             }
+                             .hbtn {
+                                 animation: hover 2s infinite;
+                             }
+                             @keyframes hover {
+                                 0% {
+                                     background-position: right;
                                  }
-                                 
-                                 @mixin flex {
-                                     display: flex;
-                                     justify-content: space-around;
+                                 100% {
+                                     background-position: left;
                                  }
-                                 
-                                 * {
-                                     margin: 0;
-                                     padding: 0;
+                             }
+                         }
+                         
+                         @mixin flex {
+                             display: flex;
+                             justify-content: space-around;
+                         }
+                         
+                         @mixin tablet {
+                             @media (max-width: #{$tablet}) {
+                                 @content;
+                             }
+                         }
+                         
+                         @mixin demention {
+                             width: 100vw;
+                             height: 100vh;
+                         }
+                         
+                         * {
+                             margin: 0;
+                             padding: 0;
+                         }
+                         
+                         html {
+                             scroll-behavior: smooth;
+                         }
+                         
+                         body {
+                             height: 100%;
+                             font-family: 'Montserrat';
+                             background-color: #Dae1eb;
+                         }
+                         
+                         .hfixe {
+                             position: fixed;
+                             width: calc(100% - 2em);
+                             z-index: 10;
+                             @include tablet() {
+                                 max-width: 645px;
+                             }
+                         }
+                         
+                         .hhead {
+                             padding: 1em;
+                             justify-content: space-between;
+                             width: calc(100% - 2em);
+                             height: 700px;
+                             background-image: url(/Images/bridge-4.jpg);
+                             background-size: cover;
+                             @include tablet() {
+                                 max-width: 800px;
+                             }
+                             a {
+                                 text-decoration: none;
+                                 color: black;
+                                 font-size: 16px;
+                                 transition: 0.5s;
+                                 padding: 0px 20px;
+                                 position: relative;
+                                 left: 200px;
+                                 @include tablet() {
+                                     font-size: 10.2px;
                                  }
-                                 
-                                 html {
-                                     scroll-behavior: smooth;
+                             }
+                             a:hover {
+                                 background-color: $primary-color;
+                                 border-radius: 40px;
+                                 font-style: italic;
+                                 color: $btn-color;
+                                 transition: .5s;
+                             }
+                             .hlogo {
+                                 width: 120px;
+                                 cursor: pointer;
+                                 position: relative;
+                                 left: 40px;
+                             }
+                             nav .hmenu {
+                                 list-style-type: none;
+                                 display: flex;
+                                 justify-content: space-around;
+                                 width: 80%;
+                                 padding: 100px;
+                                 margin-top: -170px;
+                                 @include tablet() {
+                                     padding: 90px 0px 0px 0px;
                                  }
-                                 
-                                 body {
-                                     height: 100%;
-                                     font-family: 'Montserrat';
-                                     background-color: #Dae1eb;
-                                 }
-                                 
-                                 .hfixe {
-                                     position: fixed;
-                                     width: calc(100% - 2em);
-                                     z-index: 10;
-                                 }
-                                 
-                                 .hhead {
+                                 li a {
                                      padding: 1em;
-                                     justify-content: space-between;
-                                     width: calc(100% - 2em);
-                                     height: 700px;
-                                     background-image: url(/Images/bridge-4.jpg);
+                                 }
+                                 li {
+                                     @include tablet() {
+                                         margin-right: 10px;
+                                     }
+                                 }
+                                 .fas fa-search {
+                                     position: relativ;
+                                     right: 150px;
+                                 }
+                             }
+                             .hpara {
+                                 text-align: center;
+                                 width: 600px;
+                                 margin: 290px auto;
+                                 font-size: 19px;
+                                 color: whitesmoke;
+                                 @include tablet() {
+                                     color: $btn-bg-color;
+                                     margin: 350px auto;
+                                     margin-right: 50px;
+                                 }
+                             }
+                             h1 {
+                                 text-align: center;
+                                 font-size: 65px;
+                                 color: white;
+                                 position: relative;
+                                 top: 260px;
+                                 z-index: 2;
+                                 margin: 0;
+                                 padding: 0;
+                                 @include tablet() {
+                                     color: $btn-bg-color;
+                                     margin-left: 22px;
+                                 }
+                             }
+                             @include btn();
+                             .halone {
+                                 @include tablet() {
+                                     position: relative;
+                                     right: 350px;
+                                     top: -195px;
+                                 }
+                             }
+                         }
+                         
+                         .hsec1 {
+                             .hgrid {
+                                 height: 400px;
+                                 display: grid;
+                                 grid-template-columns: 50% auto;
+                             }
+                             .hleft {
+                                 background-image: url(/Images/workplace-1245776_1920.jpg);
+                                 background-size: cover;
+                                 box-shadow: -4px -4px 8px #ffffff73, 3px 3px 5px rgba(94, 104, 121, .288);
+                                 &:hover {
+                                     box-shadow: inset -4px -4px 8px #ffffff73, inset 3px 3px 5px rgba(94, 104, 121, .288);
+                                 }
+                             }
+                             .hright {
+                                 box-shadow: -4px -4px 8px #ffffff73, 3px 3px 5px rgba(94, 104, 121, .288);
+                                 &:hover {
+                                     box-shadow: inset -4px -4px 8px #ffffff73, inset 3px 3px 5px rgba(94, 104, 121, .288);
+                                 }
+                                 @include tablet() {
+                                     max-width: 400px;
+                                 }
+                             }
+                             .htitle3 {
+                                 text-align: center;
+                                 font-size: 28px;
+                                 color: $primary-color;
+                                 font-weight: bold;
+                                 position: relative;
+                                 top: 40px;
+                                 @include tablet() {
+                                     margin-top: 20px;
+                                 }
+                             }
+                             .hpara {
+                                 text-align: center;
+                                 width: 600px;
+                                 margin: 100px auto 0 auto;
+                                 font-size: 25px;
+                                 color: $btn-bg-color;
+                                 @include tablet() {
+                                     max-width: 300px;
+                                     font-size: 20px;
+                                     margin: 60px auto 0 auto;
+                                 }
+                             }
+                             span {
+                                 color: $btn-color;
+                             }
+                         }
+                         
+                         .hsec2 {
+                             .hcont {
+                                 background-color: $btn-bg-color;
+                             }
+                             .htitle4 {
+                                 text-align: center;
+                                 font-size: 28px;
+                                 color: $primary-color;
+                                 position: relative;
+                                 top: 40px;
+                                 z-index: 2;
+                             }
+                             span {
+                                 color: $btn-color;
+                             }
+                             .hpara {
+                                 text-align: center;
+                                 width: 600px;
+                                 margin: 50px auto 0 auto;
+                                 font-size: 30px;
+                                 color: $btn-color;
+                                 font-weight: bold;
+                             }
+                             .hgrid {
+                                 margin-top: 60px;
+                                 height: 1000px;
+                                 display: grid;
+                                 grid-template-columns: 50% 50%;
+                                 grid-template-rows: 50% 50%;
+                                 @include tablet() {
+                                     max-width: 800px;
+                                     max-height: 800px;
+                                 }
+                                 .hone {
+                                     background-image: url(/Images/4.jpg);
                                      background-size: cover;
-                                     background-attachment: fixed;
-                                     a {
-                                         text-decoration: none;
-                                         color: black;
-                                         font-size: 16px;
-                                         transition: 0.5s;
-                                         padding: 0px 20px;
-                                         position: relative;
-                                         left: 200px;
+                                     &:hover {
+                                         background: red;
                                      }
-                                     a:hover {
-                                         background-color: $primary-color;
-                                         border-radius: 40px;
-                                         font-style: italic;
-                                         color: $btn-color;
-                                         transition: .5s;
-                                     }
-                                     .hlogo {
-                                         width: 120px;
-                                         cursor: pointer;
-                                         position: relative;
-                                         left: 40px;
-                                     }
-                                     nav .hmenu {
-                                         list-style-type: none;
-                                         display: flex;
-                                         justify-content: space-around;
-                                         width: 80%;
-                                         padding: 100px;
-                                         margin-top: -170px;
-                                         li a {
-                                             padding: 1em;
-                                         }
-                                         .fas fa-search {
-                                             position: relativ;
-                                             right: 150px;
-                                         }
-                                     }
-                                     .hpara {
-                                         text-align: center;
-                                         width: 600px;
-                                         margin: 290px auto;
-                                         font-size: 19px;
-                                         color: whitesmoke;
-                                     }
-                                     h1 {
-                                         text-align: center;
-                                         font-size: 65px;
-                                         color: white;
-                                         position: relative;
-                                         top: 260px;
-                                         z-index: 2;
-                                         margin: 0;
-                                         padding: 0;
-                                     }
-                                     @include btn();
                                  }
-                                 
-                                 .hsec1 {
-                                     .hgrid {
-                                         height: 400px;
-                                         display: grid;
-                                         grid-template-columns: 50% auto;
+                                 .htwo {
+                                     background-image: url(/Images/1.jpg);
+                                     background-size: cover;
+                                     &:hover {
+                                         background: aqua;
                                      }
-                                     .hleft {
-                                         background-image: url(/Images/workplace-1245776_1920.jpg);
-                                         background-size: cover;
-                                         box-shadow: -4px -4px 8px #ffffff73, 3px 3px 5px rgba(94, 104, 121, .288);
-                                         &:hover {
-                                             box-shadow: inset -4px -4px 8px #ffffff73, inset 3px 3px 5px rgba(94, 104, 121, .288);
-                                         }
+                                 }
+                                 .htree {
+                                     background-image: url(/Images/5.jpg);
+                                     background-size: cover;
+                                     &:hover {
+                                         background: violet;
                                      }
-                                     .hright {
-                                         box-shadow: -4px -4px 8px #ffffff73, 3px 3px 5px rgba(94, 104, 121, .288);
-                                         &:hover {
-                                             box-shadow: inset -4px -4px 8px #ffffff73, inset 3px 3px 5px rgba(94, 104, 121, .288);
-                                         }
+                                 }
+                                 .hfour {
+                                     background-image: url(/Images/3.jpg);
+                                     background-size: cover;
+                                     &:hover {
+                                         background: rgb(108, 51, 241)
                                      }
-                                     .htitle3 {
-                                         text-align: center;
-                                         font-size: 28px;
-                                         color: $primary-color;
-                                         font-weight: bold;
-                                         position: relative;
-                                         top: 40px;
-                                     }
-                                     .hpara {
-                                         text-align: center;
-                                         width: 600px;
-                                         margin: 100px auto 0 auto;
-                                         font-size: 25px;
+                                 }
+                                 p {
+                                     text-align: center;
+                                     width: 600px;
+                                     margin: 230px auto 0 auto;
+                                     font-size: 35px;
+                                     font-weight: bold;
+                                     color: $btn-bg-color;
+                                     letter-spacing: -.02em;
+                                     z-index: 5;
+                                     cursor: pointer;
+                                     @include tablet() {
+                                         max-width: 360px;
+                                         font-size: 30px;
+                                         margin: 180px auto 0 auto;
                                          color: $btn-bg-color;
                                      }
-                                     span {
-                                         color: $btn-color;
-                                     }
                                  }
-                                 
-                                 .hsec2 {
-                                     .hcont {
-                                         background-color: $btn-bg-color;
-                                     }
-                                     .htitle4 {
-                                         text-align: center;
-                                         font-size: 28px;
-                                         color: $primary-color;
-                                         position: relative;
-                                         top: 40px;
-                                         z-index: 2;
-                                     }
-                                     span {
-                                         color: $btn-color;
-                                     }
-                                     .hpara {
-                                         text-align: center;
-                                         width: 600px;
-                                         margin: 50px auto 0 auto;
-                                         font-size: 30px;
-                                         color: $btn-color;
-                                         font-weight: bold;
-                                     }
-                                     .hgrid {
-                                         margin-top: 60px;
-                                         height: 1000px;
-                                         display: grid;
-                                         grid-template-columns: 50% 50%;
-                                         grid-template-rows: 50% 50%;
-                                         .hone {
-                                             background-image: url(/Images/4.jpg);
-                                             background-size: cover;
-                                             &:hover {
-                                                 background: red;
-                                             }
-                                         }
-                                         .htwo {
-                                             background-image: url(/Images/1.jpg);
-                                             background-size: cover;
-                                             &:hover {
-                                                 background: aqua;
-                                             }
-                                         }
-                                         .htree {
-                                             background-image: url(/Images/5.jpg);
-                                             background-size: cover;
-                                             &:hover {
-                                                 background: violet;
-                                             }
-                                         }
-                                         .hfour {
-                                             background-image: url(/Images/3.jpg);
-                                             background-size: cover;
-                                             &:hover {
-                                                 background: rgb(108, 51, 241)
-                                             }
-                                         }
-                                         p {
-                                             text-align: center;
-                                             width: 600px;
-                                             margin: 230px auto 0 auto;
-                                             font-size: 35px;
-                                             font-weight: bold;
-                                             color: $btn-bg-color;
-                                             letter-spacing: -.02em;
-                                             z-index: 5;
-                                             cursor: pointer;
-                                         }
-                                     }
+                             }
+                         }
+                         
+                         .hsec3 {
+                             .hfather {
+                                 background-color: $primary-color;
+                                 height: 400px;
+                                 opacity: .8;
+                                 clip-path: polygon(50% 0%, 100% 0, 74% 100%, 0 99%, 0 0);
+                                 z-index: -1;
+                             }
+                             .htitle5 {
+                                 text-align: center;
+                                 font-size: 35px;
+                                 color: $btn-color;
+                                 position: relative;
+                                 top: 60px;
+                                 right: 350px;
+                                 @include tablet() {
+                                     margin-left: 360px;
+                                     max-width: 450px;
+                                     font-size: 30px;
                                  }
-                                 
-                                 .hsec3 {
-                                     .hfather {
-                                         background-color: $primary-color;
-                                         height: 400px;
-                                         opacity: .8;
-                                         clip-path: polygon(50% 0%, 100% 0, 74% 100%, 0 99%, 0 0);
-                                     }
-                                     .htitle5 {
-                                         text-align: center;
-                                         font-size: 35px;
-                                         color: $btn-color;
-                                         position: relative;
-                                         top: 60px;
-                                         position: relative;
-                                         right: 350px;
-                                     }
-                                     .p4 {
-                                         font-weight: bold;
-                                         text-align: left;
-                                         width: 600px;
-                                         margin: 50px auto 0 auto;
-                                         font-size: 30px;
-                                         color: $btn-bg-color;
-                                         position: relative;
-                                         right: 250px;
-                                         top: 50px;
-                                     }
-                                     @include btn();
-                                     .hbtn {
-                                         position: relative;
-                                         top: 80px;
-                                         z-index: 5;
-                                         right: 200px;
-                                     }
-                                     .SEPAR {
-                                         padding: 1em;
-                                         border-radius: 10px;
-                                         width: 350px;
-                                         clip-path: circle(10% at 90% 20%);
-                                         transition: all .5s ease-in-out;
-                                         cursor: pointer;
-                                         position: relative;
-                                         left: 1000px;
-                                         bottom: 250px;
-                                         &:hover {
-                                             clip-path: circle(75%);
-                                             background: $btn-color;
-                                         }
-                                         h1 {
-                                             color: $btn-bg-color;
-                                             margin: 0;
-                                         }
-                                         p {
-                                             color: $btn-bg-color;
-                                             font-size: .8rem;
-                                         }
-                                         span {
-                                             float: right;
-                                             color: $btn-bg-color;
-                                             font-weight: bold;
-                                             transition: color .5s;
-                                             position: relative;
-                                             right: 15px;
-                                         }
-                                         &:hover span {
-                                             color: rgba(255, 255, 255, 0)
-                                         }
-                                     }
+                             }
+                             .p4 {
+                                 font-weight: bold;
+                                 text-align: left;
+                                 width: 600px;
+                                 margin: 50px auto 0 auto;
+                                 font-size: 30px;
+                                 color: $btn-bg-color;
+                                 position: relative;
+                                 right: 250px;
+                                 top: 50px;
+                                 @include tablet() {
+                                     margin-left: 300px;
+                                     max-width: 450px;
+                                     font-size: 25px;
                                  }
-                                 
-                                 .hsec4 {
-                                     .hgrid3 {
-                                         height: 200px;
-                                         background-color: $btn-bg-color;
-                                         position: relative;
-                                         bottom: 55px;
-                                     }
-                                     p {
-                                         color: $btn-color;
-                                         text-align: left;
-                                         width: 800px;
-                                         margin: 50px auto 0 auto;
-                                         font-size: 21px;
-                                         font-weight: bold;
-                                         position: relative;
-                                         right: 300px;
-                                         top: 60px;
-                                         line-height: 1.5;
-                                     }
-                                     @include btn();
-                                     .hbtn {
-                                         position: relative;
-                                         z-index: 5;
-                                         left: 550px;
-                                         top: -20px;
-                                     }
+                             }
+                             @include btn();
+                             .hbtn {
+                                 position: relative;
+                                 top: 80px;
+                                 z-index: 5;
+                                 right: 230px;
+                             }
+                             .SEPAR {
+                                 @include tablet() {
+                                     display: none;
                                  }
-                                 
-                                 .hsec5 {
-                                     .hpara {
-                                         text-align: center;
-                                         width: 700px;
-                                         margin: 50px auto 0 auto;
-                                         font-size: 30px;
-                                         color: $btn-bg-color;
-                                         font-weight: bold;
-                                         position: relative;
-                                         bottom: 50px;
-                                         span {
-                                             color: $primary-color;
-                                         }
-                                     }
-                                     .habg {
-                                         width: 100%;
-                                         height: 854px;
-                                         position: absolute;
-                                         z-index: 1;
-                                         background-color: rgba($color: #7749c1, $alpha: 0.5);
-                                     }
-                                     .hslides {
-                                         width: calc(1518px * 3);
-                                         animation: glisse 10s infinite ease-in;
-                                         display: flex;
-                                     }
-                                     .hslider {
-                                         width: 1518px;
-                                         overflow: hidden;
-                                     }
-                                     @keyframes glisse {
-                                         0% {
-                                             transform: translateX(0);
-                                         }
-                                         33% {
-                                             transform: translateX(-1518px);
-                                         }
-                                         43% {
-                                             transform: translateX(-1518px);
-                                         }
-                                         66% {
-                                             transform: translateX(-3036px);
-                                         }
-                                         76% {
-                                             transform: translateX(-3036px);
-                                         }
-                                         100% {
-                                             transform: translateX(0);
-                                         }
-                                     }
+                                 padding: 1em;
+                                 border-radius: 10px;
+                                 width: 350px;
+                                 clip-path: circle(10% at 90% 20%);
+                                 transition: all .5s ease-in-out;
+                                 cursor: pointer;
+                                 position: relative;
+                                 left: 1000px;
+                                 bottom: 250px;
+                                 &:hover {
+                                     clip-path: circle(75%);
+                                     background: $btn-color;
                                  }
-                                 
-                                 @import "./footer";
-                                 footer {
-                                     margin-top: -5px;
-                                     h4 {
-                                         position: relative;
-                                         top: 38px;
-                                     }
-                                     .form {
-                                         margin-top: 30px;
-                                     }
-                                     .copy {
-                                         h6 {
-                                             position: relative;
-                                             top: 50px;
-                                         }
-                                     }
+                                 h1 {
+                                     color: $btn-bg-color;
+                                     margin: 0;
                                  }
+                                 p {
+                                     color: $btn-bg-color;
+                                     font-size: .8rem;
+                                 }
+                                 span {
+                                     float: right;
+                                     color: $btn-bg-color;
+                                     font-weight: bold;
+                                     transition: color .5s;
+                                     position: relative;
+                                     right: 15px;
+                                 }
+                                 &:hover span {
+                                     color: rgba(255, 255, 255, 0)
+                                 }
+                             }
+                         }
+                         
+                         .hsec4 {
+                             .hgrid3 {
+                                 height: 200px;
+                                 background-color: $btn-bg-color;
+                                 position: relative;
+                                 bottom: 55px;
+                             }
+                             p {
+                                 color: $btn-color;
+                                 text-align: left;
+                                 width: 800px;
+                                 margin: 50px auto 0 auto;
+                                 font-size: 21px;
+                                 font-weight: bold;
+                                 position: relative;
+                                 right: 300px;
+                                 top: 60px;
+                                 line-height: 1.5;
+                                 @include tablet() {
+                                     max-width: 500px;
+                                     margin-left: 360px;
+                                     font-size: 16px;
+                                 }
+                             }
+                             @include btn();
+                             .hbtn {
+                                 position: relative;
+                                 z-index: 5;
+                                 left: 550px;
+                                 top: -20px;
+                                 @include tablet() {
+                                     position: relative;
+                                     left: -80px;
+                                     top: -30px;
+                                 }
+                             }
+                         }
+                         
+                         .hsec5 {
+                             .hpara {
+                                 text-align: center;
+                                 width: 700px;
+                                 margin: 50px auto 0 auto;
+                                 font-size: 30px;
+                                 color: $btn-bg-color;
+                                 font-weight: bold;
+                                 position: relative;
+                                 bottom: 50px;
+                                 span {
+                                     color: $primary-color;
+                                 }
+                             }
+                             .habg {
+                                 width: 100%;
+                                 height: 854px;
+                                 position: absolute;
+                                 z-index: 1;
+                                 background-color: rgba($color: #7749c1, $alpha: 0.5);
+                                 @include tablet() {
+                                     @include demention();
+                                 }
+                             }
+                             .hslides {
+                                 width: calc(1518px * 3);
+                                 animation: glisse 10s infinite ease-in;
+                                 display: flex;
+                             }
+                             .hslider {
+                                 width: 1518px;
+                                 overflow: hidden;
+                                 @include tablet() {
+                                     @include demention();
+                                 }
+                             }
+                             @keyframes glisse {
+                                 0% {
+                                     transform: translateX(0);
+                                 }
+                                 33% {
+                                     transform: translateX(-1518px);
+                                 }
+                                 43% {
+                                     transform: translateX(-1518px);
+                                 }
+                                 66% {
+                                     transform: translateX(-3036px);
+                                 }
+                                 76% {
+                                     transform: translateX(-3036px);
+                                 }
+                                 100% {
+                                     transform: translateX(0);
+                                 }
+                             }
+                         }
+                         
+                         @import "./footer";
+                         footer {
+                             margin-top: -5px;
+                             h4 {
+                                 position: relative;
+                                 top: 38px;
+                             }
+                             .form {
+                                 margin-top: 30px;
+                             }
+                             .copy {
+                                 h6 {
+                                     position: relative;
+                                     top: 50px;
+                                 }
+                             }
+                             .icon-link {
+                                 @include tablet() {
+                                     position: relative;
+                                     left: 260px;
+                                 }
+                             }
+                         }
