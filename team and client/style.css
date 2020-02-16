@@ -8,8 +8,11 @@ body {
 .header {
   background: url(images/Online-Leadership-and-Team-Working.jpg) no-repeat;
   background-attachment: fixed;
-  background-size: 1550px 700px;
+  background-size: 1550px 800px;
+  background-position: bottom;
   height: 600px;
+  -webkit-box-shadow: 0 10px 16px 0px #7749c160;
+          box-shadow: 0 10px 16px 0px #7749c160;
 }
 
 .header .abg {
@@ -299,7 +302,7 @@ h3 {
 footer {
   background-color: #5f6163;
   text-align: center;
-  height: 350px;
+  height: 355px;
 }
 
 footer .projet {
@@ -307,6 +310,8 @@ footer .projet {
   display: -ms-inline-flexbox;
   display: inline-flex;
   cursor: pointer;
+  position: relative;
+  top: 30px;
 }
 
 footer .projet:hover h3 {
@@ -372,7 +377,7 @@ footer .form .text-input {
   border: 1px solid #bc93fd;
   color: white;
   border-radius: 50px;
-  outline: none;
+  outline-style: none;
   width: 160px;
   -webkit-transition: .4s ease-in-out;
   transition: .4s ease-in-out;
@@ -455,5 +460,14 @@ footer .footer-icon .icon-link:hover .fa-instagram {
 
 footer .footer-icon .icon-link:hover .fa-linkedin-in {
   color: #0077b5;
+}
+
+footer .copy h6 {
+  display: block;
+  color: #ffffff80;
+  font-weight: 100;
+  margin: 0;
+  cursor: pointer;
+  padding: 0;
 }
 /*# sourceMappingURL=style.css.map */
