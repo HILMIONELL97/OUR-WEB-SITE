@@ -6,6 +6,7 @@ sans-serif;
 
 body {
     font-family: 'Montserrat', sans-serif;
+    width: 100%;
 }
 
 
@@ -81,20 +82,25 @@ hr {
     position: relative;
     left: 10px;
     width: 10%;
-    padding:15px;
+    padding: 15px;
     background-color: $color2;
     color: $color;
     font-size: 20px;
 }
-.btb{
+
+.btb {
     padding: 25px;
     border-radius: 50px;
     border: none;
     background-color: $color2;
     font-size: 30px;
-    width:30%;
+    width: 30%;
 }
-.ser{
+i{
+    font-size: 700%;
+}
+
+.ser {
     position: relative;
     right: 50px;
 
@@ -109,11 +115,116 @@ hr {
     color: $color;
     font-size: 30px;
 }
-.fab{
+
+.fab {
     margin: 1px 40px;
     border-radius: 500px;
 
 }
+
+/*tablet*/
+@media (max-width:768px) {
+    body {
+        width: 700px;
+    }
+
+    // .sgrid {
+    //     display: grid;
+    //     grid-template-columns: 1fr 1fr;
+    //     grid-template-rows: 1fr;
+    //     grid-template-areas:
+    //         "spartie1 Spartie2"
+    //         "Spartie3  Spartie4"
+    //         "Spartie5 Spartie6";
+    // }
+
+    // .spartie1 {
+    //     grid-area: spartie1;
+    // }
+
+    // .Spartie2 {
+    //     grid-area: Spartie2;
+    // }
+
+    // .Spartie3 {
+    //     grid-area: Spartie3;
+    // }
+
+    // .Spartie4 {
+    //     grid-area: Spartie4;
+    // }
+
+    // .Spartie5 {
+    //     grid-area: Spartie5;
+    // }
+
+    // .Spartie6 {
+    //     grid-area: Spartie6;
+    // }
+
+    .svideo {
+        width: 600px;
+        height: 300px;
+        position: relative;
+        left: 50px;
+    }
+ .Spara{
+     font-size: 70%;
+     text-align: center;
+ }
+ .stitre{
+     font-size: 120%;
+     margin-bottom:-12px;
+ }
+ .Spart1{
+     font-size: 90%;
+ } 
+ i{
+     font-size: 300%;
+ } 
+ .para1{
+     font-size: 50%;
+ } 
+.btn{
+    height: 29px;
+    width: 100px;
+    padding: 200px;
+}
+.StitreD{
+    font-size: 120%;
+    margin: 10px;
+}
+.StitreF{
+    font-size: 100%;
+    margin-top: -10px;
+}
+.sp2{
+    font-size: 100%;
+}
+.btb{
+    width: 250px;
+    height: 60px;
+    font-size: 100%;
+}
+.ser{
+    font-size: 100%;
+    margin: 10px;
+    position: relative;
+    right:60px ;
+}
+.btR{
+    height: 40px;
+    width: 120px;
+    font-size: 90%;
+}
+ i.fab{
+    font-size: 30px;
+    
+}
+ 
+
+}
+
 
 @mixin shad {
     width: 400px;
@@ -122,7 +233,7 @@ hr {
     border-radius: 2%;
     margin: 4%;
     padding: 5%;
-    border-left:10px $color1 solid ;
+    border-left: 10px $color1 solid;
 }
 
 .Spartie3 {
