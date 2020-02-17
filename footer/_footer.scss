@@ -1,13 +1,15 @@
-@mixin flex {
-    display: flex;
-    justify-content: space-around;
-}
-
 @mixin mq($width) {
     @media (max-width: #{$width}) {
         @content;
     }
-}
+    
+  }
+  
+  @mixin flex {
+      display: flex;
+      justify-content: space-around;
+  }
+  
 
 footer {
     background-color: rgb(95, 97, 99);

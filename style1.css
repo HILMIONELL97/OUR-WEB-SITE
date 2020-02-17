@@ -13,18 +13,6 @@ body {
   background-color: #Dae1eb;
 }
 
-.hfixe {
-  position: fixed;
-  width: calc(100% - 2em);
-  z-index: 10;
-}
-
-@media (max-width: 800px) {
-  .hfixe {
-    max-width: 645px;
-  }
-}
-
 .hhead {
   padding: 1em;
   -webkit-box-pack: justify;
@@ -39,6 +27,25 @@ body {
 @media (max-width: 800px) {
   .hhead {
     max-width: 800px;
+  }
+}
+
+@media (max-width: 375px) {
+  .hhead {
+    max-width: 375px;
+    max-height: 400px;
+  }
+}
+
+.hhead .hfixe {
+  position: fixed;
+  width: calc(100% - 2em);
+  z-index: 10;
+}
+
+@media (max-width: 375px) {
+  .hhead .hfixe {
+    max-width: 300px;
   }
 }
 
@@ -75,6 +82,13 @@ body {
   left: 40px;
 }
 
+@media (max-width: 375px) {
+  .hhead .hlogo {
+    width: 80px;
+    margin-left: -25px;
+  }
+}
+
 .hhead nav .hmenu {
   list-style-type: none;
   display: -webkit-box;
@@ -93,8 +107,31 @@ body {
   }
 }
 
+@media (max-width: 375px) {
+  .hhead nav .hmenu {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #333;
+    right: -100%;
+    top: 0;
+    text-align: center;
+    padding: 80px 0;
+    line-height: normal;
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
+  }
+}
+
 .hhead nav .hmenu li a {
   padding: 1em;
+}
+
+@media (max-width: 375px) {
+  .hhead nav .hmenu li a a {
+    display: block;
+    padding: 20px;
+  }
 }
 
 @media (max-width: 800px) {
@@ -124,6 +161,14 @@ body {
   }
 }
 
+@media (max-width: 375px) {
+  .hhead .hpara {
+    margin: 280px auto;
+    margin-left: -120px;
+    color: white;
+  }
+}
+
 .hhead h1 {
   text-align: center;
   font-size: 65px;
@@ -139,6 +184,15 @@ body {
   .hhead h1 {
     color: black;
     margin-left: 22px;
+  }
+}
+
+@media (max-width: 375px) {
+  .hhead h1 {
+    font-size: 30px;
+    max-width: 300px;
+    margin-top: -120px;
+    color: white;
   }
 }
 
@@ -189,6 +243,56 @@ body {
   }
 }
 
+@media (max-width: 375px) {
+  .hhead .halone {
+    position: relative;
+    left: -580px;
+    top: -150px;
+  }
+}
+
+@media (max-width: 800px) {
+  .hhead .hshow-btn,
+  .hhead .hhideen-btn {
+    display: block;
+  }
+}
+
+.hhead .hshow-btn {
+  float: right;
+}
+
+@media (max-width: 375px) {
+  .hhead .hshow-btn {
+    position: relative;
+    top: 20px;
+    left: 20px;
+  }
+}
+
+.hhead .hhideen-btn {
+  line-height: 100px;
+}
+
+@media (max-width: 375px) {
+  .hhead .hhideen-btn {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+  }
+}
+
+.hhead .hshow-btn:hover,
+.hhead .hhideen-btn:hover {
+  color: #8f25D6;
+}
+
+@media (max-width: 800px) {
+  .hhead #hchk #hchk:checked ~ .menu {
+    right: 0;
+  }
+}
+
 .hsec1 .hgrid {
   height: 400px;
   display: -ms-grid;
@@ -197,11 +301,25 @@ body {
       grid-template-columns: 50% auto;
 }
 
+@media (max-width: 375px) {
+  .hsec1 .hgrid {
+    height: 800px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "hleft" "hright";
+  }
+}
+
 .hsec1 .hleft {
   background-image: url(/Images/workplace-1245776_1920.jpg);
   background-size: cover;
   -webkit-box-shadow: -4px -4px 8px #ffffff73, 3px 3px 5px rgba(94, 104, 121, 0.288);
           box-shadow: -4px -4px 8px #ffffff73, 3px 3px 5px rgba(94, 104, 121, 0.288);
+  grid-area: hleft;
 }
 
 .hsec1 .hleft:hover {
@@ -209,9 +327,16 @@ body {
           box-shadow: inset -4px -4px 8px #ffffff73, inset 3px 3px 5px rgba(94, 104, 121, 0.288);
 }
 
+@media (max-width: 375px) {
+  .hsec1 .hleft {
+    height: 400px;
+  }
+}
+
 .hsec1 .hright {
   -webkit-box-shadow: -4px -4px 8px #ffffff73, 3px 3px 5px rgba(94, 104, 121, 0.288);
           box-shadow: -4px -4px 8px #ffffff73, 3px 3px 5px rgba(94, 104, 121, 0.288);
+  grid-area: hright;
 }
 
 .hsec1 .hright:hover {
@@ -261,7 +386,19 @@ body {
 }
 
 .hsec2 .hcont {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
   background-color: black;
+}
+
+@media (max-width: 375px) {
+  .hsec2 .hcont {
+    max-width: 375px;
+  }
 }
 
 .hsec2 .htitle4 {
@@ -271,6 +408,12 @@ body {
   position: relative;
   top: 40px;
   z-index: 2;
+}
+
+@media (max-width: 375px) {
+  .hsec2 .htitle4 {
+    font-size: 24px;
+  }
 }
 
 .hsec2 span {
@@ -284,6 +427,13 @@ body {
   font-size: 30px;
   color: white;
   font-weight: bold;
+}
+
+@media (max-width: 375px) {
+  .hsec2 .hpara {
+    max-width: 375px;
+    font-size: 28px;
+  }
 }
 
 .hsec2 .hgrid {
@@ -304,9 +454,24 @@ body {
   }
 }
 
+@media (max-width: 800px) and (max-width: 375px) {
+  .hsec2 .hgrid {
+    max-width: 375px;
+    max-height: 2000px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: "hone" "htwo" "htree" "hfour";
+  }
+}
+
 .hsec2 .hgrid .hone {
   background-image: url(/Images/4.jpg);
   background-size: cover;
+  grid-area: hone;
 }
 
 .hsec2 .hgrid .hone:hover {
@@ -316,6 +481,7 @@ body {
 .hsec2 .hgrid .htwo {
   background-image: url(/Images/1.jpg);
   background-size: cover;
+  grid-area: htwo;
 }
 
 .hsec2 .hgrid .htwo:hover {
@@ -325,6 +491,7 @@ body {
 .hsec2 .hgrid .htree {
   background-image: url(/Images/5.jpg);
   background-size: cover;
+  grid-area: htree;
 }
 
 .hsec2 .hgrid .htree:hover {
@@ -334,6 +501,7 @@ body {
 .hsec2 .hgrid .hfour {
   background-image: url(/Images/3.jpg);
   background-size: cover;
+  grid-area: hfour;
 }
 
 .hsec2 .hgrid .hfour:hover {
@@ -358,6 +526,13 @@ body {
     font-size: 30px;
     margin: 180px auto 0 auto;
     color: black;
+  }
+}
+
+@media (max-width: 375px) {
+  .hsec2 .hgrid p {
+    position: relative;
+    top: -70px;
   }
 }
 

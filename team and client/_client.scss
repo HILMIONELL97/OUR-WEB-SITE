@@ -5,7 +5,7 @@
     border-radius: 10px;
 
     box-shadow: -4px -4px 8px #ffffff73, 3px 3px 5px rgba(94, 104, 121, .288);
-    transition: all .7s;
+
 
     @include mq (800px) {
         margin: 30px;
@@ -16,6 +16,7 @@
 
         font-size: 90px;
         color: grey;
+
 
 
     }
@@ -52,6 +53,7 @@
 
     &:hover {
         box-shadow: inset -3px -3px 7px #ffffff73, inset 3px 3px 5px rgba(94, 104, 121, .288);
+
 
         i {
             color: #7749C1;
