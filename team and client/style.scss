@@ -79,6 +79,7 @@ body {
             top: 170px;
             font-size: 40px;
         }
+
     }
 }
 
@@ -124,12 +125,14 @@ h3 {
         .team4 {
             margin-top: 80px;
 
+
             @include mq(375px) {
                 margin-top: 140px;
             }
 
 
         }
+
 
         @include mq(375px) {
             .team2 {
