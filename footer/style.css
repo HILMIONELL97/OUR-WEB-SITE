@@ -13,7 +13,6 @@ body {
   background-size: 2000PX;
   width: 100%;
   height: 500px;
-  
 }
 
 .nn {
@@ -74,7 +73,7 @@ body {
 }
 
 .contenu {
-  background-color: #555454;
+  background-color: #a17a7a;
   width: 100%;
   height: 250px;
   display: -ms-grid;
@@ -92,12 +91,14 @@ body {
 
 .f h4 {
   font-size: 20px;
-  color: #912c2c;
+  color: #000000;
+  margin-top: 70px;
 }
 
 .f a {
   font-size: 20px;
   color: #500f3c;
+  margin-top: 70px;
 }
 
 .contenu {
@@ -117,6 +118,7 @@ body {
   -ms-grid-row-span: 1;
   grid-row: 1/2;
   margin-left: 200px;
+  margin-top: 60px;
 }
 
 .f {
@@ -136,5 +138,6 @@ body {
   -ms-grid-row-span: 1;
   grid-row: 2/3;
   margin-left: 600px;
+  margin-top: 20px;
 }
 /*# sourceMappingURL=style.css.map */
