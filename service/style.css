@@ -217,6 +217,14 @@ i {
   }
 }
 
+@media (max-width: 375px) {
+  .Spartie3 {
+    margin: 0;
+    margin-bottom: 10%;
+    margin-left: 15%;
+  }
+}
+
 .spartie1 {
   width: 200px;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -233,6 +241,14 @@ i {
     margin: 0;
     margin-bottom: 20%;
     margin-left: 10px;
+  }
+}
+
+@media (max-width: 375px) {
+  .spartie1 {
+    margin: 0;
+    margin-bottom: 10%;
+    margin-left: 15%;
   }
 }
 
@@ -255,6 +271,14 @@ i {
   }
 }
 
+@media (max-width: 375px) {
+  .Spartie2 {
+    margin: 0;
+    margin-bottom: 10%;
+    margin-left: 15%;
+  }
+}
+
 .Spartie4 {
   width: 200px;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -271,6 +295,14 @@ i {
     margin: 0;
     margin-bottom: 20%;
     margin-left: 10px;
+  }
+}
+
+@media (max-width: 375px) {
+  .Spartie4 {
+    margin: 0;
+    margin-bottom: 10%;
+    margin-left: 15%;
   }
 }
 
@@ -293,6 +325,14 @@ i {
   }
 }
 
+@media (max-width: 375px) {
+  .Spartie5 {
+    margin: 0;
+    margin-bottom: 10%;
+    margin-left: 15%;
+  }
+}
+
 .Spartie6 {
   width: 200px;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -309,6 +349,14 @@ i {
     margin: 0;
     margin-bottom: 20%;
     margin-left: 10px;
+  }
+}
+
+@media (max-width: 375px) {
+  .Spartie6 {
+    margin: 0;
+    margin-bottom: 10%;
+    margin-left: 15%;
   }
 }
 
@@ -344,6 +392,81 @@ i {
   }
   100% {
     background-position: left;
+  }
+}
+
+/*mobile*/
+@media (max-width: 375px) {
+  body {
+    width: 375;
+    padding: 0;
+    margin: 0;
+  }
+  .stitre {
+    font-size: 160%;
+    margin-right: 25%;
+  }
+  .svideo {
+    width: 450px;
+    margin-left: -70px;
+  }
+  .Spara {
+    font-size: 100%;
+    max-width: 70%;
+  }
+  .Ssection1 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .Spart1 {
+    font-size: 120%;
+  }
+  .para1 {
+    font-size: 80%;
+    padding: 10%;
+  }
+  .btn {
+    width: 120px;
+    height: 40px;
+    margin-top: 20%;
+  }
+  .ssection3 {
+    margin-bottom: 10%;
+  }
+  .StitreD {
+    margin: 10%;
+    position: relative;
+    right: 120px;
+  }
+  .StitreF {
+    margin-right: 30%;
+    position: relative;
+    bottom: 60px;
+  }
+  .btb {
+    position: relative;
+    bottom: 50px;
+    position: relative;
+    right: 15%;
+    font-size: 130%;
+    height: 80px;
+    width: 300px;
+  }
+  .btR {
+    font-size: 130%;
+    height: 50px;
+    width: 110px;
+  }
+  .ser {
+    font-size: 130%;
+    position: relative;
+    right: 30px;
+  }
+  i.fab {
+    font-size: 40px;
+    margin-right: 130px;
   }
 }
 /*# sourceMappingURL=style.css.map */
