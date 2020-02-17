@@ -68,11 +68,7 @@ body {
 .fixed{  
  display: grid ; 
  grid-template-columns: 1fr 1fr 1fr;
- grid-row: 1fr 1fr 1fr;
- 
-
- 
- 
+ grid-template-rows: 1fr 1fr 1fr;
  
 }
 .apart1 {
@@ -81,9 +77,6 @@ body {
  background-color: #82ECE8;
  padding: 50px;
 
- 
- 
- 
 }
 
 
@@ -351,7 +344,8 @@ body {
         grid:grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr ;
-        width: 50%  }
+        width: 50% 
+     }
 
 
     .center {
@@ -368,9 +362,6 @@ body {
    .apart1 {
 
         @include mix();
-        
-
-
    }
 
    .apart2 img{
