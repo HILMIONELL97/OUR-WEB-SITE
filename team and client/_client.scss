@@ -1,0 +1,112 @@
+.client {
+    height: 200px;
+    width: 200px;
+    background-color: #Dae1eb;
+    border-radius: 10px;
+
+    box-shadow: -4px -4px 8px #ffffff73, 3px 3px 5px rgba(94, 104, 121, .288);
+
+
+    @include mq (800px) {
+        margin: 30px;
+    }
+
+    i {
+        margin: 55px;
+
+        font-size: 90px;
+        color: grey;
+
+
+
+    }
+
+    .fa-amazon {
+        margin: 58px;
+    }
+
+    .fa-paypal {
+        margin: 57px 65px;
+    }
+
+    .fa-apple {
+        margin: 50px 65px;
+    }
+
+    .fa-fedex {
+        margin: 55px 45px;
+    }
+
+    .fa-imdb {
+        margin: 55px 60px;
+    }
+
+    .fa-youtube {
+        margin: 55px 50px;
+    }
+
+    .fa-bootstrap {
+        margin: 56px 60px;
+    }
+
+
+
+    &:hover {
+        box-shadow: inset -3px -3px 7px #ffffff73, inset 3px 3px 5px rgba(94, 104, 121, .288);
+
+
+        i {
+            color: #7749C1;
+            margin: 57px;
+        }
+
+        .fa-amazon {
+            margin: 59px;
+            color: rgb(231, 140, 4);
+        }
+
+        .fa-paypal {
+            margin: 58px 66px;
+            color: #00457C;
+        }
+
+        .fa-apple {
+            margin: 51px 66px;
+            color: #000000;
+        }
+
+        .fa-fedex {
+            margin: 56px 46px;
+            color: rgb(211, 51, 36);
+        }
+
+        .fa-imdb {
+            margin: 56px 61px;
+            color: rgb(187, 155, 39);
+        }
+
+        .fa-youtube {
+            margin: 56px 51px;
+            color: #FF0000;
+        }
+
+        .fa-spotify {
+            margin: 56px;
+            color: rgb(42, 194, 95);
+        }
+
+        .fa-bootstrap {
+            margin: 57px 61px;
+            color: #563D7C;
+        }
+
+        .fa-github {
+            margin: 56px;
+            color: #F05032;
+        }
+
+
+    }
+
+
+}
