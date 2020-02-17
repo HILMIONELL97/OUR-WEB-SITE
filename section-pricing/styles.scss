@@ -110,6 +110,23 @@ h1 {
     .container {
         grid-row: 4/5;
     }
+    &:hover {
+        width: 90%;
+        background-image: linear-gradient($principe, rgb(86, 156, 247));
+        color: white;
+        .prix {
+            background: none;
+            background-color: white;
+            h3 {
+                color: black;
+            }
+        }
+        button {
+            color: black;
+            background: none;
+            background-color: white;
+        }
+    }
 }
 
 .section2 {
@@ -124,25 +141,14 @@ h1 {
         .standard {
             @include pricing;
             border: none;
-            &:hover {
-                width: 90%;
-            }
         }
         .professionnel {
             @include pricing;
             border: none;
-            &:hover {
-                width: 90%;
-                background-image: linear-gradient($principe, rgb(86, 156, 247));
-                color: white;
-            }
         }
-    }
-    .demande {
-        @include pricing;
-        border: none;
-        &:hover {
-            width: 90%;
+        .demande {
+            @include pricing;
+            border: none;
         }
     }
 }
