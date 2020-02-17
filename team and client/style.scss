@@ -52,6 +52,11 @@ body {
     top: 30px;
     z-index: 2;
 
+    @include mq(375px) {
+        width: 310px;
+        top: 0;
+    }
+
     p {
         margin-top: 30px;
         margin-bottom: 0;
@@ -69,6 +74,11 @@ body {
         z-index: 2;
         margin: 0;
         padding: 0;
+
+        @include mq(375px) {
+            top: 170px;
+            font-size: 40px;
+        }
     }
 }
 
@@ -94,6 +104,12 @@ h3 {
 
     }
 
+    @include mq(375px) {
+        display: grid;
+        grid-template-columns: 1fr;
+
+    }
+
     img {
         height: 160px;
         border-radius: 50%;
@@ -107,6 +123,18 @@ h3 {
         .team3,
         .team4 {
             margin-top: 80px;
+
+            @include mq(375px) {
+                margin-top: 140px;
+            }
+
+
+        }
+
+        @include mq(375px) {
+            .team2 {
+                margin-top: 70px;
+            }
         }
     }
 
