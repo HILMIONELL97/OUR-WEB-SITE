@@ -166,17 +166,30 @@ h1 {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-column-gap: 40px;
+        @include resp(800px) {
+            width: 100%;
+            grid-column-gap: 20px;
+        }
         .standard {
             @include pricing;
             border: none;
+            @include resp(800px) {
+                border: none;
+            }
         }
         .professionnel {
             @include pricing;
             border: none;
+            @include resp(800px) {
+                border: none;
+            }
         }
         .demande {
             @include pricing;
             border: none;
+            @include resp(800px) {
+                border: none;
+            }
         }
     }
 }

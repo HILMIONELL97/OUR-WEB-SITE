@@ -277,6 +277,13 @@ h1 {
   grid-column-gap: 40px;
 }
 
+@media (max-width: 800px) {
+  .section2 .pricing {
+    width: 100%;
+    grid-column-gap: 20px;
+  }
+}
+
 .section2 .pricing .standard {
   border-right: #8f25D6 6px solid;
   padding: 30px;
@@ -408,6 +415,12 @@ h1 {
   color: black;
   background: none;
   background-color: white;
+}
+
+@media (max-width: 800px) {
+  .section2 .pricing .standard {
+    border: none;
+  }
 }
 
 .section2 .pricing .professionnel {
@@ -543,6 +556,12 @@ h1 {
   background-color: white;
 }
 
+@media (max-width: 800px) {
+  .section2 .pricing .professionnel {
+    border: none;
+  }
+}
+
 .section2 .pricing .demande {
   border-right: #8f25D6 6px solid;
   padding: 30px;
@@ -674,6 +693,12 @@ h1 {
   color: black;
   background: none;
   background-color: white;
+}
+
+@media (max-width: 800px) {
+  .section2 .pricing .demande {
+    border: none;
+  }
 }
 
 footer {
