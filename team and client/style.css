@@ -41,6 +41,13 @@ body {
   z-index: 2;
 }
 
+@media (max-width: 375px) {
+  .para {
+    width: 310px;
+    top: 0;
+  }
+}
+
 .para p {
   margin-top: 30px;
   margin-bottom: 0;
@@ -56,6 +63,13 @@ body {
   z-index: 2;
   margin: 0;
   padding: 0;
+}
+
+@media (max-width: 375px) {
+  .title h1 {
+    top: 170px;
+    font-size: 40px;
+  }
 }
 
 h2 {
@@ -91,6 +105,15 @@ h3 {
   }
 }
 
+@media (max-width: 375px) {
+  .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
 .container img {
   height: 160px;
   border-radius: 50%;
@@ -104,6 +127,19 @@ h3 {
   .container .team3,
   .container .team4 {
     margin-top: 80px;
+  }
+}
+
+@media (max-width: 800px) and (max-width: 375px) {
+  .container .team3,
+  .container .team4 {
+    margin-top: 140px;
+  }
+}
+
+@media (max-width: 800px) and (max-width: 375px) {
+  .container .team2 {
+    margin-top: 70px;
   }
 }
 
@@ -258,8 +294,6 @@ h3 {
   border-radius: 10px;
   -webkit-box-shadow: -4px -4px 8px #ffffff73, 3px 3px 5px rgba(94, 104, 121, 0.288);
           box-shadow: -4px -4px 8px #ffffff73, 3px 3px 5px rgba(94, 104, 121, 0.288);
-  -webkit-transition: all .7s;
-  transition: all .7s;
 }
 
 @media (max-width: 800px) {
@@ -363,6 +397,12 @@ footer {
   height: 355px;
 }
 
+@media (max-width: 375px) {
+  footer {
+    height: auto;
+  }
+}
+
 footer .projet {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -370,6 +410,12 @@ footer .projet {
   cursor: pointer;
   position: relative;
   top: 30px;
+}
+
+@media (max-width: 375px) {
+  footer .projet {
+    right: 10px;
+  }
 }
 
 footer .projet:hover h3 {
@@ -391,6 +437,13 @@ footer .projet i {
   transition: all 0.4s ease-in-out;
 }
 
+@media (max-width: 375px) {
+  footer .projet i {
+    top: 35px;
+    font-size: 30px;
+  }
+}
+
 footer .projet h3 {
   color: white;
   font-size: 40px;
@@ -399,8 +452,26 @@ footer .projet h3 {
   transition: all 0.3s ease-in-out;
 }
 
+@media (max-width: 375px) {
+  footer .projet h3 {
+    font-size: 30px;
+  }
+}
+
 .footer-content {
   margin-top: 60px;
+}
+
+@media (max-width: 375px) {
+  .footer-content {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr .4fr 0.4fr;
+        grid-template-rows: 1fr .4fr 0.4fr;
+        grid-template-areas: "form" "contact" "icon";
+  }
 }
 
 .flaot {
@@ -414,6 +485,12 @@ footer .projet h3 {
   }
 }
 
+@media (max-width: 375px) {
+  .flaot {
+    float: none;
+  }
+}
+
 footer .contact {
   color: #ffffff80;
   margin-top: 10px;
@@ -423,6 +500,19 @@ footer .contact {
   footer .contact {
     font-size: 13px;
     margin-top: 20px;
+  }
+}
+
+@media (max-width: 375px) {
+  footer .contact {
+    grid-area: contact;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -10px;
+  }
+  footer .contact .cnt {
+    position: relative;
+    right: 35px;
   }
 }
 
@@ -441,6 +531,12 @@ footer .form {
   margin-left: 10px;
 }
 
+@media (max-width: 375px) {
+  footer .form {
+    grid-area: form;
+  }
+}
+
 footer .form .text-input {
   padding: 10px 30px;
   margin-bottom: 20px;
@@ -452,6 +548,12 @@ footer .form .text-input {
   width: 160px;
   -webkit-transition: .4s ease-in-out;
   transition: .4s ease-in-out;
+}
+
+@media (max-width: 375px) {
+  footer .form .text-input {
+    margin-left: 55%;
+  }
 }
 
 footer .form .text-input::-webkit-input-placeholder {
@@ -474,6 +576,12 @@ footer .form .text-input:focus {
   width: 230px;
 }
 
+@media (max-width: 375px) {
+  footer .form .text-input:focus {
+    width: 160px;
+  }
+}
+
 footer .form .submit-input {
   background: none;
   color: #ffffff80;
@@ -484,10 +592,23 @@ footer .form .submit-input {
   transition: .5S;
 }
 
+@media (max-width: 375px) {
+  footer .form .submit-input {
+    margin-left: 115%;
+  }
+}
+
 footer .form .submit-input:hover {
   background-color: #8561be;
   color: white;
   border: 1px solid #8561be;
+}
+
+@media (max-width: 375px) {
+  footer .footer-icon {
+    grid-area: icon;
+    margin-left: 35%;
+  }
 }
 
 footer .footer-icon .icon {
@@ -515,6 +636,12 @@ footer .footer-icon .icon-link {
   font-size: 19px;
   color: #a5a4a4;
   border-radius: 50%;
+}
+
+@media (max-width: 375px) {
+  footer .footer-icon .icon-link {
+    padding-right: 10px;
+  }
 }
 
 footer .footer-icon .icon-link:hover .fa-twitter {
