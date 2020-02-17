@@ -1,23 +1,138 @@
-*{
+$tablet:800px;
+$mobile:375px;
+@mixin mobile {
+    @media (max-width: #{$mobile}) {
+        @content;
+    }
+
+@mixin tablet {
+    @media (max-width: #{$tablet}) {
+        @content;
+    }
+}
+
+
+body{
   margin:0px ;
   padding:0px ;
   box-sizing:border-box ;
+  background-color:#EEEEEE;
+  font-family:  'Montserrat';
+
 }
+.cc{
+  
+  background-image: url(img/photodefotre.jpg);
+  background-size: cover;
+  width: 100%;
+  height:500px ;
+  
 
-
-
+}
 .nn{
-    font-size:60px ;
-    color:  #9c8686;
-    
+  color:  #ffffff;
+ 
+ text-align: center;
+ position: relative;
+ top: 200PX;
+ font-size:99px ;
+ margin-top:0 ;
+ &:hover {
+   color: rgb(178, 39, 233);
+ }
+
 }
+
 
   
 
-.cc{
-  background-image: url(img/bridge-1660417_1920.jpg) ;
-  width: 2000px; height: 1440px;
-  padding-top:1000px ;
-  padding-left:1000px ;
+.input1{
+  display: flex;
+  flex-direction: row;
+  margin-top: 3%;
+  width:100% ;
+  margin-left:5% ;
+  
+  
+  
+  }
+  
 
+   .non{
+    width:350px ;
+    height:40px ;
+    border-radius:15px;
+    border: 1.3px solid #bc93fd ;
+    position: relative;
+    left:450px ;
+    @include tablet(){
+    margin-left:-380px ;
+    width:200px ;
+    }
+    
+    
+  }
+  .numéro{
+    width:350px ;
+    height:40px ;
+    border-radius: 15px;
+    border: 1.3px solid #bc93fd ;
+    position: relative;
+    top: 65px;
+    left: 95px;
+   @include tablet(){
+   margin-left:150px ;
+    width:200px ;
+   }
+    
+  }
+  
+  
+  .adres{
+    width:350px ;
+    height:40px ; 
+    margin-bottom: 20px;
+    margin-left:22% ;
+    border-radius: 15px;
+    border: 1.3px solid #bc93fd ;
+    @include tablet(){
+    width:200px ;
+   margin-left:70px ;
+    }
+
+  }
+  .votre{
+    width:350px ;
+    height:40px ;
+    margin-left:22% ;
+    border-radius: 15px;
+    border: 1.3px solid #bc93fd ;
+    @include tablet(){
+      width:200px ;
+      margin-left:70px ;
+
+    }
+    
+    
+  }
+
+
+.message{
+  box-sizing: border-box;
+  width: 41%;
+  margin-left: 540px;
+  height: 250px;
+  margin-top: 20px;
+  padding-bottom: 10%;
+  margin-bottom: 30px;
+  border-radius: 30px;
+  border: 1.3px solid #bc93fd ;
+  @include tablet(){
+    margin-left:100px ;
+   width:70% ;
+    height: 250px;
+
+  }
 }
+
+@import "./footer"

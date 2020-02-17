@@ -29,7 +29,7 @@ hr {
   text-align: center;
   -webkit-text-decoration: underline #8f25D6;
           text-decoration: underline #8f25D6;
-  margin: 3%;
+  margin: 5%;
   font-size: 25px;
 }
 
@@ -45,19 +45,17 @@ hr {
 
 .para1 {
   font-family: "Montserrat", sans-serif;
-  font-size: 70%;
+  font-size: 80%;
 }
 
 .Ssection1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.Ssection2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  grid-gap: 10px;
 }
 
 .ssection3 {
@@ -120,22 +118,32 @@ i {
 }
 
 /*tablet*/
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   body {
-    width: 700px;
+    width: 800px;
+    margin: 0;
+    padding: 0;
+  }
+  .Ssection1 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
   }
   .svideo {
-    width: 600px;
+    width: 500px;
     height: 300px;
-    position: relative;
-    left: 50px;
   }
   .Spara {
     font-size: 70%;
     text-align: center;
+    position: relative;
+    right: 1%;
+    margin-bottom: 80px;
   }
   .stitre {
-    font-size: 120%;
+    font-size: 150%;
     margin-bottom: -12px;
   }
   .Spart1 {
@@ -145,7 +153,9 @@ i {
     font-size: 300%;
   }
   .para1 {
-    font-size: 50%;
+    font-size: 80%;
+    padding: 8%;
+    position: relative;
   }
   .btn {
     height: 29px;
@@ -158,96 +168,196 @@ i {
   }
   .StitreF {
     font-size: 100%;
-    margin-top: -10px;
+    margin-top: -20px;
   }
   .sp2 {
     font-size: 100%;
   }
   .btb {
-    width: 250px;
-    height: 60px;
-    font-size: 100%;
+    width: 200px;
+    height: 55px;
+    font-size: 80%;
   }
   .ser {
     font-size: 100%;
     margin: 10px;
     position: relative;
-    right: 60px;
+    right: 15px;
+    padding: 3%;
   }
   .btR {
-    height: 40px;
-    width: 120px;
-    font-size: 90%;
+    height: 1px;
+    width: 70px;
+    font-size: 70%;
   }
   i.fab {
     font-size: 30px;
   }
+  .ssection3 {
+    margin-bottom: 90%;
+  }
 }
 
 .Spartie3 {
-  width: 400px;
+  width: 200px;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-align: center;
   border-radius: 2%;
-  margin: 4%;
-  padding: 5%;
+  margin: 20%;
+  padding: 10%;
   border-left: 10px #8f25D6 solid;
+}
+
+@media (max-width: 800px) {
+  .Spartie3 {
+    margin: 0;
+    margin-bottom: 20%;
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 375px) {
+  .Spartie3 {
+    margin: 0;
+    margin-bottom: 10%;
+    margin-left: 15%;
+  }
 }
 
 .spartie1 {
-  width: 400px;
+  width: 200px;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-align: center;
   border-radius: 2%;
-  margin: 4%;
-  padding: 5%;
+  margin: 20%;
+  padding: 10%;
   border-left: 10px #8f25D6 solid;
+}
+
+@media (max-width: 800px) {
+  .spartie1 {
+    margin: 0;
+    margin-bottom: 20%;
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 375px) {
+  .spartie1 {
+    margin: 0;
+    margin-bottom: 10%;
+    margin-left: 15%;
+  }
 }
 
 .Spartie2 {
-  width: 400px;
+  width: 200px;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-align: center;
   border-radius: 2%;
-  margin: 4%;
-  padding: 5%;
+  margin: 20%;
+  padding: 10%;
   border-left: 10px #8f25D6 solid;
+}
+
+@media (max-width: 800px) {
+  .Spartie2 {
+    margin: 0;
+    margin-bottom: 20%;
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 375px) {
+  .Spartie2 {
+    margin: 0;
+    margin-bottom: 10%;
+    margin-left: 15%;
+  }
 }
 
 .Spartie4 {
-  width: 400px;
+  width: 200px;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-align: center;
   border-radius: 2%;
-  margin: 4%;
-  padding: 5%;
+  margin: 20%;
+  padding: 10%;
   border-left: 10px #8f25D6 solid;
+}
+
+@media (max-width: 800px) {
+  .Spartie4 {
+    margin: 0;
+    margin-bottom: 20%;
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 375px) {
+  .Spartie4 {
+    margin: 0;
+    margin-bottom: 10%;
+    margin-left: 15%;
+  }
 }
 
 .Spartie5 {
-  width: 400px;
+  width: 200px;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-align: center;
   border-radius: 2%;
-  margin: 4%;
-  padding: 5%;
+  margin: 20%;
+  padding: 10%;
   border-left: 10px #8f25D6 solid;
 }
 
+@media (max-width: 800px) {
+  .Spartie5 {
+    margin: 0;
+    margin-bottom: 20%;
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 375px) {
+  .Spartie5 {
+    margin: 0;
+    margin-bottom: 10%;
+    margin-left: 15%;
+  }
+}
+
 .Spartie6 {
-  width: 400px;
+  width: 200px;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-align: center;
   border-radius: 2%;
-  margin: 4%;
-  padding: 5%;
+  margin: 20%;
+  padding: 10%;
   border-left: 10px #8f25D6 solid;
+}
+
+@media (max-width: 800px) {
+  .Spartie6 {
+    margin: 0;
+    margin-bottom: 20%;
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 375px) {
+  .Spartie6 {
+    margin: 0;
+    margin-bottom: 10%;
+    margin-left: 15%;
+  }
 }
 
 .btn {
@@ -282,6 +392,82 @@ i {
   }
   100% {
     background-position: left;
+  }
+}
+
+/*mobile*/
+@media (max-width: 375px) {
+  body {
+    width: 375;
+    padding: 0;
+    margin: 0;
+  }
+  .stitre {
+    font-size: 160%;
+    margin-right: 25%;
+  }
+  .svideo {
+    width: 450px;
+    margin-left: -70px;
+  }
+  .Spara {
+    font-size: 100%;
+    max-width: 70%;
+  }
+  .Ssection1 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .Spart1 {
+    font-size: 120%;
+  }
+  .para1 {
+    font-size: 80%;
+    padding: 10%;
+  }
+  .btn {
+    width: 120px;
+    height: 40px;
+    margin-top: 20%;
+  }
+  .ssection3 {
+    margin-bottom: 10%;
+  }
+  .StitreD {
+    margin: 10%;
+    position: relative;
+    right: 120px;
+  }
+  .StitreF {
+    margin-right: 30%;
+    position: relative;
+    bottom: 60px;
+  }
+  .btb {
+    position: relative;
+    bottom: 50px;
+    position: relative;
+    right: 15%;
+    font-size: 130%;
+    height: 80px;
+    width: 300px;
+  }
+  .btR {
+    font-size: 130%;
+    height: 50px;
+    width: 110px;
+  }
+  .ser {
+    font-size: 130%;
+    position: relative;
+    right: 30px;
+  }
+  i.fab {
+    font-size: 40px;
+    position: relative;
+    right: 100px;
   }
 }
 /*# sourceMappingURL=style.css.map */
