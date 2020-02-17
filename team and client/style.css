@@ -10,7 +10,7 @@ body {
   background-attachment: fixed;
   background-size: cover;
   background-position: bottom;
-  height: 700px;
+  height: 720px;
   -webkit-box-shadow: 0 10px 16px 0px #7749c160;
           box-shadow: 0 10px 16px 0px #7749c160;
 }
@@ -24,7 +24,7 @@ body {
 
 .header .abg {
   width: 100%;
-  height: 700px;
+  height: 720px;
   position: absolute;
   z-index: 2;
   background-color: rgba(119, 73, 193, 0.7);
@@ -337,8 +337,8 @@ h3 {
 }
 
 .client:hover {
-  -webkit-box-shadow: inset -3px -3px 7px #ffffff73, inset 3px 3px 5px rgba(94, 104, 121, 0.288);
-          box-shadow: inset -3px -3px 7px #ffffff73, inset 3px 3px 5px rgba(94, 104, 121, 0.288);
+  -webkit-box-shadow: inset -3px -3px 8px #ffffff73, inset 3px 3px 5px rgba(94, 104, 121, 0.288);
+          box-shadow: inset -3px -3px 8px #ffffff73, inset 3px 3px 5px rgba(94, 104, 121, 0.288);
 }
 
 .client:hover i {
