@@ -8,6 +8,9 @@ body {
     font-family: 'Montserrat', sans-serif;
     width: 100%;
 }
+.service{
+    margin-top: 140px;
+}
 
 
 .stitre {
@@ -357,3 +360,4 @@ hr {
 }
 
 @import"./footer";
+@import"./navbar"
