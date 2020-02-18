@@ -53,7 +53,7 @@ body {
 
 @media (max-width: 375px) {
   .hhead .header {
-    height: 0px;
+    height: 100px;
   }
 }
 

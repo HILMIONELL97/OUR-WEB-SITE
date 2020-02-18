@@ -4,6 +4,19 @@ $btn-bg-color: black;
 $btn-color: white;
 $tablet:800px;
 $mobile:375px;
+//MIXIN //
+@mixin tablet {
+    @media (max-width: #{$tablet}) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (max-width: #{$mobile}) {
+        @content;
+    }
+}
+
 .header {
     position: fixed;
     margin-top: -20px;
