@@ -47,7 +47,8 @@ $mobile:375px;
     cursor: pointer;
     @include tablet() {
         margin: 0px;
-        margin-left: 10px;
+        margin-left: 40px;
+    
     }
     @include mobile() {
         font-size: 30px;
