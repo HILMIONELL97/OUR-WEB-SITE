@@ -28,9 +28,7 @@ $mobile:375px;
     z-index: 20;
     width: 100vw;
     margin-left: -50px;
-    @include mobile() {
-        height: 0px;
-    }
+    @include mobile() {}
     @include tablet() {
         width: 100vw;
         margin-left: -35px;
