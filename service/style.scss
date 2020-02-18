@@ -99,7 +99,7 @@ hr {
     width: 30%;
 }
 
- .Ssection1 i {
+.Ssection1 i {
     font-size: 700%;
 }
 
@@ -137,8 +137,8 @@ hr {
     .Ssection1 {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        
-        
+
+
     }
 
     .svideo {
@@ -234,10 +234,11 @@ hr {
         margin-bottom: 20%;
         margin-left: 10px;
     }
-    @media (max-width:375px){
-     margin: 0;
-     margin-bottom: 10%;
-     margin-left: 15%;
+
+    @media (max-width:375px) {
+        margin: 0;
+        margin-bottom: 10%;
+        margin-left: 15%;
     }
 
 }
@@ -266,80 +267,93 @@ hr {
     @include shad
 }
 
-@import"./style" ;
+@import"./style";
+
 /*mobile*/
-@media (max-width:375px){
-    body{
+@media (max-width:375px) {
+    body {
         width: 375;
         padding: 0;
         margin: 0;
     }
-    .stitre{
+
+    .stitre {
         font-size: 160%;
         margin-right: 25%;
     }
-    .svideo{
+
+    .svideo {
         width: 450px;
         margin-left: -5px;
 
     }
-    .Spara{
+
+    .Spara {
         font-size: 100%;
         max-width: 70%;
         margin-left: 90px;
     }
-    .Ssection1{
+
+    .Ssection1 {
         display: grid;
         grid-template-columns: 1fr;
     }
-    .Spart1{
+
+    .Spart1 {
         font-size: 120%;
     }
-    .para1{
+
+    .para1 {
         font-size: 80%;
         padding: 10%;
     }
-    .btn{
+
+    .btn {
         width: 120px;
         height: 40px;
         margin-top: 20%;
     }
-    
-    .StitreD{
+
+    .StitreD {
         margin: 10%;
         position: relative;
-        right:20px;
+        right: 20px;
     }
-    .StitreF{
+
+    .StitreF {
         margin-right: 30%;
         position: relative;
         bottom: 60px;
         margin-left: 150px;
     }
-    .btb{
+
+    .btb {
         position: relative;
         bottom: 50px;
-        margin-right:40px;
+        margin-right: 40px;
         font-size: 130%;
         height: 80px;
         width: 300px;
     }
-    .btR{
+
+    .btR {
         font-size: 130%;
         height: 50px;
         width: 110px;
-        
+
     }
-    .ser{
+
+    .ser {
         font-size: 130%;
         position: relative;
-        right:1px;
+        right: 1px;
         bottom: 10px;
     }
+
     i.fab {
         font-size: 40px;
         margin-left: 10px;
     }
 }
-@import"./footer"
 
+@import"./footer";
