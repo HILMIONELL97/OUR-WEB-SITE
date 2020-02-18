@@ -1,3 +1,15 @@
+@mixin hw{
+    width: 506px;
+    height: 610px;
+    margin-top: -4px;
+    box-sizing: border-box;
+
+
+   
+    
+    
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -12,18 +24,24 @@ body {
 .aheader{
    background: url(img/back.jpg) no-repeat ;
    background-size: 1550px 600px ;
+
    height: 600px;
    background-attachment:fixed;
+   width: 100%;
+   @media screen and (max-width:800px){
+       background-position: center;
+   }
 
 
-   .abg{
+
+  /*.abg{
        width: 100%;
        height: 600px;
        position: absolute;
        z-index: 2;
-       background-color: rgba($color: #e20cc6, $alpha: .4);
+       background-color: rgba($color: #7d54be, $alpha: .7);
     
-   }  
+   }  */
 }
 
 .center{
@@ -47,31 +65,31 @@ body {
 }
 /*--------------------------------------------------------------------*/
 
-.aorg{ 
- display: flex ;  
- height: 600px;
- 
+.fixed{  
+ display: grid ; 
+ grid-template-columns: 1fr 1fr 1fr;
+ grid-template-rows: 1fr 1fr 1fr;
  
 }
 .apart1 {
+
+  @include hw();
  background-color: #82ECE8;
- padding: 100px 30px ;
- flex-basis: 32%;
- line-height: 40px;
- 
- 
+ padding: 50px;
+
 }
+
 
 .apart1 h1 {
     line-height: 50px;
     font-weight: 900;
     
-
 }
 .apart1 h2 {
     padding-bottom: 20px;
     font-weight: lighter;
     color: #EB2F5B;
+    line-height: 30px;
    }
  .hr{
  margin-top: -10px;
@@ -83,23 +101,28 @@ body {
 
 .apart1 p{
     margin-top: 25px;
+    width: 320px;
+    line-height: 40px;
     
 }
-.aorg img{
 
-  width: 524px;
-  padding-right: 10px;
 
+
+.apart2  img{
+
+    @include hw();
 
 }
+
+
 .apart3 {
+     @include hw();
     background-color: black;
     color: white;
-    flex-basis:35%;
-    margin-left:-20px;
-    width: 100%;
-    padding: 140px 35px ;
+    padding: 50px;
+    padding-top: 100px;
 }
+
 .apart3 h1 {
     margin-bottom: 35px;
     font-weight: 900;
@@ -108,7 +131,7 @@ body {
 
     
     margin-bottom: 30px;
-    line-height: 40px;
+    line-height: 50px;
 
 }
 .apart3 button{
@@ -120,38 +143,41 @@ body {
     width: 180px;
     font-weight: bold;
     font-size: 15px;
+    outline: none;
+    transition:all .5s ease-in-out ;
+}
 
+.butt:hover {
+  
+   background-color:  #FED841 ; 
+   border-color:  #FED841;
+   
 }
 /*--------------------------------------------------------------------*/
-.aorg2{
-    display: flex; 
-    height: 600px;
-    
 
-}
+
 .apaart1 img {
-    width: 479px;
-    height: 600px;
 
-
-}
-.apaart2{
-   background-color:#FED841;
-   width: 916px;
-   margin-left:0px;
-   padding: 140px 64px ;
+    @include hw();
    
+}
 
+.apaart2{
+   @include hw(); 
+   background-color:#FED841;
+   padding: 50px;
 }
 
 .apaart2 p{
-   
-    margin-bottom: 40px;
+    padding-top: 30px;
+    margin-bottom: 20px;
     font-weight: 900;
     font-size: 25px;
+    line-height: 40px;
 }
 .apaart2 img {
     border-radius: 100%;
+    width: 110px;
     
 }
 .apaart2 h3 span {
@@ -168,10 +194,12 @@ body {
     
 }
 .apaart3{
-   width: 1085px; 
+   @include hw();  
    background-color: #EB2F5B; 
    color:white ;
-   padding: 140px 35px ;
+   padding: 50px;
+
+   
    
 }
 .apaart3 h2 {
@@ -181,7 +209,8 @@ body {
 
 .apaart3 p {
 
-   line-height: 30px;
+   line-height: 50px;
+
 
 }
 .aespace {
@@ -191,18 +220,12 @@ body {
 
 /*--------------------------------------------------------------------*/
 
-.aorg3{
-
-   display: flex;
-   height: 600px; 
-}
-
 .apaaart1{
-
+    @include hw();
     background-color: black;
     color: white;
-    width: 411px;
-    padding: 140px 35px ;
+    padding: 50px;
+    
 }
 
 .apaaart1 h1{
@@ -220,16 +243,19 @@ body {
 
 .apaaart1 p{
 
-    line-height: 30px;
+    line-height: 40px;
     font-weight: 900;
     text-align: center;
     margin-top: 30px;
 }
 
 .apaaart2{
+ @include hw();   
  background-color: white;
- width: 445px;
- padding: 140px 35px ;
+ padding: 50px;
+ padding-top: 90px;
+ 
+
 }
 .apaaart2 h2 {
 
@@ -249,14 +275,14 @@ body {
 .apaaart2 p {
 
     color: #7777;
-    line-height: 30px;
+    line-height: 40px;
     margin-top: 30px;
 }
 
 .apaaart2 hr {
     height: 10px;
     background: #EB2F5B; 
-    width:55%;
+    width:60%;
     border-color:#EB2F5B ;
     margin-top: -36px;
     margin-left: 2px;
@@ -266,11 +292,8 @@ body {
 
 
 .apaaart3{
-
-    width: 528px;
+    @include hw();
     background: url(img/bout.jpg) no-repeat ;  
-
-
 }
 
 .apaaart3 h1 {
@@ -280,19 +303,127 @@ body {
    font-size: 50px;
    font-weight: 900;
    color: white;
+   padding: 10px;
 
 }
+
+
 .apaaart3 h1 a {
-    color: red;
-  
-}
+    text-decoration: none;
+    transition: all 0.8S ease-in-out;
+  }
+  .hov:hover{
+    
+     color: #FED841;
+     font-weight: 900;
+  }
 
 
 .apaaart3 hr {
     height: 10px;
     background: #EB2F5B; 
-    width:35%;
+    width:37%;
     border-color:#EB2F5B ;
-    margin-left: 310px;
-    margin-top: -5px;  
+    margin-left: 298px;
+    margin-top: -12px;  
 }
+
+@media screen and (max-width:800px){
+  
+  @mixin mix {
+
+    width: 400px;
+    height: 700px;
+
+      
+  }
+    
+
+    .fixed{
+
+        grid:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr ;
+        width: 50% 
+     }
+
+
+    .center {
+
+        margin-left: 185px;
+        margin-top: 240px;
+    }    
+ 
+    .apaaart3 {
+
+        display: none;
+     }
+
+   .apart1 {
+
+        @include mix();
+   }
+
+   .apart2 img{
+
+    @include mix()
+       
+   }
+
+   .apart3 {
+
+    @include mix()
+   }
+
+   .apaart1 img {
+
+    @include mix()
+   }
+
+   .apaart2{
+    @include mix()
+   }
+
+   .apaart2 h3 {
+
+    margin-left: 70px;
+   }
+
+   .apaart3{
+
+    @include mix()
+   }
+
+   .apaaart1{
+
+    @include mix()
+   }
+
+   .apaaart2{
+
+    @include mix()
+    
+   }
+
+   .apaaart2 p {
+
+    line-height: 30px;
+   }
+
+   .apaaart2 hr {
+
+    width: 81%;
+   }
+
+   
+     
+ 
+ }
+
+ 
+
+
+ 
+
+
+
