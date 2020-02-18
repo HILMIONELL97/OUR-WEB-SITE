@@ -8,14 +8,14 @@ body {
   font-family: 'Montserrat';
 }
 
-.cc {
+.fsection1 {
   background-image: url(img/photodefotre.jpg);
   background-size: cover;
   width: 100%;
   height: 500px;
 }
 
-.nn {
+.fcontact {
   color: #ffffff;
   text-align: center;
   position: relative;
@@ -24,11 +24,11 @@ body {
   margin-top: 0;
 }
 
-.nn:hover {
+.fcontact:hover {
   color: #b227e9;
 }
 
-.nn .input1 {
+.finputs {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -41,7 +41,7 @@ body {
   margin-left: 5%;
 }
 
-.nn .non {
+.non {
   width: 350px;
   height: 40px;
   border-radius: 15px;
@@ -50,14 +50,14 @@ body {
   left: 450px;
 }
 
-@media (max-width: 800px) {
-  .nn .non {
+@media (max-width: 800) {
+  .non {
     margin-left: -380px;
     width: 200px;
   }
 }
 
-.nn .numéro {
+.numéro {
   width: 350px;
   height: 40px;
   border-radius: 15px;
@@ -67,14 +67,14 @@ body {
   left: 95px;
 }
 
-@media (max-width: 800px) {
-  .nn .numéro {
+@media (max-width: 800) {
+  .numéro {
     margin-left: 150px;
     width: 200px;
   }
 }
 
-.nn .adres {
+.adres {
   width: 350px;
   height: 40px;
   margin-bottom: 20px;
@@ -83,14 +83,14 @@ body {
   border: 1.3px solid #bc93fd;
 }
 
-@media (max-width: 800px) {
-  .nn .adres {
+@media (max-width: 800) {
+  .adres {
     width: 200px;
     margin-left: 70px;
   }
 }
 
-.nn .votre {
+.votre {
   width: 350px;
   height: 40px;
   margin-left: 22%;
@@ -98,14 +98,13 @@ body {
   border: 1.3px solid #bc93fd;
 }
 
-@media (max-width: 800px) {
-  .nn .votre {
+@media (max-width: 800) {
+  .votre {
     width: 200px;
-    margin-left: 70px;
   }
 }
 
-.nn .message {
+.message {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 41%;
@@ -118,8 +117,8 @@ body {
   border: 1.3px solid #bc93fd;
 }
 
-@media (max-width: 375px) {
-  .nn .message {
+@media (max-width: 800) {
+  .message {
     margin-left: 100px;
     width: 70%;
     height: 250px;
