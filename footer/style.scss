@@ -18,11 +18,9 @@ body{
   box-sizing:border-box ;
   background-color:#EEEEEE;
   font-family:  'Montserrat';
-  @include mobile(){
-
-  }
+  @include mobile(){}
 }
-.cc{
+.fsection1{
   
   background-image: url(img/photodefotre.jpg);
   background-size: cover;
@@ -32,7 +30,7 @@ body{
   
 
 }
-.nn{
+.fcontact{
   color:  #ffffff;
  
  text-align: center;
@@ -49,14 +47,14 @@ body{
 
   
 
-.input1{
+.finputs{
   display: flex;
   flex-direction: row;
   margin-top: 3%;
   width:100% ;
   margin-left:5% ;
   
-  
+
   
   }
   
@@ -73,9 +71,7 @@ body{
     width:200px ;
     }
     
-    @include mobile(){
     
-    }  
   }
   .numéro{
     width:350px ;
@@ -89,9 +85,7 @@ body{
    margin-left:150px ;
     width:200px ;
    }
-   @include mobile(){
     
-  } 
   }
   
   
@@ -106,9 +100,7 @@ body{
     width:200px ;
    margin-left:70px ;
     }
-    @include mobile(){
-    
-    }
+
   }
   .votre{
     width:350px ;
@@ -121,9 +113,7 @@ body{
       margin-left:70px ;
 
     }
-    @include mobile(){
     
-    }
     
   }
 
@@ -142,11 +132,7 @@ body{
     margin-left:100px ;
    width:70% ;
     height: 250px;
-    @include mobile(){
-    
-    }
 
   }
 }
-
-@import "./footer"
+}
