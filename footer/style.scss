@@ -74,7 +74,7 @@ body{
   .non{
     width:350px ;
     height:40px ;
-    border-radius:15px;
+    border-radius:10px;
     border: 1.3px solid #bc93fd ;
     position: relative;
     left:450px ;
@@ -89,7 +89,7 @@ body{
   .numéro{
     width:350px ;
     height:40px ;
-    border-radius: 15px;
+    border-radius: 10px;
     border: 1.3px solid #bc93fd ;
     position: relative;
     top: 65px;
@@ -111,7 +111,7 @@ body{
     height:40px ; 
     margin-bottom: 20px;
     margin-left:22% ;
-    border-radius: 15px;
+    border-radius: 10px;
     border: 1.3px solid #bc93fd ;
     @include tablet(){
       width:200px ;
@@ -126,7 +126,7 @@ body{
     width:350px ;
     height:40px ;
     margin-left:22% ;
-    border-radius: 15px;
+    border-radius: 10px;
     border: 1.3px solid #bc93fd ;
     @include tablet(){
      width:200px ;
@@ -147,7 +147,7 @@ body{
   margin-top: 20px;
   padding-bottom: 10%;
   margin-bottom: 30px;
-  border-radius: 30px;
+  border-radius: 10px;
   border: 1.3px solid #bc93fd ;
   @include tablet(){
     margin-left:100px ;
@@ -155,6 +155,7 @@ body{
     height: 250px;
     position: relative;
     right: -20px;
+    padding: 25px 0 200px 5px ;
     @include mobile(){
       margin-left:35px ;
      height: 50px;
@@ -174,3 +175,4 @@ body{
 }
 
 @import'./footer';
+@import"./navbar";
