@@ -549,7 +549,7 @@ footer .projet h3 {
         grid-template-columns: 1fr;
     -ms-grid-rows: 1fr .4fr 0.4fr;
         grid-template-rows: 1fr .4fr 0.4fr;
-        grid-template-areas: "form" "contact" "icon";
+        grid-template-areas: "form" "contact" "icon";
   }
 }
 

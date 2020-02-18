@@ -39,88 +39,54 @@ body {
   }
 }
 
-.hhead .header {
-  position: fixed;
-  height: 100px;
-  padding: 0 20px;
-  color: white;
-  background: #8f25D6;
-  opacity: .9;
-  z-index: 20;
-  margin-left: -50px;
-}
-
-@media (max-width: 375px) {
-  .hhead .header {
-    margin: 0;
-    padding: 0;
-    position: relative;
-    left: 18px;
-    top: -15px;
-    width: 100%;
-  }
-}
-
-@media (max-width: 800px) {
-  .hhead .header {
-    width: 100vw;
-    margin-left: -36px;
-  }
-}
-
-.hhead .logo {
-  line-height: 100px;
-  float: left;
-  color: #8f25D6;
-  margin-left: 60px;
-  font-size: 35px;
-  color: white;
-  cursor: pointer;
-}
-
-@media (max-width: 800px) {
-  .hhead .logo {
-    margin: 0px;
-    margin-left: 18px;
-  }
-}
-
-@media (max-width: 375px) {
-  .hhead .logo {
-    font-size: 30px;
-    margin: 0px 0px 0px 8px;
-  }
-}
-
-.hhead .menu {
-  float: right;
-  line-height: 100px;
-  margin-left: 240px;
-}
-
-@media (max-width: 800px) {
-  .hhead .menu {
-    margin-right: 0px;
-  }
-}
-
-@media (max-width: 375px) {
-  .hhead .menu {
-    margin: 0px;
-  }
-}
-
-.hhead .menu a {
-  color: white;
-  text-transform: uppercase;
+.hhead * {
+  padding: 0;
+  margin: 0;
   text-decoration: none;
-  font-weight: bold;
-  padding: 0 40px;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  list-style: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-.hhead .menu a:hover {
+.hhead body {
+  font-family: montserrat;
+}
+
+.hhead nav {
+  background: #8f25D6;
+  height: 80px;
+  width: 100%;
+}
+
+.hhead label.hlogo {
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+
+.hhead nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+.hhead nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+.hhead nav ul li a {
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+.hhead a.hactive,
+.hhead a:hover {
   background-color: white;
   border-radius: 30px;
   padding: 10px;
@@ -131,58 +97,60 @@ body {
   transition: .5s;
 }
 
-.hhead .show-menu-btn,
-.hhead .hide-menu-btn {
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+.hhead .hcheckbtn {
   font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
   cursor: pointer;
   display: none;
 }
 
-.hhead .show-menu-btn {
-  float: right;
-}
-
-.hhead .show-menu-btn i {
-  line-height: 100px;
-}
-
-.hhead #chk {
-  position: absolute;
-  visibility: hidden;
+.hhead #hcheck {
+  display: none;
 }
 
 @media (max-width: 800px) {
-  .hhead .show-menu-btn,
-  .hhead .hide-menu-btn {
+  .hhead label.hlogo {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  .hhead nav ul li a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 375px) {
+  .hhead .hcheckbtn {
     display: block;
   }
-  .hhead .menu {
+  .hhead ul {
     position: fixed;
     width: 100%;
-    height: 50vh;
-    background: #8f25D6;
-    right: -100%;
-    top: 0;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
     text-align: center;
-    padding: 80px 0;
-    line-height: normal;
-    -webkit-transition: 0.7s;
-    transition: 0.7s;
-    z-index: 10;
+    -webkit-transition: all .5s;
+    transition: all .5s;
   }
-  .hhead .menu a {
+  .hhead nav ul li {
     display: block;
-    padding: 20px;
+    margin: 50px 0;
+    line-height: 30px;
   }
-  .hhead .hide-menu-btn {
-    position: absolute;
-    top: 40px;
-    right: 40px;
+  .hhead nav ul li a {
+    font-size: 20px;
   }
-  .hhead #chk:checked ~ .menu {
-    right: 0;
+  .hhead a:hover,
+  .hhead a.hactive {
+    background: none;
+    color: white;
+  }
+  .hhead #hcheck:checked ~ ul {
+    left: 0;
   }
 }
 
