@@ -59,16 +59,7 @@ body {
     display: grid;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    -ms-grid-rows: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
   }
-}
-
-.fparti2 {
-  margin: 0;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .non {
@@ -83,7 +74,7 @@ body {
 @media (max-width: 800px) {
   .non {
     position: relative;
-    left: 95px;
+    left: 60px;
     width: 200px;
   }
 }
@@ -103,6 +94,7 @@ body {
     position: relative;
     width: 200px;
     top: 20px;
+    left: 60px;
   }
 }
 
@@ -119,7 +111,7 @@ body {
   .adres {
     width: 200px;
     position: relative;
-    right: 60px;
+    right: 58px;
   }
 }
 
@@ -135,7 +127,7 @@ body {
   .votre {
     width: 200px;
     position: relative;
-    right: 60px;
+    right: 58px;
   }
 }
 
@@ -159,6 +151,21 @@ body {
     height: 250px;
     position: relative;
     right: -20px;
+  }
+}
+
+@media (max-width: 800px) and (max-width: 375px) {
+  .message {
+    margin-left: 35px;
+    height: 50px;
+    padding: 25px 0 200px 5px;
+  }
+}
+
+@media (max-width: 375px) {
+  .fparti2 {
+    margin-top: 50px;
+    margin-left: 50px;
   }
 }
 /*# sourceMappingURL=style.css.map */
