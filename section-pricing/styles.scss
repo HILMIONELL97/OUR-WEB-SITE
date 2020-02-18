@@ -8,12 +8,17 @@ body {
     background-image: url(img/back.jpg);
 }
 
+// -----------------------------------header
+@import'';
+// -----------------------------------header
+// --------------------------------responcive
 @mixin resp($size) {
     @media (max-width: #{$size}) {
         @content;
     }
 }
 
+// ________________________________________mobile
 @mixin mobile {
     @include resp(375px) {
         width: 100%;
@@ -119,6 +124,7 @@ h1 {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
+    // ---------------mobile
     @include resp(376px) {
         width: 80%;
         margin: auto;
