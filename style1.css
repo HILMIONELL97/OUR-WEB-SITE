@@ -60,7 +60,7 @@ body {
 @media (max-width: 800px) {
   .hhead .header {
     width: 100vw;
-    margin-left: -35px;
+    margin-left: -36px;
   }
 }
 
@@ -77,7 +77,7 @@ body {
 @media (max-width: 800px) {
   .hhead .logo {
     margin: 0px;
-    margin-left: 10px;
+    margin-left: 18px;
   }
 }
 
