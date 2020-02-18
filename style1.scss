@@ -440,6 +440,9 @@
                                                                  background-color: $btn-bg-color;
                                                                  position: relative;
                                                                  bottom: 55px;
+                                                                 @include mobile() {
+                                                                     height: 100px;
+                                                                 }
                                                              }
                                                              p {
                                                                  color: $btn-color;
@@ -458,11 +461,11 @@
                                                                      font-size: 16px;
                                                                  }
                                                                  @include mobile() {
-                                                                     font-size: 13px;
-                                                                     max-width: 200px;
+                                                                     font-size: 11px;
+                                                                     max-width: 350px;
                                                                      position: relative;
-                                                                     top: 25px;
-                                                                     left: -340px;
+                                                                     top: 15px;
+                                                                     left: -320px;
                                                                  }
                                                              }
                                                              @include btn();
@@ -478,13 +481,16 @@
                                                                  }
                                                                  @include mobile() {
                                                                      position: relative;
-                                                                     top: -90px;
-                                                                     left: -455px;
+                                                                     top: 30px;
+                                                                     left: -555px;
                                                                  }
                                                              }
                                                          }
                                                          
                                                          .hsec5 {
+                                                             @include mobile() {
+                                                                 display: none;
+                                                             }
                                                              .hpara {
                                                                  text-align: center;
                                                                  width: 700px;
@@ -499,6 +505,7 @@
                                                                  }
                                                                  @include mobile() {
                                                                      max-width: 400px;
+                                                                     display: none;
                                                                  }
                                                              }
                                                              .habg {
@@ -508,13 +515,22 @@
                                                                  z-index: 1;
                                                                  background-color: rgba($color: #7749c1, $alpha: 0.5);
                                                                  @include tablet() {
-                                                                     @include demention();
+                                                                     max-width: 800px;
+                                                                     max-height: 100%;
+                                                                 }
+                                                                 @include mobile() {
+                                                                     max-width: 375px;
+                                                                     max-height: 100%;
+                                                                     display: none;
                                                                  }
                                                              }
                                                              .hslides {
                                                                  width: calc(1518px * 3);
                                                                  animation: glisse 10s infinite ease-in;
                                                                  display: flex;
+                                                                 @include mobile() {
+                                                                     max-width: 375px;
+                                                                 }
                                                              }
                                                              .hslider {
                                                                  width: 1518px;

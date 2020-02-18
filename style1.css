@@ -39,54 +39,80 @@ body {
   }
 }
 
-.hhead * {
-  padding: 0;
-  margin: 0;
-  text-decoration: none;
-  list-style: none;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-.hhead body {
-  font-family: montserrat;
-}
-
-.hhead nav {
+.hhead .hilmi-header {
+  position: fixed;
+  left: 30px;
+  margin-top: -20px;
+  height: 100px;
+  padding: 0 10px;
+  color: white;
   background: #8f25D6;
-  height: 80px;
-  width: 100%;
+  opacity: .9;
+  z-index: 20;
+  width: 100vw;
+  margin-left: -50px;
 }
 
-.hhead label.hlogo {
-  color: white;
+.hhead .hilmi-header ul {
+  margin: 12px 3px 14px 218px;
+}
+
+@media (max-width: 800px) {
+  .hhead .hilmi-header {
+    width: 100vw;
+    margin-left: -49px;
+    left: 28px;
+  }
+}
+
+.hhead .logo {
+  line-height: 100px;
+  float: left;
+  color: #8f25D6;
+  margin-left: 60px;
   font-size: 35px;
-  line-height: 80px;
-  padding: 0 100px;
-  font-weight: bold;
-}
-
-.hhead nav ul {
-  float: right;
-  margin-right: 20px;
-}
-
-.hhead nav ul li {
-  display: inline-block;
-  line-height: 80px;
-  margin: 0 5px;
-}
-
-.hhead nav ul li a {
   color: white;
-  font-size: 17px;
-  padding: 7px 13px;
-  border-radius: 3px;
-  text-transform: uppercase;
+  cursor: pointer;
+  margin: 11px 0px 12px 44px;
 }
 
-.hhead a.hactive,
-.hhead a:hover {
+@media (max-width: 800px) {
+  .hhead .logo {
+    margin: 0px;
+    margin-left: 10px;
+    margin: 8px 8px 16px 14px;
+  }
+}
+
+@media (max-width: 375px) {
+  .hhead .logo {
+    font-size: 30px;
+  }
+}
+
+.hhead .menu {
+  float: right;
+  line-height: 100px;
+  margin-left: 240px;
+}
+
+@media (max-width: 800px) {
+  .hhead .menu {
+    margin-right: 0px;
+  }
+}
+
+.hhead .menu a {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0 40px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.hhead .menu a:hover {
   background-color: white;
   border-radius: 30px;
   padding: 10px;
@@ -97,60 +123,59 @@ body {
   transition: .5s;
 }
 
-.hhead .hcheckbtn {
+.hhead .show-menu-btn,
+.hhead .hide-menu-btn {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
   font-size: 30px;
-  color: white;
-  float: right;
-  line-height: 80px;
-  margin-right: 40px;
   cursor: pointer;
   display: none;
 }
 
-.hhead #hcheck {
-  display: none;
+.hhead .show-menu-btn {
+  float: right;
+}
+
+.hhead .show-menu-btn i {
+  line-height: 100px;
+  margin: 8px 20px 7px 9px;
+}
+
+.hhead #chk {
+  position: absolute;
+  visibility: hidden;
 }
 
 @media (max-width: 800px) {
-  .hhead label.hlogo {
-    font-size: 30px;
-    padding-left: 50px;
-  }
-  .hhead nav ul li a {
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 375px) {
-  .hhead .hcheckbtn {
+  .hhead .show-menu-btn,
+  .hhead .hide-menu-btn {
     display: block;
   }
-  .hhead ul {
-    position: fixed;
+  .hhead .menu {
+    position: relative;
     width: 100%;
     height: 100vh;
-    background: #2c3e50;
-    top: 80px;
-    left: -100%;
+    background: #8f25D6;
+    right: 100%;
+    bottom: 50px;
     text-align: center;
-    -webkit-transition: all .5s;
-    transition: all .5s;
+    padding: 80px 0;
+    line-height: normal;
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
+    z-index: 10;
   }
-  .hhead nav ul li {
+  .hhead .menu a {
     display: block;
-    margin: 50px 0;
-    line-height: 30px;
+    padding: 20px;
   }
-  .hhead nav ul li a {
-    font-size: 20px;
+  .hhead .hide-menu-btn {
+    position: absolute;
+    top: 40px;
+    right: 40px;
   }
-  .hhead a:hover,
-  .hhead a.hactive {
-    background: none;
-    color: white;
-  }
-  .hhead #hcheck:checked ~ ul {
-    left: 0;
+  .hhead #chk:checked ~ .menu {
+    right: 0;
   }
 }
 
@@ -707,6 +732,12 @@ body {
   bottom: 55px;
 }
 
+@media (max-width: 375px) {
+  .hsec4 .hgrid3 {
+    height: 100px;
+  }
+}
+
 .hsec4 p {
   color: white;
   text-align: left;
@@ -730,11 +761,11 @@ body {
 
 @media (max-width: 375px) {
   .hsec4 p {
-    font-size: 13px;
-    max-width: 200px;
+    font-size: 11px;
+    max-width: 350px;
     position: relative;
-    top: 25px;
-    left: -340px;
+    top: 15px;
+    left: -320px;
   }
 }
 
@@ -786,8 +817,14 @@ body {
 @media (max-width: 375px) {
   .hsec4 .hbtn {
     position: relative;
-    top: -90px;
-    left: -455px;
+    top: 30px;
+    left: -555px;
+  }
+}
+
+@media (max-width: 375px) {
+  .hsec5 {
+    display: none;
   }
 }
 
@@ -809,6 +846,7 @@ body {
 @media (max-width: 375px) {
   .hsec5 .hpara {
     max-width: 400px;
+    display: none;
   }
 }
 
@@ -822,8 +860,16 @@ body {
 
 @media (max-width: 800px) {
   .hsec5 .habg {
-    width: 100vw;
-    height: 100vh;
+    max-width: 800px;
+    max-height: 100%;
+  }
+}
+
+@media (max-width: 375px) {
+  .hsec5 .habg {
+    max-width: 375px;
+    max-height: 100%;
+    display: none;
   }
 }
 
@@ -834,6 +880,12 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media (max-width: 375px) {
+  .hsec5 .hslides {
+    max-width: 375px;
+  }
 }
 
 .hsec5 .hslider {
