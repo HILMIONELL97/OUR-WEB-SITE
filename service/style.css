@@ -404,16 +404,16 @@ hr {
     margin: 0;
   }
   .stitre {
-    font-size: 160%;
-    margin-right: 25%;
+    font-size: 190%;
+    margin-right: 10%;
   }
   .svideo {
     width: 450px;
     margin-left: -5px;
   }
   .Spara {
-    font-size: 100%;
-    max-width: 70%;
+    font-size: 120%;
+    max-width: 80%;
     margin-left: 90px;
   }
   .Ssection1 {
@@ -426,7 +426,7 @@ hr {
     font-size: 120%;
   }
   .para1 {
-    font-size: 80%;
+    font-size: 70%;
     padding: 10%;
   }
   .btn {
@@ -756,14 +756,17 @@ footer .copy h6 {
 
 @media (max-width: 375px) {
   .header {
-    height: 0px;
+    height: 100px;
+    position: absolute;
+    right: -160px;
+    width: 300px;
   }
 }
 
 @media (max-width: 800px) {
   .header {
     width: 100vw;
-    margin-left: -35px;
+    margin-left: -20px;
   }
 }
 
@@ -787,7 +790,7 @@ footer .copy h6 {
 
 @media (max-width: 375px) {
   .logo {
-    font-size: 30px;
+    font-size: 20px;
   }
 }
 
