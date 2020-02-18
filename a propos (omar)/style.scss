@@ -65,7 +65,7 @@ body {
 }
 /*--------------------------------------------------------------------*/
 
-.fixed{  
+.afixed{  
  display: grid ; 
  grid-template-columns: 1fr 1fr 1fr;
  grid-template-rows: 1fr 1fr 1fr;
@@ -328,23 +328,30 @@ body {
     margin-top: -12px;  
 }
 
+/*--------------------------------------------------------------------*/
+
 @media screen and (max-width:800px){
   
   @mixin mix {
 
-    width: 400px;
+    width: 410px;
     height: 700px;
 
       
   }
     
 
-    .fixed{
+    .afixed{
 
         grid:grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr ;
-        width: 50% 
+        width: 800px
+     }
+
+     .aheader {
+
+        width: 820px;
      }
 
 
@@ -418,6 +425,146 @@ body {
    
      
  
+ }
+
+ /*------------------------------------------------------------------------*/
+
+ @media screen and (max-width:375px){
+
+    .afixed {
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr  1fr  1fr  1fr  1fr  1fr  1fr  1fr  1fr;
+
+       width: 375px;
+    }  
+
+
+
+    @mixin mobile {
+
+        width: 375px;
+        box-sizing: border-box;   
+    }
+
+
+    .apro {
+
+        font-size: 40px;
+        margin-right: 60px;
+    }
+
+    .aqui{
+      margin-left: -140px;
+
+    }
+
+    .centre h2 {
+
+      margin-left: 100px;
+    }
+
+
+    .aheader {
+        
+        width: 375px;
+        
+    }
+
+    .aqui{
+
+        margin-top: 140px;
+      
+             
+    }
+
+    .apro {
+        margin-top: 10px;
+        margin-left: -80px; 
+    }
+    .apaaart3 {
+        display: list-item;
+        @include mobile();
+    }
+
+    .apart1  {
+
+      @include mobile();
+    }
+
+    .apart2 img {
+        @include mobile();
+
+        
+    }
+
+    .apart3 {
+        @include mobile();
+
+    }
+   
+    .apaart1 img{
+        @include mobile();
+
+
+    }
+    .apaart2{
+        @include mobile();
+
+
+  
+        
+    }  
+    
+    
+  
+    .apaart2 h3 {
+
+        margin-left:  100px;
+
+
+
+
+    }
+
+    .apaart3{
+        @include mobile();
+
+
+    }
+   
+    .apaaart1 {
+        @include mobile();
+
+
+    }
+
+    .apaaart2 {
+        @include mobile();
+
+
+    }
+
+    .apaaart2 hr {
+
+        width: 243px;
+    }
+
+    .apaaart3 {
+        @include mobile();
+        height: 703px;
+
+
+        
+
+    }
+
+    .apaaart3 hr {
+
+        margin-left: 93px;
+        width: 188px;
+    }
  }
 
  
