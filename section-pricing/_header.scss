@@ -18,7 +18,37 @@ $mobile:375px;
 }
 
 .back {
-    height: 70px;
+    img {
+        width: 100%;
+        height: 650px;
+    }
+    h1 {
+        position: absolute;
+        margin-top: -500px;
+        margin-left: 35%;
+        font-size: 50px;
+        color: white;
+        text-decoration: none;
+        @include tablet() {
+            margin-right: 100%;
+        }
+    }
+    p {
+        width: 50%;
+        position: absolute;
+        margin-top: -400px;
+        margin-left: 27%;
+        color: white;
+        text-decoration: none;
+        text-align: center;
+        @include tablet() {
+            margin-top: -40%;
+        }
+    }
+}
+
+.fas.fa-ellipsis-h {
+    padding-right: 30px;
 }
 
 .header {
@@ -30,7 +60,7 @@ $mobile:375px;
     background: $primary-color;
     opacity: .9;
     z-index: 20;
-    width: 100vw;
+    width: 102%;
     margin-left: -50px;
     @include mobile() {}
     @include tablet() {
