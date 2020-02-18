@@ -485,6 +485,12 @@ footer .projet h3 {
   }
 }
 
+@media (max-width: 767px) {
+  .flaot {
+    width: 32.80%;
+  }
+}
+
 @media (max-width: 375px) {
   .flaot {
     float: none;

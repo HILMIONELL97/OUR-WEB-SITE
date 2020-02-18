@@ -4,7 +4,7 @@ $mobile:375px;
     @media (max-width: #{$mobile}) {
         @content;
     }
-
+$tablet:800px;
 @mixin tablet {
     @media (max-width: #{$tablet}) {
         @content;
@@ -18,18 +18,19 @@ body{
   box-sizing:border-box ;
   background-color:#EEEEEE;
   font-family:  'Montserrat';
-
+  @include mobile(){}
 }
-.cc{
+.fsection1{
   
   background-image: url(img/photodefotre.jpg);
   background-size: cover;
   width: 100%;
   height:500px ;
   
+  
 
 }
-.nn{
+.fcontact{
   color:  #ffffff;
  
  text-align: center;
@@ -46,14 +47,14 @@ body{
 
   
 
-.input1{
+.finputs{
   display: flex;
   flex-direction: row;
   margin-top: 3%;
   width:100% ;
   margin-left:5% ;
   
-  
+
   
   }
   
@@ -134,5 +135,4 @@ body{
 
   }
 }
-
-@import "./footer"
+}

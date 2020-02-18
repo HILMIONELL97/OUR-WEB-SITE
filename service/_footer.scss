@@ -1,3 +1,14 @@
+@mixin flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+@mixin mq($width) {
+    @media (max-width: #{$width}) {
+        @content;
+    }
+}
+
 footer {
     background-color: rgb(95, 97, 99);
     text-align: center;
@@ -149,6 +160,7 @@ footer {
             padding: 10px 30px;
             margin-bottom: 20px;
 
+
             background: none;
             border: 1px solid #bc93fd;
             color: white;
@@ -157,9 +169,7 @@ footer {
             width: 160px;
             transition: .4s ease-in-out;
 
-            @include mq(375px) {
-                margin-left: 55%;
-            }
+            @include mq(375px) {}
 
             &::placeholder {
                 color: #ffffff80;
