@@ -103,10 +103,6 @@ footer {
         width: 32.90%;
     }
 
-    @include mq(767px) {
-        width: 32.80%;
-    }
-
     @include mq(375px) {
         float: none;
     }
@@ -164,6 +160,7 @@ footer {
             padding: 10px 30px;
             margin-bottom: 20px;
 
+
             background: none;
             border: 1px solid #bc93fd;
             color: white;
@@ -172,9 +169,7 @@ footer {
             width: 160px;
             transition: .4s ease-in-out;
 
-            @include mq(375px) {
-                margin-left: 55%;
-            }
+            @include mq(375px) {}
 
             &::placeholder {
                 color: #ffffff80;

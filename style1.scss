@@ -98,11 +98,11 @@
                                                                  width: 100vw;
                                                                  margin-left: -50px;
                                                                  @include mobile() {
-                                                                     height: 0px;
+                                                                     height: 100px;
                                                                  }
                                                                  @include tablet() {
                                                                      width: 100vw;
-                                                                     margin-left: -35px;
+                                                                     margin-left: -36px;
                                                                  }
                                                              }
                                                              .logo {
@@ -115,7 +115,7 @@
                                                                  cursor: pointer;
                                                                  @include tablet() {
                                                                      margin: 0px;
-                                                                     margin-left: 10px;
+                                                                     margin-left: 18px;
                                                                  }
                                                                  @include mobile() {
                                                                      font-size: 30px;
@@ -212,6 +212,7 @@
                                                                      font-size: 25px;
                                                                      position: relative;
                                                                      right: 120px;
+                                                                     top: 40px;
                                                                      color: $btn-bg-color;
                                                                  }
                                                              }
@@ -233,11 +234,12 @@
                                                                      font-size: 42px;
                                                                  }
                                                                  @include mobile() {
-                                                                     font-size: 30px;
+                                                                     font-size: 42px;
+                                                                     max-width: 300px;
                                                                      color: $btn-bg-color;
                                                                      position: relative;
-                                                                     right: 60px;
-                                                                     bottom: 30px;
+                                                                     left: 18px;
+                                                                     top: 170px;
                                                                  }
                                                              }
                                                              @include btn();
@@ -252,8 +254,8 @@
                                                                  }
                                                                  @include mobile() {
                                                                      position: relative;
-                                                                     left: -580px;
-                                                                     top: -1px;
+                                                                     left: -570px;
+                                                                     top: 50px;
                                                                  }
                                                              }
                                                          }
