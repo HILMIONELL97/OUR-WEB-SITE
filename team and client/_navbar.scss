@@ -81,7 +81,7 @@ $mobile:375px;
     text-transform: uppercase;
     text-decoration: none;
     font-weight: bold;
-    padding: 0 40px;
+    padding: 0px 40px;
     transition: 0.4s;
 
 
@@ -89,9 +89,9 @@ $mobile:375px;
     &:hover {
         background-color: $btn-color;
         border-radius: 30px;
-        padding: 10px;
-        padding-right: 20px;
-        font-style: unset;
+        padding: 10px 40px;
+
+
         color: $primary-color;
         transition: .5s;
     }
@@ -139,11 +139,16 @@ $mobile:375px;
         line-height: normal;
         transition: 0.7s;
         z-index: 10;
+
+
     }
 
     .menu a {
         display: block;
-        padding: 20px;
+        margin: 20px;
+        padding: 10px;
+
+        &:hover {}
     }
 
     .hide-menu-btn {
