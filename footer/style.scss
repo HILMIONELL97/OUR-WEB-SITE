@@ -34,7 +34,7 @@ body {
 
 .fcontact {
   color: #ffffff;
-
+  text-transform: capitalize;
   text-align: center;
   position: relative;
   top: 200PX;
@@ -89,11 +89,12 @@ body {
 
   .message {
     box-sizing: border-box;
-    width: 100%;
+    width: 99%;
     height: 250px;
     border-radius: 10px;
     margin: 10px 10px;
     border: 1.3px solid #bc93fd;
+    padding-bottom: 200px;
 
 
   }
@@ -101,3 +102,4 @@ body {
 }
 
 @import'./footer';
+@import'./navbar';
