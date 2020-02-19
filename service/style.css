@@ -96,6 +96,10 @@ hr {
   background-color: #fff;
   font-size: 30px;
   width: 30%;
+  border: 1px solid black;
+  -webkit-transition: .6s;
+  transition: .6s;
+  overflow: hidden;
 }
 
 .Ssection1 i {
@@ -125,7 +129,6 @@ hr {
 /*tablet*/
 @media (max-width: 781px) {
   body {
-    width: 781px;
     margin: 0;
     padding: 0;
   }
@@ -452,6 +455,14 @@ hr {
     font-size: 130%;
     height: 80px;
     width: 300px;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #2EE59D;
+    -webkit-box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+            box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    -webkit-transform: translateY(-7px);
+            transform: translateY(-7px);
   }
   .btR {
     font-size: 130%;
