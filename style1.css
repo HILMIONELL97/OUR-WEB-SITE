@@ -8,6 +8,7 @@ html {
 }
 
 body {
+  width: 100%;
   height: 100%;
   font-family: 'Montserrat';
   background-color: #Dae1eb;
@@ -38,8 +39,9 @@ body {
   }
 }
 
-.hhead .header {
+.hhead .hilmi-header {
   position: fixed;
+  left: 30px;
   margin-top: -20px;
   height: 100px;
   padding: 0 10px;
@@ -51,16 +53,15 @@ body {
   margin-left: -50px;
 }
 
-@media (max-width: 375px) {
-  .hhead .header {
-    height: 100px;
-  }
+.hhead .hilmi-header ul {
+  margin: 12px 3px 14px 218px;
 }
 
 @media (max-width: 800px) {
-  .hhead .header {
+  .hhead .hilmi-header {
     width: 100vw;
-    margin-left: -36px;
+    margin-left: -35px;
+    left: 28px;
   }
 }
 
@@ -72,12 +73,14 @@ body {
   font-size: 35px;
   color: white;
   cursor: pointer;
+  margin: 11px 0px 12px 44px;
 }
 
 @media (max-width: 800px) {
   .hhead .logo {
     margin: 0px;
-    margin-left: 18px;
+    margin-left: 10px;
+    margin: 8px 8px 16px 14px;
   }
 }
 
@@ -104,7 +107,7 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   font-weight: bold;
-  padding: 0 40px;
+  padding: 0px 40px;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -112,9 +115,7 @@ body {
 .hhead .menu a:hover {
   background-color: white;
   border-radius: 30px;
-  padding: 10px;
-  padding-right: 20px;
-  font-style: unset;
+  padding: 10px 40px;
   color: #8f25D6;
   -webkit-transition: .5s;
   transition: .5s;
@@ -135,6 +136,7 @@ body {
 
 .hhead .show-menu-btn i {
   line-height: 100px;
+  margin: 8px 20px 7px 9px;
 }
 
 .hhead #chk {
@@ -148,12 +150,12 @@ body {
     display: block;
   }
   .hhead .menu {
-    position: fixed;
+    position: relative;
     width: 100%;
     height: 100vh;
     background: #8f25D6;
     right: -100%;
-    top: 0;
+    bottom: 50px;
     text-align: center;
     padding: 80px 0;
     line-height: normal;
@@ -163,7 +165,8 @@ body {
   }
   .hhead .menu a {
     display: block;
-    padding: 20px;
+    margin: 20px;
+    padding: 10px;
   }
   .hhead .hide-menu-btn {
     position: absolute;
@@ -728,6 +731,12 @@ body {
   bottom: 55px;
 }
 
+@media (max-width: 375px) {
+  .hsec4 .hgrid3 {
+    height: 100px;
+  }
+}
+
 .hsec4 p {
   color: white;
   text-align: left;
@@ -751,11 +760,11 @@ body {
 
 @media (max-width: 375px) {
   .hsec4 p {
-    font-size: 13px;
-    max-width: 200px;
+    font-size: 11px;
+    max-width: 350px;
     position: relative;
-    top: 25px;
-    left: -340px;
+    top: 15px;
+    left: -320px;
   }
 }
 
@@ -807,8 +816,14 @@ body {
 @media (max-width: 375px) {
   .hsec4 .hbtn {
     position: relative;
-    top: -90px;
-    left: -455px;
+    top: 30px;
+    left: -560px;
+  }
+}
+
+@media (max-width: 375px) {
+  .hsec5 {
+    display: none;
   }
 }
 
@@ -830,6 +845,7 @@ body {
 @media (max-width: 375px) {
   .hsec5 .hpara {
     max-width: 400px;
+    display: none;
   }
 }
 
@@ -843,8 +859,16 @@ body {
 
 @media (max-width: 800px) {
   .hsec5 .habg {
-    width: 100vw;
-    height: 100vh;
+    max-width: 800px;
+    max-height: 100%;
+  }
+}
+
+@media (max-width: 375px) {
+  .hsec5 .habg {
+    max-width: 375px;
+    max-height: 100%;
+    display: none;
   }
 }
 
@@ -855,6 +879,12 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media (max-width: 375px) {
+  .hsec5 .hslides {
+    max-width: 375px;
+  }
 }
 
 .hsec5 .hslider {
