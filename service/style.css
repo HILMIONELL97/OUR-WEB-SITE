@@ -15,10 +15,6 @@ body {
   color: #000;
 }
 
-hr {
-  width: 20%;
-}
-
 .svideo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -102,6 +98,14 @@ hr {
   -webkit-transition: 10s;
   transition: 10s;
   overflow: hidden;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #dde6e2;
+  -webkit-box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+          box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  -webkit-transform: translateY(-7px);
+          transform: translateY(-7px);
 }
 
 .Ssection1 i {
@@ -128,7 +132,8 @@ hr {
   border-radius: 500px;
 }
 
-/*tablet*/
+/****************************************fin de version desktop*************************************************/
+/***********************************************tablet************************************************************/
 @media (max-width: 1130px) {
   body {
     margin: 0;
@@ -420,7 +425,7 @@ hr {
   }
 }
 
-/*mobile*/
+/****************************************mobile******************************************************************/
 @media (max-width: 650px) {
   .stitre {
     font-size: 190%;
@@ -452,12 +457,6 @@ hr {
     height: 40px;
     margin-top: 20%;
   }
-  .svideo .StitreD {
-    margin: 10%;
-    position: relative;
-    right: 20px;
-    color: red;
-  }
   .svideo .StitreF {
     margin-right: 30%;
     position: relative;
@@ -471,14 +470,6 @@ hr {
     font-size: 130%;
     height: 80px;
     width: 300px;
-    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    background-color: #2EE59D;
-    -webkit-box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
-            box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
-    color: #fff;
-    -webkit-transform: translateY(-7px);
-            transform: translateY(-7px);
   }
   .svideo .btR {
     font-size: 130%;
@@ -491,9 +482,7 @@ hr {
     right: 1px;
     bottom: 10px;
   }
-  .svideo i.fab {
-    font-size: 40px;
-    margin-left: 10px;
-  }
 }
+
+/***********************************fin verssion mobile*************************************************************************/
 /*# sourceMappingURL=style.css.map */

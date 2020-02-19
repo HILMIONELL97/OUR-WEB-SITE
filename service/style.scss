@@ -21,10 +21,6 @@ body {
     color: $color;
 }
 
-hr {
-    width: 20%;
-}
-
 .svideo {
     display: flex;
     flex-direction: column;
@@ -32,7 +28,6 @@ hr {
     margin: auto;
     width: 99%;
 }
-
 .Spara {
     text-align: center;
     text-decoration: underline $color1;
@@ -50,11 +45,6 @@ hr {
 }
 
 .Ssection1 {
-    // display: grid;
-    // grid-template-columns: (1fr 1fr 1fr);
-    // grid-template-rows: repeat(1fr 1fr);
-    // grid-gap: 10px;
-    // margin-left: 40px;
     display: flex;
     flex-direction: column column column;
     flex-wrap: wrap;
@@ -73,7 +63,6 @@ hr {
     font-size: 30px;
     padding: 5%;
     line-height: 10%;
-    // max-width:600px ;
 }
 
 .btR {
@@ -99,6 +88,11 @@ hr {
     border: 1px solid black;
     transition: 10s;
     overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            background-color: rgb(221, 230, 226);
+            box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+            color: #fff;
+            transform: translateY(-7px);
 }
 
 .Ssection1 i {
@@ -126,9 +120,9 @@ hr {
     border-radius: 500px;
 
 }
+/****************************************fin de version desktop*************************************************/
 
-
-/*tablet*/
+/***********************************************tablet************************************************************/
 @media (max-width:1130px) {
     body {
         margin: 0;
@@ -140,13 +134,7 @@ hr {
             margin-top: 5%;
             display: flex;
         }
-
     }
-
-    // .Ssection1 {
-    //     display: grid;
-    //     grid-template-columns: 1fr 1fr;
-    // }
 
     .Spara {
         font-size: 70%;
@@ -278,7 +266,8 @@ hr {
 
 @import"./style";
 
-/*mobile*/
+/****************************************mobile******************************************************************/
+
 @media (max-width:650px) {
     .stitre {
         font-size: 190%;
@@ -297,12 +286,6 @@ hr {
             max-width: 80%;
             margin-left: 90px;
         }
-
-        // .Ssection1 {
-
-
-        // }
-
         .Spart1 {
             font-size: 120%;
         }
@@ -310,33 +293,19 @@ hr {
         .para1 {
             font-size: 70%;
             padding: 10%;
-
         }
 
         .btn {
             width: 120px;
             height: 40px;
             margin-top: 20%;
-
         }
-
-        .StitreD {
-            margin: 10%;
-            position: relative;
-            right: 20px;
-            color: red;
-
-
-
-        }
-
         .StitreF {
             margin-right: 30%;
             position: relative;
             bottom: 60px;
             margin-left: 150px;
         }
-
         .btb {
             position: relative;
             bottom: 50px;
@@ -344,18 +313,12 @@ hr {
             font-size: 130%;
             height: 80px;
             width: 300px;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-            background-color: #2EE59D;
-            box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
-            color: #fff;
-            transform: translateY(-7px);
         }
 
         .btR {
             font-size: 130%;
             height: 50px;
             width: 110px;
-
         }
 
         .ser {
@@ -365,16 +328,7 @@ hr {
             bottom: 10px;
         }
 
-        i.fab {
-            font-size: 40px;
-            margin-left: 10px;
-        }
-
     }
 
 }
-
-
-
-
-// @import"./footer"
+/***********************************fin verssion mobile*************************************************************************/
