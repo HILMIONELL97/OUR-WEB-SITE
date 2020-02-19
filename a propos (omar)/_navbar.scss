@@ -45,15 +45,12 @@ $mobile:375px;
     font-size: 35px;
     color: $btn-color;
     cursor: pointer;
-    
     @include tablet() {
         margin: 0px;
-        margin-left: 40px;
-    
+        margin-left: 10px;
     }
     @include mobile() {
         font-size: 30px;
-       
     }
 }
 

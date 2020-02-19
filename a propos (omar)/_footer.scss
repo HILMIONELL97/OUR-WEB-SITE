@@ -13,7 +13,6 @@ footer {
     background-color: rgb(95, 97, 99);
     text-align: center;
     height: 355px;
-    
 
     @include mq(375px) {
         height: auto;
@@ -102,6 +101,10 @@ footer {
 
     @include mq(800px) {
         width: 32.90%;
+    }
+
+    @include mq(767px) {
+        width: 32.80%;
     }
 
     @include mq(375px) {
