@@ -13,10 +13,11 @@
 }
 
 .hilmi-header ul {
-  margin: 12px 3px 14px 218px;
+  margin: 12px 3px 14px 0px;
+  padding: 0;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1016px) {
   .hilmi-header {
     width: 100vw;
     margin-left: -35px;
@@ -35,7 +36,7 @@
   margin: 11px 0px 12px 44px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1016px) {
   .logo {
     margin: 0px;
     margin-left: 10px;
@@ -52,10 +53,9 @@
 .menu {
   float: right;
   line-height: 100px;
-  margin-left: 240px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1016px) {
   .menu {
     margin-right: 0px;
   }
@@ -69,6 +69,12 @@
   padding: 0px 40px;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+}
+
+@media (max-width: 1250px) {
+  .menu a {
+    padding: 0px 20px;
+  }
 }
 
 .menu a:hover {
@@ -103,7 +109,7 @@
   visibility: hidden;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1016px) {
   .show-menu-btn,
   .hide-menu-btn {
     display: block;
@@ -154,7 +160,7 @@ body {
           box-shadow: 0 10px 16px 0px #7749c160;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1350px) {
   .header {
     background-size: cover;
     background-position: bottom;
@@ -178,6 +184,13 @@ body {
   position: relative;
   top: 30px;
   z-index: 2;
+}
+
+@media (max-width: 625px) {
+  .para {
+    width: 400px;
+    top: 0;
+  }
 }
 
 @media (max-width: 375px) {
@@ -204,7 +217,7 @@ body {
   padding: 0;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 625px) {
   .title h1 {
     top: 170px;
     font-size: 40px;
@@ -233,7 +246,7 @@ h3 {
       flex-wrap: nowrap;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1350px) {
   .container {
     display: -ms-grid;
     display: grid;
@@ -241,10 +254,11 @@ h3 {
         grid-template-columns: 1fr 1fr;
     -ms-grid-rows: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
+    justify-items: center;
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 625px) {
   .container {
     display: -ms-grid;
     display: grid;
@@ -262,21 +276,21 @@ h3 {
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1350px) {
   .container .team3,
   .container .team4 {
     margin-top: 80px;
   }
 }
 
-@media (max-width: 800px) and (max-width: 375px) {
+@media (max-width: 1350px) and (max-width: 625px) {
   .container .team3,
   .container .team4 {
     margin-top: 140px;
   }
 }
 
-@media (max-width: 800px) and (max-width: 375px) {
+@media (max-width: 1350px) and (max-width: 625px) {
   .container .team2 {
     margin-top: 70px;
   }
@@ -348,7 +362,7 @@ h3 {
   bottom: 110px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1350px) {
   .container p {
     margin-left: auto;
     margin-right: auto;
@@ -400,7 +414,7 @@ h3 {
       flex-wrap: wrap;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1350px) {
   .clients1 {
     margin: 80px 50px 0px 50px;
   }
@@ -420,7 +434,7 @@ h3 {
       flex-wrap: wrap;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1350px) {
   .clients2 .none {
     display: none;
   }
@@ -435,7 +449,7 @@ h3 {
           box-shadow: -4px -4px 8px #ffffff73, 3px 3px 5px rgba(94, 104, 121, 0.288);
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1350px) {
   .client {
     margin: 30px;
   }
@@ -536,7 +550,7 @@ footer {
   height: 355px;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 625px) {
   footer {
     height: auto;
   }
@@ -551,7 +565,7 @@ footer .projet {
   top: 30px;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 625px) {
   footer .projet {
     right: 10px;
   }
@@ -576,7 +590,7 @@ footer .projet i {
   transition: all 0.4s ease-in-out;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 625px) {
   footer .projet i {
     top: 35px;
     font-size: 30px;
@@ -591,7 +605,7 @@ footer .projet h3 {
   transition: all 0.3s ease-in-out;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 625px) {
   footer .projet h3 {
     font-size: 30px;
   }
@@ -601,7 +615,7 @@ footer .projet h3 {
   margin-top: 60px;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 625px) {
   .footer-content {
     display: -ms-grid;
     display: grid;
@@ -610,6 +624,7 @@ footer .projet h3 {
     -ms-grid-rows: 1fr .4fr 0.4fr;
         grid-template-rows: 1fr .4fr 0.4fr;
         grid-template-areas: "form" "contact" "icon";
+    justify-items: center;
   }
 }
 
@@ -618,7 +633,7 @@ footer .projet h3 {
   width: 33%;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 998px) {
   .flaot {
     width: 32.90%;
   }
@@ -630,7 +645,7 @@ footer .projet h3 {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 625px) {
   .flaot {
     float: none;
   }
@@ -648,13 +663,19 @@ footer .contact {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 625px) {
   footer .contact {
     grid-area: contact;
     margin-left: auto;
     margin-right: auto;
     margin-top: -10px;
   }
+  footer .contact .cnt {
+    position: relative;
+  }
+}
+
+@media (max-width: 375px) {
   footer .contact .cnt {
     position: relative;
     right: 35px;
@@ -676,7 +697,7 @@ footer .form {
   margin-left: 10px;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 625px) {
   footer .form {
     grid-area: form;
   }
@@ -695,9 +716,17 @@ footer .form .text-input {
   transition: .4s ease-in-out;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 625px) {
   footer .form .text-input {
-    margin-left: 55%;
+    position: relative;
+    right: 10%;
+  }
+}
+
+@media (max-width: 420px) {
+  footer .form .text-input {
+    position: relative;
+    right: 40%;
   }
 }
 
@@ -721,7 +750,7 @@ footer .form .text-input:focus {
   width: 230px;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 625px) {
   footer .form .text-input:focus {
     width: 160px;
   }
@@ -737,22 +766,15 @@ footer .form .submit-input {
   transition: .5S;
 }
 
-@media (max-width: 375px) {
-  footer .form .submit-input {
-    margin-left: 115%;
-  }
-}
-
 footer .form .submit-input:hover {
   background-color: #8561be;
   color: white;
   border: 1px solid #8561be;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 625px) {
   footer .footer-icon {
     grid-area: icon;
-    margin-left: 35%;
   }
 }
 
@@ -783,7 +805,7 @@ footer .footer-icon .icon-link {
   border-radius: 50%;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 625px) {
   footer .footer-icon .icon-link {
     padding-right: 10px;
   }

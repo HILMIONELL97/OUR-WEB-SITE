@@ -6,6 +6,7 @@ sans-serif;
 body {
     font-family: 'Montserrat', sans-serif;
     width: 100%;
+    margin: 0px;
 }
 
 .service {
@@ -14,7 +15,7 @@ body {
 
 .stitre {
     color: $color1;
-    margin: 10px;
+    margin-bottom: 40px;
     text-align: center;
     text-decoration: underline;
 }
@@ -23,15 +24,16 @@ body {
     color: $color;
 }
 
-hr {
-    width: 20%;
-}
-
 .svideo {
     width: 900px;
     height: 300px;
     position: relative;
     left: 160px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 99%;
 }
 
 .Spara {
@@ -45,23 +47,17 @@ hr {
     color: $color1;
 }
 
-.svido {
-    width: 100%;
-    background: $color;
-    margin-top: 30px;
-}
-
 .para1 {
     font-family: $font-family;
     font-size: 80%;
 }
 
 .Ssection1 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-gap: 10px;
-    margin-left: 40px;
+    display: flex;
+    flex-direction: column column column;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-around;
 }
 
 .ssection3 {
@@ -97,6 +93,14 @@ hr {
     background-color: $color2;
     font-size: 30px;
     width: 30%;
+    border: 1px solid black;
+    transition: 10s;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: rgb(221, 230, 226);
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
 }
 
 .Ssection1 i {
@@ -124,11 +128,13 @@ hr {
 }
 
 
+/****************************************fin de version desktop*************************************************/
+
+
 /*tablet*/
 
 @media (max-width:781px) {
     body {
-        width: 781px;
         margin: 0;
         padding: 0;
     }
@@ -137,8 +143,10 @@ hr {
         grid-template-columns: 1fr 1fr;
     }
     .svideo {
-        width: 500px;
-        height: 300px;
+        @media (max-width: 1130px) {
+            margin-top: 5%;
+            display: flex;
+        }
     }
     .Spara {
         font-size: 70%;
@@ -170,6 +178,7 @@ hr {
     .StitreD {
         font-size: 120%;
         margin: 10px;
+        line-height: 150%;
     }
     .StitreF {
         font-size: 100%;
@@ -201,12 +210,12 @@ hr {
 }
 
 @mixin shad {
-    width: 200px;
+    width: 300px;
+    height: 400px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     text-align: center;
     border-radius: 2%;
-    margin: 20%;
-    padding: 10%;
+    margin: 10px;
     border-left: 10px $color1 solid;
     @media (max-width: 781px) {
         margin: 0;
@@ -216,11 +225,15 @@ hr {
     @media (max-width:375px) {
         margin: 0;
         margin-bottom: 10%;
-        margin-left: 15%;
+        margin-left: 9%;
+        width: 250px;
     }
 }
 
 .Spartie3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     @include shad
 }
 
@@ -317,7 +330,54 @@ hr {
         font-size: 40px;
         margin-left: 10px;
     }
+    @media (max-width:650px) {
+        margin-top: 10%;
+    }
+    .Spara {
+        font-size: 120%;
+        max-width: 80%;
+        margin-left: 90px;
+    }
+    .Spart1 {
+        font-size: 120%;
+    }
+    .para1 {
+        font-size: 70%;
+        padding: 10%;
+    }
+    .btn {
+        width: 120px;
+        height: 40px;
+        margin-top: 20%;
+    }
+    .StitreF {
+        margin-right: 30%;
+        position: relative;
+        bottom: 60px;
+        margin-left: 150px;
+    }
+    .btb {
+        position: relative;
+        bottom: 50px;
+        margin-right: 40px;
+        font-size: 130%;
+        height: 80px;
+        width: 300px;
+    }
+    .btR {
+        font-size: 130%;
+        height: 50px;
+        width: 110px;
+    }
+    .ser {
+        font-size: 130%;
+        position: relative;
+        right: 1px;
+        bottom: 10px;
+    }
 }
 
-@import"./footer";
-@import"./navbar"
+
+}
+
+/***********************************fin verssion mobile*************************************************************************/
