@@ -72,7 +72,9 @@ hr {
 .ssection3 {
     background-image: url(images/agence-web.png);
     text-align: center;
+    
 }
+
 
 .StitreD {
     color: $color2;
@@ -102,6 +104,9 @@ hr {
     background-color: $color2;
     font-size: 30px;
     width: 30%;
+    border: 1px solid black;
+    transition:.6s;
+    overflow: hidden;
 }
 
 .Ssection1 i {
@@ -134,7 +139,7 @@ hr {
 /*tablet*/
 @media (max-width:781px) {
     body {
-        width: 781px;
+        // width: ;
         margin: 0;
         padding: 0;
     }
@@ -318,6 +323,7 @@ hr {
         width: 120px;
         height: 40px;
         margin-top: 20%;
+       
     }
 
     .StitreD {
@@ -340,6 +346,11 @@ hr {
         font-size: 130%;
         height: 80px;
         width: 300px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        background-color: #2EE59D;
+        box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+        color: #fff;
+        transform: translateY(-7px);
     }
 
     .btR {
