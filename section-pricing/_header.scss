@@ -2,7 +2,7 @@
 $primary-color: #8f25D6;
 $btn-bg-color: black;
 $btn-color: white;
-$tablet:800px;
+$tablet:900px;
 $mobile:375px;
 //MIXIN //
 @mixin tablet {
@@ -13,6 +13,12 @@ $mobile:375px;
 
 @mixin mobile {
     @media (max-width: #{$mobile}) {
+        @content;
+    }
+}
+
+@mixin var($var) {
+    @media (max-width: #{$var}) {
         @content;
     }
 }
@@ -39,6 +45,12 @@ $mobile:375px;
             margin-top: -100%;
             margin-left: 0;
             text-align: start;
+        }
+        @include var (700px) {
+            margin-left: 30%;
+        }
+        @include var (700px) {
+            margin-left: 10%;
         }
     }
     p {
