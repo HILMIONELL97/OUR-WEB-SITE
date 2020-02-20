@@ -3,7 +3,6 @@ $color2: #fff;
 $color:#000;
 $font-family: 'Montserrat',
 sans-serif;
-
 body {
     font-family: 'Montserrat', sans-serif;
     width: 100%;
@@ -49,7 +48,7 @@ body {
 
 .Ssection1 {
     display: flex;
-    flex-direction: column column column;
+    flex-direction: row;
     flex-wrap: wrap;
     margin: auto;
     justify-content: space-around;
@@ -133,14 +132,12 @@ body {
         margin: 0;
         padding: 0;
     }
-
     .svideo {
         @media (max-width: 1130px) {
             margin-top: 5%;
             display: flex;
         }
     }
-
     .Spara {
         font-size: 70%;
         text-align: center;
@@ -148,53 +145,43 @@ body {
         right: 1%;
         margin-bottom: 80px;
     }
-
     .stitre {
         font-size: 150%;
         margin-bottom: -12px;
     }
-
     .Spart1 {
         font-size: 90%;
     }
-
     .Ssection1 i {
         font-size: 300%;
     }
-
     .para1 {
         font-size: 80%;
         padding: 8%;
         position: relative;
     }
-
     .btn {
         height: 29px;
         width: 100px;
         padding: 200px;
     }
-
     .StitreD {
         font-size: 120%;
         margin: 10px;
         line-height: 150%;
     }
-
     .StitreF {
         font-size: 100%;
         margin-top: -20px;
     }
-
     .sp2 {
         font-size: 100%;
     }
-
     .btb {
         width: 200px;
         height: 55px;
         font-size: 80%;
     }
-
     .ser {
         font-size: 100%;
         margin: 10px;
@@ -202,13 +189,11 @@ body {
         right: 15px;
         padding: 3%;
     }
-
     .btR {
         height: 1px;
         width: 70px;
         font-size: 70%;
     }
-
     i.fab {
         font-size: 30px;
     }
@@ -222,13 +207,11 @@ body {
     border-radius: 2%;
     margin: 10px;
     border-left: 10px $color1 solid;
-
     @media (max-width: 781px) {
         margin: 0;
         margin-bottom: 20%;
         margin-left: 10px;
     }
-
     @media (max-width:375px) {
         margin: 0;
         margin-bottom: 10%;
@@ -274,74 +257,57 @@ body {
         padding: 0;
         margin: 0;
     }
-
     .stitre {
         font-size: 190%;
         margin-right: 10%;
     }
-
     .svideo {
         width: 100%;
         margin-left: -5px;
-
-        @media (max-width:500px) {
+        @media (max-width: 500px) {
             margin-bottom: 10px;
-
         }
     }
-
     .Spara {
         font-size: 120%;
         max-width: 80%;
         margin-left: 90px;
     }
-
     .Ssection1 {
-        @media (max-width:600px) {
+        @media (max-width: 600px) {
             margin-left: 20%;
-
         }
-
         @media (max-width:500px) {
             margin-left: 10%;
-
         }
-
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-
     }
-
     .Spart1 {
         font-size: 120%;
     }
-
     .para1 {
         font-size: 70%;
         padding: 10%;
     }
-
     .btn {
         width: 120px;
         height: 40px;
         margin-top: 20%;
     }
-
     .StitreD {
         margin: 10%;
         position: relative;
         right: 20px;
         line-height: 50px;
     }
-
     .StitreF {
         margin-right: 30%;
         position: relative;
         bottom: 60px;
         margin-left: 150px;
     }
-
     .btb {
         position: relative;
         bottom: 50px;
@@ -350,39 +316,32 @@ body {
         height: 80px;
         width: 300px;
     }
-
     .btR {
         font-size: 130%;
         height: 50px;
         width: 110px;
     }
-
     i.fab {
         font-size: 40px;
         margin-left: 10px;
     }
-
     .Spara {
         font-size: 120%;
         max-width: 80%;
         margin-left: 90px;
     }
-
     .Spart1 {
         font-size: 120%;
     }
-
     .para1 {
         font-size: 70%;
         padding: 10%;
     }
-
     .btn {
         width: 120px;
         height: 40px;
         margin-top: 20%;
     }
-
     .StitreF {
         margin-right: 30%;
         position: relative;
@@ -390,7 +349,6 @@ body {
         margin-left: 100px;
         line-height: 40px;
     }
-
     .btb {
         position: relative;
         bottom: 50px;
@@ -399,7 +357,6 @@ body {
         height: 80px;
         width: 300px;
     }
-
     .btR {
         font-size: 130%;
         height: 50px;
