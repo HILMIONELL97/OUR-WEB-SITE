@@ -163,13 +163,45 @@ body {
   }
 }
 
+.header {
+  color: white;
+  text-align: center;
+}
+
+.header .abg img {
+  width: 100%;
+  height: 400px;
+  z-index: 0;
+}
+
+@media (max-width: 375px) {
+  .header .abg img {
+    height: 500px;
+  }
+}
+
+.header h1 {
+  text-decoration: none;
+  font-size: 50px;
+  color: white;
+  z-index: 1;
+  margin-top: -350px;
+}
+
 h1 {
   text-align: center;
   text-decoration: underline;
+  margin-top: 250px;
+}
+
+@media (max-width: 375px) {
+  h1 {
+    margin-top: 120px;
+  }
 }
 
 .testimonaile {
-  margin-top: 20px;
+  margin-top: 100px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[8];
@@ -615,7 +647,8 @@ h1 {
 }
 
 .section2 {
-  margin: 60px auto;
+  margin: 10px auto;
+  margin-top: -100px;
 }
 
 .section2 .pricing {
