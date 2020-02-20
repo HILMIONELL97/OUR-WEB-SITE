@@ -8,8 +8,10 @@ body {
     background-image: url(img/back.jpg);
 }
 
+
+
 // -----------------------------------header
-@import'./header';
+@import"./navbar";
 // -----------------------------------header
 // --------------------------------responcive
 @mixin resp($size) {
@@ -132,6 +134,9 @@ h1 {
         grid-template-columns: 1fr;
         grid-row-gap: 10px;
     }
+    @include resp(900px) {
+        grid-column-gap: 10px;
+    }
     .jone {
         grid-column: 2/4;
         @include tous;
@@ -231,9 +236,45 @@ h1 {
             grid-column-gap: 20px;
         }
         @include resp(375px) {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
             width: 300px;
             overflow: scroll;
+            .standard {
+                grid-column: 1/2;
+            }
+            .professionnel {
+                grid-column: 2/3;
+            }
+            .demande {
+                grid-column: 3/4;
+                grid-row: 1/2;
+            }
         }
+        @include resp(900px) {
+            width: 100%;
+        }
+        @include resp(600px) {
+            display: grid;
+            grid-template-columns: repeat(1, 2fr);
+            .standard {
+                grid-column: 1/2;
+            }
+            .professionnel {
+                grid-column: 2/3;
+            }
+        }
+        // @include resp(450px) {
+        //     margin-left: 0%;
+        //     display: grid;
+        //     grid-template-row: repeat(1, 3fr);
+        //     .standard {
+        //         grid-row: 1/2;
+        //     }
+        //     .professionnel {
+        //         grid-row: 2/3;
+        //     }
+        // }
         .standard {
             @include pricing;
             border: none;
