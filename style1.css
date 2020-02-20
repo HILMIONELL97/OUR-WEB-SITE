@@ -78,7 +78,7 @@ body {
       flex-wrap: wrap;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 968px) {
   .hhead .menu {
     margin-right: 0px;
   }
@@ -128,7 +128,7 @@ body {
   display: none;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 968px) {
   .hhead .show-menu-btn,
   .hhead .hide-menu-btn {
     display: block;
@@ -156,13 +156,13 @@ body {
   }
 }
 
-@media (max-width: 800px) and (max-width: 375px) {
+@media (max-width: 968px) and (max-width: 375px) {
   .hhead .hide-menu-btn {
     display: none;
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 968px) {
   .hhead #chk:checked ~ .menu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -232,7 +232,7 @@ body {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 968px) {
   .hhead .hcont {
     min-width: 100%;
     position: relative;
