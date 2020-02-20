@@ -8,8 +8,10 @@ body {
     background-image: url(img/back.jpg);
 }
 
+
+
 // -----------------------------------header
-@import'./header';
+@import"./navbar";
 // -----------------------------------header
 // --------------------------------responcive
 @mixin resp($size) {

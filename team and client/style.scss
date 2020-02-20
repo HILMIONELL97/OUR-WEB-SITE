@@ -9,7 +9,7 @@
   }
 }
 
-@import"./navbar";
+@import'./navbar';
 
 body {
   background-color: #dae1eb;
@@ -57,8 +57,13 @@ body {
     top: 0;
   }
 
-  @include mq(375px) {
+  @include mq(407px) {
     width: 310px;
+    top: 0;
+  }
+
+  @include mq(340px) {
+    width: 270px;
     top: 0;
   }
 
@@ -155,6 +160,7 @@ h3 {
     transition: all 0.4s ease-in-out;
     border-top: 8px solid #7749c1;
     height: 445px;
+
 
 
 

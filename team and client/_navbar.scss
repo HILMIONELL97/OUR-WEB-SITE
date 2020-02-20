@@ -2,9 +2,8 @@
 $primary-color: #8f25D6;
 $btn-bg-color: black;
 $btn-color: white;
-$tablet:1016px;
-$mobile:375px;
-
+$tablet:968px;
+$mobile:400px;
 //MIXIN //
 @mixin tablet {
     @media (max-width: #{$tablet}) {
@@ -19,81 +18,67 @@ $mobile:375px;
 }
 
 .hilmi-header {
-    position: fixed;
-    left: 30px;
-    margin-top: -20px;
-    height: 100px;
-    padding: 0 10px;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+    font-size: 1rem;
+    align-items: center;
+    max-width: 100%;
     color: $btn-color;
     background: $primary-color;
-    opacity: .9;
-    z-index: 20;
-    width: 100vw;
-    margin-left: -50px;
-
-    ul {
-        margin: 12px 3px 14px 0px;
+    @include mobile() {}
+    @include tablet() {}
+    height: 100px;
+    ul{
         padding: 0;
     }
-
-    @include mobile() {}
-
-    @include tablet() {
-        width: 100vw;
-        margin-left: -35px;
-        left: 28px;
-    }
+    
+    
 }
 
 .logo {
     line-height: 100px;
-    float: left;
+    
     color: $primary-color;
-    margin-left: 60px;
-    font-size: 35px;
+    font-size: 2rem;
     color: $btn-color;
     cursor: pointer;
-    margin: 11px 0px 12px 44px;
-
-    @include tablet() {
-        margin: 0px;
-        margin-left: 10px;
-        margin: 8px 8px 16px 14px;
-    }
-
+    margin-left: 20px;
+    position: relative;
+    bottom: 28px;
+    @include tablet() {}
     @include mobile() {
         font-size: 30px;
     }
 }
 
 .menu {
-    float: right;
-    line-height: 100px;
-
-
+    display: flex;
+    flex-wrap: wrap;
     @include tablet() {
         margin-right: 0px;
     }
 }
 
 .menu a {
+    margin:  0 20px 48px 20px;
+    padding:  10px 30px;
     color: $btn-color;
     text-transform: uppercase;
     text-decoration: none;
     font-weight: bold;
-    padding: 0px 40px;
-    transition: 0.4s;
+    transition: 0.6s;
 
-    @media (max-width:1250px) {
-        padding: 0px 20px;
+    @media (max-width: 1215px) {
+        padding:  10px 20px;
+        margin:  0 10px 48px 10px;
     }
-
-
-
     &:hover {
         background-color: $btn-color;
         border-radius: 30px;
-        padding: 10px 40px;
+        padding:  10px 30px;
+       
+       
         color: $primary-color;
         transition: .5s;
     }
@@ -113,49 +98,48 @@ $mobile:375px;
 
 .show-menu-btn i {
     line-height: 100px;
-    margin: 8px 20px 7px 9px;
+    margin: 8px 20px 50px 9px;
 }
 
 #chk {
     position: absolute;
-    visibility: hidden;
+    display: none;
 }
 
 @include tablet() {
-
     .show-menu-btn,
     .hide-menu-btn {
         display: block;
     }
-
     .menu {
-        position: relative;
+        display: none;
         width: 100%;
         height: 100vh;
         background: $primary-color;
         right: -100%;
-        bottom: 50px;
         text-align: center;
         padding: 80px 0;
         line-height: normal;
         transition: 0.7s;
         z-index: 10;
-
+        position: relative;
+        bottom: 80px;
     }
-
     .menu a {
-        display: block;
         margin: 20px;
-        padding: 10px;
     }
-
     .hide-menu-btn {
         position: absolute;
-        top: 40px;
-        right: 40px;
+        top: 550px;
+        right: 315px;
+        @include mobile() {
+            display: none;
+        }
     }
-
     #chk:checked~.menu {
+        display: flex;
+        flex-direction: column;
+        opacity: 0.7;
         right: 0;
     }
 }
