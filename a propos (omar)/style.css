@@ -229,12 +229,6 @@ footer .projet h3 {
   }
 }
 
-@media (max-width: 767px) {
-  .flaot {
-    width: 32.80%;
-  }
-}
-
 @media (max-width: 375px) {
   .flaot {
     float: none;
@@ -416,10 +410,6 @@ footer .copy h6 {
   font-weight: 100;
   margin: 0 auto;
   padding: 0;
-}
-
-.menu {
-  margin-right: 20px;
 }
 
 * {
@@ -834,10 +824,10 @@ body {
   }
   .apro {
     font-size: 40px;
-    margin-right: 60px;
+    margin-right: 90px;
   }
   .aqui {
-    margin-left: -140px;
+    margin-left: -170px;
   }
   .centre h2 {
     margin-left: 100px;
