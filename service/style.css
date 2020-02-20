@@ -16,6 +16,8 @@ body {
 }
 
 .svideo {
+  width: 80%;
+  height: 70%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -133,15 +135,21 @@ body {
 }
 
 /****************************************fin de version desktop*************************************************/
-/***********************************************tablet************************************************************/
-@media (max-width: 1130px) {
+/*tablet*/
+@media (max-width: 781px) {
   body {
     margin: 0;
     padding: 0;
   }
+  .Ssection1 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
 }
 
-@media (max-width: 1130px) and (max-width: 1130px) {
+@media (max-width: 781px) and (max-width: 1130px) {
   .svideo {
     margin-top: 5%;
     display: -webkit-box;
@@ -150,7 +158,7 @@ body {
   }
 }
 
-@media (max-width: 1130px) {
+@media (max-width: 781px) {
   .Spara {
     font-size: 70%;
     text-align: center;
@@ -425,45 +433,80 @@ body {
   }
 }
 
-/****************************************mobile******************************************************************/
-@media (max-width: 650px) {
+/*mobile*/
+@media (max-width: 600px) {
+  body {
+    width: 375;
+    padding: 0;
+    margin: 0;
+  }
   .stitre {
     font-size: 190%;
     margin-right: 10%;
   }
-}
-
-@media (max-width: 650px) and (max-width: 650px) {
   .svideo {
-    margin-top: 10%;
+    width: 450px;
+    margin-left: -5px;
   }
 }
 
-@media (max-width: 650px) {
-  .svideo .Spara {
+@media (max-width: 600px) and (max-width: 500px) {
+  .svideo {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .Spara {
     font-size: 120%;
     max-width: 80%;
     margin-left: 90px;
   }
-  .svideo .Spart1 {
+  .Ssection1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 600px) and (max-width: 500px) {
+  .Ssection1 {
+    margin-left: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .Spart1 {
     font-size: 120%;
   }
-  .svideo .para1 {
+  .para1 {
     font-size: 70%;
     padding: 10%;
   }
-  .svideo .btn {
+  .btn {
     width: 120px;
     height: 40px;
     margin-top: 20%;
   }
-  .svideo .StitreF {
+  .StitreD {
+    margin: 10%;
+    position: relative;
+    right: 20px;
+    line-height: 50px;
+  }
+  .StitreF {
     margin-right: 30%;
     position: relative;
     bottom: 60px;
     margin-left: 150px;
   }
-  .svideo .btb {
+  .btb {
     position: relative;
     bottom: 50px;
     margin-right: 40px;
@@ -471,16 +514,53 @@ body {
     height: 80px;
     width: 300px;
   }
-  .svideo .btR {
+  .btR {
     font-size: 130%;
     height: 50px;
     width: 110px;
   }
-  .svideo .ser {
-    font-size: 130%;
+  i.fab {
+    font-size: 40px;
+    margin-left: 10px;
+  }
+  .Spara {
+    font-size: 120%;
+    max-width: 80%;
+    margin-left: 90px;
+  }
+  .Spart1 {
+    font-size: 120%;
+  }
+  .para1 {
+    font-size: 70%;
+    padding: 10%;
+  }
+  .btn {
+    width: 120px;
+    height: 40px;
+    margin-top: 20%;
+  }
+  .StitreF {
+    margin-right: 30%;
     position: relative;
-    right: 1px;
-    bottom: 10px;
+    bottom: 60px;
+    margin-left: 150px;
+  }
+  .btb {
+    position: relative;
+    bottom: 50px;
+    margin-right: 40px;
+    font-size: 130%;
+    height: 80px;
+    width: 300px;
+  }
+  .btR {
+    font-size: 130%;
+    height: 50px;
+    width: 110px;
+  }
+  .ssection3 {
+    width: 500px;
   }
 }
 
