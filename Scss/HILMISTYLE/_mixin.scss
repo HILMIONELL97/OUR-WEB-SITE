@@ -1,0 +1,51 @@
+// MIXIN
+@mixin btn {
+    .hbtn {
+        background-image: linear-gradient(45deg, #7749c1, #9b59b6, #3498db);
+        border-radius: 3em 0.5em;
+        padding: 1em;
+        font-size: 100%;
+        background-size: 800px;
+        background-position: right;
+        color: white;
+        margin-left: 680px;
+        position: relative;
+        top: -80px;
+        font-family: 'Montserrat';
+        outline: none;
+        cursor: pointer;
+    }
+    .hbtn {
+        animation: hover 2s infinite;
+    }
+    @keyframes hover {
+        0% {
+            background-position: right;
+        }
+        100% {
+            background-position: left;
+        }
+    }
+}
+
+@mixin flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+@mixin tablet {
+    @media (max-width: #{$tablet}) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (max-width: #{$mobile}) {
+        @content;
+    }
+}
+
+@mixin demention {
+    width: 100vw;
+    height: 100vh;
+}
