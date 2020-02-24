@@ -9,7 +9,7 @@
   }
 }
 
-@import"./navbar";
+@import'./navbar';
 
 body {
   background-color: #dae1eb;
@@ -28,7 +28,7 @@ body {
   height: 720px;
   box-shadow: 0 10px 16px 0px #7749c160;
 
-  @include mq(800px) {
+  @include mq(1350px) {
     background-size: cover;
     background-position: bottom;
   }
@@ -52,8 +52,18 @@ body {
   top: 30px;
   z-index: 2;
 
-  @include mq(375px) {
+  @include mq(625px) {
+    width: 400px;
+    top: 0;
+  }
+
+  @include mq(407px) {
     width: 310px;
+    top: 0;
+  }
+
+  @include mq(340px) {
+    width: 270px;
     top: 0;
   }
 
@@ -75,7 +85,7 @@ body {
     margin: 0;
     padding: 0;
 
-    @include mq(375px) {
+    @include mq(625px) {
       top: 170px;
       font-size: 40px;
     }
@@ -97,13 +107,18 @@ h3 {
   margin-top: 150px;
   flex-wrap: nowrap;
 
-  @include mq(800px) {
+  @include mq(1350px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    justify-items: center;
+
+
+
+
   }
 
-  @include mq(375px) {
+  @include mq(625px) {
     display: grid;
     grid-template-columns: 1fr;
   }
@@ -116,18 +131,18 @@ h3 {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
-  @include mq(800px) {
+  @include mq(1350px) {
 
     .team3,
     .team4 {
       margin-top: 80px;
 
-      @include mq(375px) {
+      @include mq(625px) {
         margin-top: 140px;
       }
     }
 
-    @include mq(375px) {
+    @include mq(625px) {
       .team2 {
         margin-top: 70px;
       }
@@ -135,6 +150,7 @@ h3 {
   }
 
   .team {
+
     margin-left: 25px;
     margin-right: 25px;
     background-color: #dae1eb;
@@ -144,6 +160,16 @@ h3 {
     transition: all 0.4s ease-in-out;
     border-top: 8px solid #7749c1;
     height: 445px;
+
+
+
+
+
+
+
+
+
+
 
     h2,
     h3,
@@ -195,7 +221,7 @@ h3 {
     position: relative;
     bottom: 110px;
 
-    @include mq(800px) {
+    @include mq(1350px) {
       margin-left: auto;
       margin-right: auto;
     }
@@ -238,7 +264,7 @@ h3 {
   margin: 80px 50px 80px 50px;
   flex-wrap: wrap;
 
-  @include mq(800px) {
+  @include mq(1350px) {
     margin: 80px 50px 0px 50px;
 
     .none {
@@ -252,7 +278,7 @@ h3 {
   margin: 0 50px 0 50px;
   flex-wrap: wrap;
 
-  @include mq(800px) {
+  @include mq(1350px) {
     .none {
       display: none;
     }

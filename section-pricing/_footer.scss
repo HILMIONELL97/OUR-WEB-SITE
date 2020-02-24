@@ -1,19 +1,19 @@
+@mixin flex {
+    display: flex;
+    justify-content: space-around;
+}
+
 @mixin mq($width) {
     @media (max-width: #{$width}) {
         @content;
     }
 }
 
-@mixin flex {
-    display: flex;
-    justify-content: space-around;
-}
-
 footer {
     background-color: rgb(95, 97, 99);
     text-align: center;
     height: 355px;
-    @include mq(375px) {
+    @include mq(625px) {
         height: auto;
     }
     .projet {
@@ -21,7 +21,7 @@ footer {
         cursor: pointer;
         position: relative;
         top: 30px;
-        @include mq(375px) {
+        @include mq(625px) {
             right: 10px;
         }
         &:hover {
@@ -40,7 +40,7 @@ footer {
             top: 45px;
             left: 22px;
             transition: all 0.4s ease-in-out;
-            @include mq(375px) {
+            @include mq(625px) {
                 top: 35px;
                 font-size: 30px;
             }
@@ -50,7 +50,7 @@ footer {
             font-size: 40px;
             font-weight: normal;
             transition: all 0.3s ease-in-out;
-            @include mq(375px) {
+            @include mq(625px) {
                 font-size: 30px;
             }
         }
@@ -59,21 +59,25 @@ footer {
 
 .footer-content {
     margin-top: 60px;
-    @include mq(375px) {
+    @include mq(625px) {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr .4fr 0.4fr;
         grid-template-areas: "form" "contact" "icon";
+        justify-items: center;
     }
 }
 
 .flaot {
     float: left;
     width: 33%;
-    @include mq(800px) {
+    @include mq(998px) {
         width: 32.90%;
     }
-    @include mq(375px) {
+    @include mq(767px) {
+        width: 32.80%;
+    }
+    @include mq(625px) {
         float: none;
     }
 }
@@ -86,11 +90,16 @@ footer {
             font-size: 13px;
             margin-top: 20px;
         }
-        @include mq(375px) {
+        @include mq(625px) {
             grid-area: contact;
             margin-left: auto;
             margin-right: auto;
             margin-top: -10px;
+            .cnt {
+                position: relative;
+            }
+        }
+        @include mq(375px) {
             .cnt {
                 position: relative;
                 right: 35px;
@@ -107,7 +116,7 @@ footer {
     }
     .form {
         margin-left: 10px;
-        @include mq(375px) {
+        @include mq(625px) {
             grid-area: form;
         }
         .text-input {
@@ -120,15 +129,20 @@ footer {
             outline-style: none;
             width: 160px;
             transition: .4s ease-in-out;
-            @include mq(375px) {
-                margin-left: 55%;
+            @include mq(625px) {
+                position: relative;
+                right: 10%;
+            }
+            @include mq(420px) {
+                position: relative;
+                right: 40%;
             }
             &::placeholder {
                 color: #ffffff80;
             }
             &:focus {
                 width: 230px;
-                @include mq(375px) {
+                @include mq(625px) {
                     width: 160px;
                 }
             }
@@ -140,9 +154,7 @@ footer {
             border: 1px solid #bc93fd;
             border-radius: 50px;
             transition: .5S;
-            @include mq(375px) {
-                margin-left: 115%;
-            }
+            @include mq(625px) {}
             &:hover {
                 background-color: #8561be;
                 color: white;
@@ -151,9 +163,8 @@ footer {
         }
     }
     .footer-icon {
-        @include mq(375px) {
+        @include mq(625px) {
             grid-area: icon;
-            margin-left: 35%;
         }
         .icon {
             @include flex();
@@ -171,7 +182,7 @@ footer {
             font-size: 19px;
             color: rgb(165, 164, 164);
             border-radius: 50%;
-            @include mq(375px) {
+            @include mq(625px) {
                 padding-right: 10px;
             }
             &:hover {

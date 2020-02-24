@@ -1,14 +1,19 @@
 @mixin hw{
-    width: 506px;
+    width: 100%;
     height: 610px;
     margin-top: -4px;
-    box-sizing: border-box;
-
-
-   
-    
-    
+    box-sizing: border-box; 
+  
 }
+
+@import"./navbar";
+@import"./footer";
+
+
+
+
+
+
 
 *{
     margin: 0;
@@ -16,36 +21,36 @@
 }
 
 body {
-  width: 100%;
+  
   font-family: 'Montserrat', sans-serif;
 
 }
 
 .aheader{
    background: url(img/back.jpg) no-repeat ;
-   background-size: 1550px 600px ;
+   background-size: cover ;
 
    height: 600px;
    background-attachment:fixed;
-   width: 100%;
+   
    @media screen and (max-width:800px){
        background-position: center;
    }
 
 
 
-  /*.abg{
+  .abg{
        width: 100%;
-       height: 600px;
+       height: 496px;
        position: absolute;
        z-index: 2;
-       background-color: rgba($color: #7d54be, $alpha: .7);
+       background-color: rgba($color: #8612b4, $alpha: .7);
     
-   }  */
+   }  
 }
 
 .center{
-   margin-left: 33%;
+   margin-left: 40%;
    margin-top: 16%;
    position: absolute;
    z-index: 3;
@@ -55,7 +60,7 @@ body {
 .aqui{
    
    color: #EB2F5B;
-   font-weight: 100; 
+   font-weight: 100%; 
 }
 
 .apro{
@@ -67,8 +72,9 @@ body {
 
 .afixed{  
  display: grid ; 
- grid-template-columns: 1fr 1fr 1fr;
- grid-template-rows: 1fr 1fr 1fr;
+ grid-template-columns:repeat(3,1fr);
+ grid-template-rows:repeat(3,1fr);
+ margin-bottom: -10px;
  
 }
 .apart1 {
@@ -91,6 +97,14 @@ body {
     color: #EB2F5B;
     line-height: 30px;
    }
+
+.hov2:hover {
+
+
+  font-weight: 900; 
+  color:  #FED841;
+
+}   
  .hr{
  margin-top: -10px;
  height: 10px;
@@ -254,6 +268,8 @@ body {
  background-color: white;
  padding: 50px;
  padding-top: 90px;
+ box-sizing: border-box;
+
  
 
 }
@@ -265,6 +281,12 @@ body {
     margin-top: -30px;
 
 }
+
+.apaaart2 h2:hover {
+
+    color: #FED841;
+    font-weight: 900;
+}
 .apaaart2 h1 {
 
     font-size: 30px;
@@ -275,8 +297,9 @@ body {
 .apaaart2 p {
 
     color: #7777;
-    line-height: 40px;
+    line-height: 30px;
     margin-top: 30px;
+    
 }
 
 .apaaart2 hr {
@@ -286,6 +309,7 @@ body {
     border-color:#EB2F5B ;
     margin-top: -36px;
     margin-left: 2px;
+   
 }
 
 
@@ -315,26 +339,37 @@ body {
   .hov:hover{
     
      color: #FED841;
-     font-weight: 900;
+     font-size: 107%;
   }
 
 
-.apaaart3 hr {
+/*.apaaart3 hr {
     height: 10px;
     background: #EB2F5B; 
     width:37%;
     border-color:#EB2F5B ;
     margin-left: 298px;
     margin-top: -12px;  
+}*/
+
+.projet i{
+   margin-top:-12%;
+    
+
 }
+
+
+
+
+
 
 /*--------------------------------------------------------------------*/
 
-@media screen and (max-width:800px){
+@media screen and (max-width:1130px){
   
   @mixin mix {
 
-    width: 410px;
+    width: 100%;
     height: 700px;
 
       
@@ -344,14 +379,24 @@ body {
     .afixed{
 
         grid:grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr ;
-        width: 800px
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(4,1fr);
+        width: 100%;
+        margin-top: 10px;
+     }
+
+   
+
+     .center{
+
+       margin-right: ;
+
+       
      }
 
      .aheader {
 
-        width: 820px;
+        width: 100%;
      }
 
 
@@ -429,34 +474,38 @@ body {
 
  /*------------------------------------------------------------------------*/
 
- @media screen and (max-width:375px){
+ @media screen and (max-width:751px){
 
     .afixed {
 
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr  1fr  1fr  1fr  1fr  1fr  1fr  1fr  1fr;
+        grid-template-rows: repeat(9,1fr);
 
-       width: 375px;
+      width: 100%;
     }  
+
+
+
+    .abg {
+
+
+
+    }
 
 
 
     @mixin mobile {
 
-        width: 375px;
+      width: 100%;
         box-sizing: border-box;   
     }
 
 
-    .apro {
 
-        font-size: 40px;
-        margin-right: 60px;
-    }
 
     .aqui{
-      margin-left: -140px;
+      margin-left: -170px;
 
     }
 
@@ -468,8 +517,7 @@ body {
 
     .aheader {
         
-        width: 375px;
-        
+        width: 100%;
     }
 
     .aqui{
@@ -567,10 +615,13 @@ body {
     }
  }
 
+
+ 
+
+
  
 
 
  
-
 
 
