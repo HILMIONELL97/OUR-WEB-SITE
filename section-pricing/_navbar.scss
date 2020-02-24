@@ -2,8 +2,8 @@
 $primary-color: #8f25D6;
 $btn-bg-color: black;
 $btn-color: white;
-$tablet:800px;
-$mobile:375px;
+$tablet:968px;
+$mobile:400px;
 //MIXIN //
 @mixin tablet {
     @media (max-width: #{$tablet}) {
@@ -28,15 +28,24 @@ $mobile:375px;
     background: $primary-color;
     @include mobile() {}
     @include tablet() {}
+    height: 100px;
+    ul{
+        padding: 0;
+    }
+    
+    
 }
 
 .logo {
     line-height: 100px;
+    
     color: $primary-color;
     font-size: 2rem;
     color: $btn-color;
     cursor: pointer;
     margin-left: 20px;
+    position: relative;
+    bottom: 28px;
     @include tablet() {}
     @include mobile() {
         font-size: 30px;
@@ -52,18 +61,24 @@ $mobile:375px;
 }
 
 .menu a {
-    margin: 20px;
+    margin:  0 20px 48px 20px;
+    padding:  10px 30px;
     color: $btn-color;
     text-transform: uppercase;
     text-decoration: none;
     font-weight: bold;
-    transition: 0.4s;
+    transition: 0.6s;
+
+    @media (max-width: 1215px) {
+        padding:  10px 20px;
+        margin:  0 10px 48px 10px;
+    }
     &:hover {
         background-color: $btn-color;
         border-radius: 30px;
-        padding: 10px;
-        padding-right: 20px;
-        font-style: italic;
+        padding:  10px 30px;
+       
+       
         color: $primary-color;
         transition: .5s;
     }
@@ -83,7 +98,7 @@ $mobile:375px;
 
 .show-menu-btn i {
     line-height: 100px;
-    margin: 8px 20px 7px 9px;
+    margin: 8px 20px 50px 9px;
 }
 
 #chk {
@@ -107,6 +122,8 @@ $mobile:375px;
         line-height: normal;
         transition: 0.7s;
         z-index: 10;
+        position: relative;
+        bottom: 80px;
     }
     .menu a {
         margin: 20px;

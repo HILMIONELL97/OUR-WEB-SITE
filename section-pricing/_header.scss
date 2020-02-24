@@ -1,0 +1,21 @@
+.header {
+    background-image: url(./img/bridge-1660417_1920.jpg);
+    height: 450px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .container {
+        color: white;
+        text-align: center;
+        h1 {
+            margin: 0;
+            font-size: 60px;
+            text-decoration: none;
+        }
+        p {
+            font-size: 17px;
+        }
+    }
+}

@@ -1,0 +1,11 @@
+@import'./footer';
+@import'./navbar';
+@import'./header';
+@import'./textimoniale';
+@import'./pricing';
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(./img/back.jpg);
+    font-family: 'Montserrat', sans-serif;
+}
