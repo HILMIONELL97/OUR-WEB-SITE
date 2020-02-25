@@ -25,7 +25,6 @@ $mobile:375px;
     align-items: center;
     max-width: 100%;
     color: $btn-color;
-    background: $primary-color;
     @include mobile() {}
     @include tablet() {}
 }
@@ -59,13 +58,14 @@ $mobile:375px;
     font-weight: bold;
     transition: 0.4s;
     &:hover {
-        background-color: $btn-color;
+        background-color: $primary-color;
         border-radius: 30px;
         padding: 10px;
         padding-right: 20px;
         font-style: italic;
-        color: $primary-color;
+        color: $btn-color;
         transition: .5s;
+        border: 2px solid $btn-color;
     }
 }
 

@@ -12,16 +12,16 @@ body {
 
 .hhead {
     width: 99vw;
-    height: 700px;
+    height: 44rem;
     background-image: url(Images/bridge-4.jpg);
     background-size: cover;
     @include mobile() {
-        max-width: 375px;
-        max-height: 500px;
+        max-width: 23.5rem;
+        max-height: 31.25rem;
     }
     @include tablet() {
-        max-width: 800px;
-        max-height: 600px;
+        max-width: 50rem;
+        max-height: 37.5rem;
     }
     @import "./navbar";
     .hcont {
@@ -29,19 +29,19 @@ body {
         flex-direction: column;
         align-items: center;
         align-content: center;
-        margin: 250px;
-        line-height: 50px;
+        margin: 15.60rem;
+        line-height: 3.12rem;
         @include btn();
         @include tablet() {
             min-width: 100%;
             position: relative;
-            right: 250px;
-            bottom: 100px;
+            right: 15.60rem;
+            bottom: 6.25rem;
         }
     }
     .hpara {
         text-align: center;
-        font-size: 30px;
+        font-size: 1.8rem;
         color: $btn-bg-color;
         @include mobile() {
             color: $btn-bg-color;
@@ -55,7 +55,7 @@ body {
     }
     @include mobile() {
         font-size: 42px;
-        max-width: 300px;
+        max-width: 18.75rem;
         color: $btn-color;
         max-width: 100%;
         text-align: center;
@@ -64,7 +64,7 @@ body {
 
 .halone {
     position: relative;
-    top: 120px;
-    left: -330px;
+    top: 7.5rem;
+    left: -20.62rem;
     font-size: 16px;
 }

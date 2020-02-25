@@ -12,22 +12,22 @@ body {
 
 .hhead {
   width: 99vw;
-  height: 700px;
+  height: 44rem;
   background-image: url(Images/bridge-4.jpg);
   background-size: cover;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 400px) {
   .hhead {
-    max-width: 375px;
-    max-height: 500px;
+    max-width: 23.5rem;
+    max-height: 31.25rem;
   }
 }
 
 @media (max-width: 800px) {
   .hhead {
-    max-width: 800px;
-    max-height: 600px;
+    max-width: 50rem;
+    max-height: 37.5rem;
   }
 }
 
@@ -48,7 +48,6 @@ body {
           align-items: center;
   max-width: 100%;
   color: white;
-  background: #8f25D6;
 }
 
 .hhead .logo {
@@ -91,14 +90,15 @@ body {
 }
 
 .hhead .menu a:hover {
-  background-color: white;
+  background-color: #8f25D6;
   border-radius: 30px;
   padding: 10px;
   padding-right: 20px;
   font-style: italic;
-  color: #8f25D6;
+  color: white;
   -webkit-transition: .5s;
   transition: .5s;
+  border: 2px solid white;
 }
 
 .hhead .show-menu-btn,
@@ -185,8 +185,8 @@ body {
           align-items: center;
   -ms-flex-line-pack: center;
       align-content: center;
-  margin: 250px;
-  line-height: 50px;
+  margin: 15.60rem;
+  line-height: 3.12rem;
 }
 
 .hhead .hcont .hbtn {
@@ -232,14 +232,14 @@ body {
   .hhead .hcont {
     min-width: 100%;
     position: relative;
-    right: 250px;
-    bottom: 100px;
+    right: 15.60rem;
+    bottom: 6.25rem;
   }
 }
 
 .hhead .hpara {
   text-align: center;
-  font-size: 30px;
+  font-size: 1.8rem;
   color: black;
 }
 
@@ -259,7 +259,7 @@ body {
 @media (max-width: 375px) {
   .hhead {
     font-size: 42px;
-    max-width: 300px;
+    max-width: 18.75rem;
     color: white;
     max-width: 100%;
     text-align: center;
@@ -268,26 +268,21 @@ body {
 
 .halone {
   position: relative;
-  top: 120px;
-  left: -330px;
+  top: 7.5rem;
+  left: -20.62rem;
   font-size: 16px;
 }
 
 .hsec1 .hgrid {
-  max-height: -webkit-fit-content;
-  max-height: -moz-fit-content;
-  max-height: fit-content;
   width: 99vw;
-  height: 400px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 50% auto;
       grid-template-columns: 50% auto;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 400px) {
   .hsec1 .hgrid {
-    height: 100%;
     height: 100%;
     display: -ms-grid;
     display: grid;
@@ -299,8 +294,9 @@ body {
 }
 
 .hsec1 .hleft {
-  background-image: url(Images/workplace-1245776_1920.jpg);
+  background-image: url(/Images/workplace-1245776_1920.jpg);
   background-size: cover;
+  height: 50vh;
   -webkit-box-shadow: -4px -4px 8px #ffffff73, 3px 3px 5px rgba(94, 104, 121, 0.288);
           box-shadow: -4px -4px 8px #ffffff73, 3px 3px 5px rgba(94, 104, 121, 0.288);
 }
@@ -310,15 +306,10 @@ body {
           box-shadow: inset -4px -4px 8px #ffffff73, inset 3px 3px 5px rgba(94, 104, 121, 0.288);
 }
 
-@media (max-width: 375px) {
-  .hsec1 .hleft {
-    height: 400px;
-  }
-}
-
 .hsec1 .hright {
   -webkit-box-shadow: -4px -4px 8px #ffffff73, 3px 3px 5px rgba(94, 104, 121, 0.288);
           box-shadow: -4px -4px 8px #ffffff73, 3px 3px 5px rgba(94, 104, 121, 0.288);
+  height: 50vh;
 }
 
 .hsec1 .hright:hover {
@@ -326,52 +317,51 @@ body {
           box-shadow: inset -4px -4px 8px #ffffff73, inset 3px 3px 5px rgba(94, 104, 121, 0.288);
 }
 
-@media (max-width: 375px) {
-  .hsec1 .hright {
-    max-height: 400px;
-  }
-}
-
 .hsec1 .htitle3 {
   text-align: center;
-  font-size: 28px;
+  font-size: 1.8rem;
   color: #8f25D6;
   font-weight: bold;
-  position: relative;
-  top: 40px;
-  min-width: 100%;
+  margin: 2.5rem;
 }
 
 @media (max-width: 800px) {
   .hsec1 .htitle3 {
-    margin-top: 20px;
+    margin-top: 0.5rem;
   }
 }
 
+@media (max-width: 400px) {
+  .hsec1 .htitle3 {
+    margin-bottom: 2.18rem;
+  }
+}
+
+.hsec1 .htitle3 span {
+  color: white;
+}
+
 .hsec1 .hpara {
+  width: 90%;
   text-align: center;
-  width: 80%;
-  margin: 100px auto 0 auto;
-  font-size: 25px;
+  font-size: 30px;
+  margin-left: 2rem;
   color: black;
 }
 
 @media (max-width: 800px) {
   .hsec1 .hpara {
-    max-width: 300px;
     font-size: 20px;
-    margin: 60px auto 0 auto;
+    margin-bottom: 0.5rem;
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 400px) {
   .hsec1 .hpara {
-    margin-bottom: 50px;
+    font-size: 22px;
+    margin-bottom: 5rem;
+    margin-left: 1.5rem;
   }
-}
-
-.hsec1 .hpara span {
-  color: white;
 }
 
 .hsec2 .hcont {
@@ -385,9 +375,9 @@ body {
       grid-template-rows: 1fr;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 400px) {
   .hsec2 .hcont {
-    max-width: 375px;
+    max-width: 25rem;
   }
 }
 
@@ -397,11 +387,11 @@ body {
   font-size: 28px;
   color: #8f25D6;
   position: relative;
-  top: 40px;
+  top: 2.5rem;
   z-index: 2;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 400px) {
   .hsec2 .hcont .htitle4 {
     font-size: 24px;
   }
@@ -414,13 +404,13 @@ body {
 .hsec2 .hcont .hpara {
   text-align: center;
   width: 99vw;
-  margin: 50px auto 0 auto;
+  margin: 3.1rem auto 0 auto;
   font-size: 30px;
   color: white;
   font-weight: bold;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 400px) {
   .hsec2 .hcont .hpara {
     font-size: 20px;
   }
@@ -428,7 +418,7 @@ body {
 
 .hsec2 .hcont .hgrid {
   width: 99vw;
-  margin-top: 60px;
+  margin-top: 3.75rem;
   height: 130vh;
   display: -ms-grid;
   display: grid;
@@ -440,12 +430,12 @@ body {
 
 @media (max-width: 800px) {
   .hsec2 .hcont .hgrid {
-    max-width: 800px;
-    max-height: 800px;
+    max-width: 50rem;
+    max-height: 50rem;
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 400px) {
   .hsec2 .hcont .hgrid {
     display: -ms-grid;
     display: grid;
@@ -503,7 +493,7 @@ body {
 .hsec2 .hcont .hgrid p {
   text-align: center;
   width: 100%;
-  margin: 230px auto 0 auto;
+  margin: 14.5rem auto 0 auto;
   font-size: 35px;
   font-weight: bold;
   color: black;
@@ -514,17 +504,17 @@ body {
 
 @media (max-width: 800px) {
   .hsec2 .hcont .hgrid p {
-    max-width: 360px;
-    font-size: 30px;
-    margin: 180px auto 0 auto;
+    max-width: 22.5rem;
+    font-size: 1.9rem;
+    margin: 11rem auto 0 auto;
     color: black;
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 400px) {
   .hsec2 .hcont .hgrid p {
     width: 99vw;
-    margin-top: 80px;
+    margin-top: 5rem;
     color: black;
     font-weight: bold;
   }
@@ -541,10 +531,10 @@ body {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  margin-bottom: 50px;
+  margin-bottom: 3rem;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 400px) {
   .hsec3 .hgrid3 {
     width: 99vw;
   }
@@ -554,7 +544,7 @@ body {
   color: black;
   text-align: center;
   width: 80vw;
-  margin: 50px auto 0 auto;
+  margin: 3rem auto 0 auto;
   font-size: 35px;
   font-weight: bold;
   line-height: 1.5;
@@ -567,10 +557,10 @@ body {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 400px) {
   .hsec3 p {
-    font-size: 11px;
-    margin-top: 80px;
+    font-size: 16px;
+    margin-top: 3.7rem;
   }
 }
 
