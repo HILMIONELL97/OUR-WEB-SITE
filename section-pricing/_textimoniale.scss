@@ -1,0 +1,114 @@
+@mixin resp($size) {
+    @media (max-width: #{$size}) {
+        @content;
+    }
+}
+
+$principe: #8f25D6;
+@mixin part1 {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: white;
+    border-radius: 16px;
+    border-right: $principe solid 10px;
+    padding: 15px;
+    @include resp(800px) {
+        width: 80%;
+        border-right: $principe solid 5px;
+        border-radius: 8px;
+    }
+    @include resp(540px) {
+        width: 50%;
+        margin: 20px auto;
+    }
+    @include resp(375px) {
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, auto);
+        img {
+            width: 80%;
+        }
+        .para {
+            grid-column: 1/3;
+            grid-row: 2/3;
+        }
+        .stars {
+            grid-column: 1/3;
+            grid-row: 3/4;
+        }
+        .social {
+            grid-column: 1/3;
+            grid-row: 4/5;
+        }
+    }
+    .personne {
+        h3 {
+            color: $principe;
+        }
+    }
+    margin: 0 auto;
+    img {
+        border-radius: 100%;
+        width: 60%;
+        border: $principe solid 2px;
+    }
+    .stars {
+        color: $principe;
+    }
+    .social {
+        font-size: 400%;
+        display: none;
+    }
+    &:hover {
+        .social {
+            display: unset;
+            .fa-facebook-square:hover {
+                color: #1877F2;
+            }
+            .fa-whatsapp-square:hover {
+                color: #25D366;
+            }
+            .fa-twitter-square:hover {
+                color: #1DA1F2;
+            }
+        }
+    }
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.testimonaile {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 5%;
+    @include resp(800px) {
+        grid-column-gap: 1%;
+        padding: 0;
+    }
+    @include resp(540px) {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+.jone {
+    @include part1;
+}
+
+.steve {
+    @include part1;
+}
+
+.ball {
+    @include part1;
+}
+
+// ____________________________________________---

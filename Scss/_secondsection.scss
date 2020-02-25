@@ -1,0 +1,110 @@
+.hsec2 {
+    .hcont {
+        width: 99vw;
+        background: $btn-bg-color;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        @include mobile() {
+            max-width: 25rem;
+        }
+        .htitle4 {
+            max-width: 99vw;
+            text-align: center;
+            font-size: 28px;
+            color: $primary-color;
+            position: relative;
+            top: 2.5rem;
+            z-index: 2;
+            @include mobile() {
+                font-size: 24px;
+            }
+        }
+        span {
+            color: $btn-color;
+        }
+        .hpara {
+            text-align: center;
+            width: 99vw;
+            margin: 3.1rem auto 0 auto;
+            font-size: 30px;
+            color: $btn-color;
+            font-weight: bold;
+            @include mobile() {
+                font-size: 20px;
+            }
+        }
+        .hgrid {
+            width: 99vw;
+            margin-top: 3.75rem;
+            height: 130vh;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 50% 50%;
+            @include tablet() {
+                max-width: 50rem;
+                max-height: 50rem;
+            }
+            @include mobile() {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr;
+            }
+            .hone {
+                background-image: url(Images/4.jpg);
+                background-size: cover;
+                &:hover {
+                    background: rgb(108, 51, 241);
+                    transition: .6s;
+                }
+            }
+            .htwo {
+                background-image: url(Images/1.jpg);
+                background-size: cover;
+                &:hover {
+                    background: aqua;
+                    transition: .6s;
+                }
+            }
+            .htree {
+                background-image: url(Images/5.jpg);
+                background-size: cover;
+                &:hover {
+                    background: violet;
+                    transition: .6s;
+                }
+            }
+            .hfour {
+                background-image: url(Images/3.jpg);
+                background-size: cover;
+                &:hover {
+                    background: rgb(108, 51, 241);
+                    transition: .6s;
+                }
+            }
+            p {
+                text-align: center;
+                width: 100%;
+                margin: 14.5rem auto 0 auto;
+                font-size: 35px;
+                font-weight: bold;
+                color: $btn-bg-color;
+                letter-spacing: -.02em;
+                z-index: 5;
+                cursor: pointer;
+                @include tablet() {
+                    max-width: 22.5rem;
+                    font-size: 1.9rem;
+                    margin: 11rem auto 0 auto;
+                    color: $btn-bg-color;
+                }
+                @include mobile() {
+                    width: 99vw;
+                    margin-top: 5rem;
+                    color: $btn-bg-color;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
